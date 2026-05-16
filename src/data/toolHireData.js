@@ -117,6 +117,7 @@ export const TOOL_HIRE_CATEGORIES = [
         id: 'vibrating-poker',
         title: 'Vibrating Poker Unit (Petrol)',
         illustration: 'poker',
+        image: '/images/IMG_7847.webp',
         specs: [
           'Vibrates fluid concrete to ensure total compaction and structural strength',
           'Removes trapped air for an improved finish',
@@ -128,6 +129,7 @@ export const TOOL_HIRE_CATEGORIES = [
         id: 'power-trowel',
         title: 'Petrol Power Trowel / Float (36 Inch)',
         illustration: 'trowel',
+        image: '/images/IMG_7817.webp',
         specs: [
           'High performance 36" power trowel designed for safety and longevity',
           'Complete with set of finishing blades',
@@ -550,6 +552,7 @@ export const TOOL_HIRE_CATEGORIES = [
         id: 'hedge-trimmer',
         title: 'Hedge Trimmer – Petrol 24"',
         illustration: 'hedge-trimmer',
+        image: '/images/IMG_7858.webp',
         specs: [
           'Petrol engine hedge trimmer',
           '24" (600mm) double-sided blade',
@@ -561,6 +564,7 @@ export const TOOL_HIRE_CATEGORIES = [
         id: 'rotavator',
         title: 'Heavy Duty Rotavator (Petrol)',
         illustration: 'rotavator',
+        image: '/images/IMG_7861.webp',
         specs: [
           'Heavy duty petrol rotavator / cultivator',
           'For breaking up and aerating compacted soil',
@@ -585,6 +589,7 @@ export const TOOL_HIRE_CATEGORIES = [
         id: 'stump-grinder',
         title: 'Stump Grinder',
         illustration: 'poa',
+        image: '/images/IMG_7865.webp',
         specs: [
           'For grinding tree stumps below ground level',
           'Removes the need for excavation',
@@ -615,6 +620,7 @@ export const TOOL_HIRE_CATEGORIES = [
         id: 'single-width-tower',
         title: 'Single Width Scaffold Tower (900mm × 2500mm)',
         illustration: 'scaffold-tower',
+        image: '/images/IMG_7778.webp',
         specs: [
           'Platform width: 900mm',
           'Platform length: 2500mm',
@@ -632,6 +638,7 @@ export const TOOL_HIRE_CATEGORIES = [
         id: 'double-width-tower',
         title: 'Double Width Scaffold Tower (1800mm × 2500mm)',
         illustration: 'scaffold-tower',
+        image: '/images/IMG_7788.webp',
         specs: [
           'Platform width: 1800mm',
           'Platform length: 2500mm',
