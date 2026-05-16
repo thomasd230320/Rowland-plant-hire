@@ -8,7 +8,7 @@ export default function CategoryPage({ category }) {
   return (
     <>
       <LogoBanner />
-      <SectionHeader title={category.label} icon={category.icon} />
+      <SectionHeader title={category.label} />
 
       <div className="cat-page-wrapper">
         <Link href="/tool-hire" className="cat-page-back">
