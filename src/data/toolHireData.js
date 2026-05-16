@@ -1,6 +1,7 @@
 export const TOOL_HIRE_CATEGORIES = [
   {
     id: 'concrete-breaking',
+    slug: 'concrete-breaking',
     label: 'Concrete Breaking',
     icon: '🔨',
     categoryNote: 'Sharpening charge per chisel @ £3.75 applies to all breakers.',
@@ -8,7 +9,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'light-duty-breaker',
         title: 'Light Duty Breaker – 110v',
-        emoji: '🔨',
+        illustration: 'breaker',
         specs: [
           'For light duty breaking of plaster, render & small wall tiles',
           'Tool Holder: SDS Plus',
@@ -23,7 +24,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'medium-duty-breaker',
         title: 'Medium Duty Breaker – 110v – 6.2Kg',
-        emoji: '🔨',
+        illustration: 'breaker',
         specs: [
           'Lightweight breaker intended for horizontal chiselling in concrete and stone',
           'Tool Holder: SDS Max',
@@ -36,7 +37,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'heavy-duty-breaker-11kg',
         title: 'Heavy Duty Breaker – 110v – 11.0Kg',
-        emoji: '🔨',
+        illustration: 'breaker',
         specs: [
           'Ideal for demolition and breaking up of concrete and hard material',
           'Can be used inside and outside – flooring, tiles, brickwork and more',
@@ -50,7 +51,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'heavy-duty-breaker-27kg',
         title: 'Heavy Duty Breaker – 110v (32AMP) – 27.0Kg',
-        emoji: '🔨',
+        illustration: 'breaker-large',
         specs: [
           'For breaking up concrete slabs, roads, footings and stone',
           'Tool Holder: HEX 28mm',
@@ -64,13 +65,14 @@ export const TOOL_HIRE_CATEGORIES = [
   },
   {
     id: 'concrete-mixing-laying',
+    slug: 'concrete-mixing-laying',
     label: 'Concrete Mixing & Laying',
     icon: '🪣',
     products: [
       {
         id: 'petrol-cement-mixer',
         title: 'Petrol 4/3 Tip Up Cement Mixer',
-        emoji: '🪣',
+        illustration: 'mixer',
         specs: [
           'Portable mixer for all small-to-medium building projects',
           'Barrow height tipping',
@@ -84,7 +86,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: '110v-cement-mixer',
         title: '110v 4/3 Tip Up Cement Mixer',
-        emoji: '🪣',
+        illustration: 'mixer',
         specs: [
           'Portable mixer for all small-to-medium building projects',
           'Barrow height tipping',
@@ -98,7 +100,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'diesel-site-mixer',
         title: 'Diesel 5/3.5 Wheelbarrow Cement Mixer',
-        emoji: '🪣',
+        illustration: 'mixer-large',
         specs: [
           'Heavy duty site mixer',
           'Engine: Yanmar L48 3.4HP Diesel',
@@ -114,7 +116,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'vibrating-poker',
         title: 'Vibrating Poker Unit (Petrol)',
-        emoji: '🔧',
+        illustration: 'poker',
         specs: [
           'Vibrates fluid concrete to ensure total compaction and structural strength',
           'Removes trapped air for an improved finish',
@@ -125,7 +127,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'power-trowel',
         title: 'Petrol Power Trowel / Float (36 Inch)',
-        emoji: '🔧',
+        illustration: 'trowel',
         specs: [
           'High performance 36" power trowel designed for safety and longevity',
           'Complete with set of finishing blades',
@@ -139,7 +141,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'twin-beam-screed',
         title: 'Twin Beam Air Screed (Petrol)',
-        emoji: '🔧',
+        illustration: 'screed',
         specs: [
           'High efficiency vibratory twin beam screed',
           'For accurate consolidation and levelling of concrete slabs',
@@ -153,13 +155,14 @@ export const TOOL_HIRE_CATEGORIES = [
   },
   {
     id: 'masonry-diamond-tile',
+    slug: 'masonry-and-tile-cutting',
     label: 'Masonry, Diamond Core & Tile Cutting',
     icon: '🪚',
     products: [
       {
         id: 'angle-grinder-4-5',
         title: '4.5" Angle Grinder – 110v',
-        emoji: '🪚',
+        illustration: 'grinder',
         specs: [
           '110v electric',
           'Suitable for masonry, metal and stone cutting/grinding',
@@ -170,7 +173,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'angle-grinder-9',
         title: '9" Angle Grinder – 110v',
-        emoji: '🪚',
+        illustration: 'grinder',
         specs: [
           '110v electric',
           'Heavy duty grinder for larger masonry and metal cutting',
@@ -181,7 +184,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'cut-off-saw-12-electric',
         title: '12" Electric Cut-Off Saw (Disc Cutter)',
-        emoji: '🪚',
+        illustration: 'disc-cutter',
         specs: [
           '110v electric',
           '12" blade capacity',
@@ -192,7 +195,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'cut-off-saw-12-petrol',
         title: '12" Petrol Cut-Off Saw (Disc Cutter)',
-        emoji: '🪚',
+        illustration: 'disc-cutter',
         specs: [
           'Petrol engine – suitable for outdoor use',
           '12" blade capacity',
@@ -203,7 +206,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'cut-off-saw-14-petrol',
         title: '14" Petrol Cut-Off Saw (Disc Cutter)',
-        emoji: '🪚',
+        illustration: 'disc-cutter',
         specs: [
           'Petrol engine – suitable for outdoor use',
           '14" blade capacity for greater cutting depth',
@@ -214,7 +217,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'petrol-floor-saw',
         title: 'Petrol Floor Saw (Max 14" Blade)',
-        emoji: '🪚',
+        illustration: 'floor-saw',
         specs: [
           'Petrol engine walk-behind floor saw',
           'Max 14" blade capacity',
@@ -226,7 +229,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'diamond-core-drill',
         title: 'Standard Diamond Core Drill Unit',
-        emoji: '💎',
+        illustration: 'core-drill',
         specs: [
           '110v electric core drill',
           'For precision core drilling through concrete and masonry',
@@ -238,7 +241,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'diamond-core-cutters',
         title: 'Diamond Core Cutters – Individual Sizes',
-        emoji: '💎',
+        illustration: 'core-cutter',
         specs: [
           'Available in sizes: 22mm, 28mm, 38mm, 48mm, 52mm, 65mm, 78mm, 107mm, 117mm, 127mm, 152mm',
           'Prices scale with cutter diameter – see pricing table',
@@ -255,7 +258,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'tile-bench-saw',
         title: 'Tile Bench Saw / Bridge Saw',
-        emoji: '🪚',
+        illustration: 'tile-saw',
         specs: [
           'Electric tile bench / bridge saw',
           'For precision cutting of ceramic, porcelain and natural stone tiles',
@@ -266,7 +269,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'manual-tile-cutter',
         title: 'Manual Rail Tile Cutter (Heavy Duty)',
-        emoji: '🪚',
+        illustration: 'tile-cutter',
         specs: [
           'Manual operation – no power required',
           'Heavy duty construction for repeated professional use',
@@ -277,7 +280,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'block-splitter',
         title: 'Block Splitter (Manual Hydraulic)',
-        emoji: '🪚',
+        illustration: 'block-splitter',
         specs: [
           'Manual hydraulic operation – no power required',
           'For splitting concrete blocks, bricks and kerb stones',
@@ -289,13 +292,14 @@ export const TOOL_HIRE_CATEGORIES = [
   },
   {
     id: 'wood-metal-cutting',
+    slug: 'wood-metal-cutting',
     label: 'Wood & Metal Cutting',
     icon: '⚙️',
     products: [
       {
         id: 'jigsaw',
         title: 'Jigsaw – 110v',
-        emoji: '⚙️',
+        illustration: 'jigsaw',
         specs: [
           '110v electric',
           'For cutting curves and intricate shapes in wood, metal and plastics',
@@ -306,7 +310,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'reciprocating-saw',
         title: 'Reciprocating Saw – 110v',
-        emoji: '⚙️',
+        illustration: 'recip-saw',
         specs: [
           '110v electric',
           'Heavy duty demolition and cutting tool',
@@ -317,7 +321,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'circular-saw-185',
         title: '185mm Circular Saw – 110v',
-        emoji: '⚙️',
+        illustration: 'circular-saw',
         specs: [
           '110v electric',
           '185mm blade diameter',
@@ -328,7 +332,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'circular-saw-235',
         title: '235mm Circular Saw – 110v',
-        emoji: '⚙️',
+        illustration: 'circular-saw',
         specs: [
           '110v electric',
           '235mm blade diameter – greater cutting depth than 185mm',
@@ -339,7 +343,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'mitre-saw',
         title: 'Crosscut / Slide Mitre Saw – 110v',
-        emoji: '⚙️',
+        illustration: 'mitre-saw',
         specs: [
           '110v electric sliding crosscut mitre saw',
           'For precision angled and straight crosscuts in timber',
@@ -351,13 +355,14 @@ export const TOOL_HIRE_CATEGORIES = [
   },
   {
     id: 'compacting-equipment',
+    slug: 'compacting-equipment',
     label: 'Compacting Equipment',
     icon: '🏗️',
     products: [
       {
         id: 'plate-compactor-12',
         title: '12" Plate Compactor – Petrol',
-        emoji: '🏗️',
+        illustration: 'compactor',
         specs: [
           'Petrol engine',
           '12" (300mm) plate width',
@@ -369,7 +374,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'plate-compactor-18',
         title: '18" Plate Compactor – Petrol',
-        emoji: '🏗️',
+        illustration: 'compactor',
         specs: [
           'Petrol engine',
           '18" (450mm) plate width – greater coverage per pass',
@@ -381,7 +386,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'vibrating-roller-55',
         title: 'Vibrating Roller 55cm – Petrol',
-        emoji: '🏗️',
+        illustration: 'roller',
         specs: [
           'Petrol engine walk-behind vibratory roller',
           '55cm drum width',
@@ -393,7 +398,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'ride-on-roller',
         title: '960mm Ride-On Roller – Diesel',
-        emoji: '🏗️',
+        illustration: 'poa',
         specs: [
           'Diesel engine ride-on roller',
           '960mm roller drum width',
@@ -406,13 +411,14 @@ export const TOOL_HIRE_CATEGORIES = [
   },
   {
     id: 'metal-drilling',
+    slug: 'drilling',
     label: 'Metal Drilling',
     icon: '🔩',
     products: [
       {
         id: 'sds-plus-drill',
         title: 'SDS Plus Hammer Drill – 110v',
-        emoji: '🔩',
+        illustration: 'sds-drill',
         specs: [
           '110v electric',
           'SDS Plus chuck for rotary hammer drilling',
@@ -424,7 +430,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'angle-drill-10mm',
         title: '10mm Angle Headed Drill – 110v',
-        emoji: '🔩',
+        illustration: 'angle-drill',
         specs: [
           '110v electric',
           '10mm chuck capacity',
@@ -436,7 +442,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'angle-drill-13mm',
         title: '13mm Angle Headed Drill – 110v',
-        emoji: '🔩',
+        illustration: 'angle-drill',
         specs: [
           '110v electric',
           '13mm chuck capacity',
@@ -448,7 +454,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'magnetic-core-drill',
         title: '13mm Magnetic Core Drill – 110v',
-        emoji: '🔩',
+        illustration: 'mag-drill',
         specs: [
           '110v electric',
           'Powerful magnetic base for secure attachment to steel surfaces',
@@ -461,13 +467,14 @@ export const TOOL_HIRE_CATEGORIES = [
   },
   {
     id: 'acro-props-trestles-boards',
+    slug: 'acro-props-strongboys-trestles-scaffold',
     label: 'Acro Props, Trestles & Boards',
     icon: '🪵',
     products: [
       {
         id: 'adjustable-props',
         title: 'Adjustable Props (Sizes 0, 1, 2, 3)',
-        emoji: '🪵',
+        illustration: 'acro-prop',
         specs: [
           'Adjustable steel acro props for temporary structural support',
           'Available in sizes 0, 1, 2 and 3',
@@ -478,7 +485,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'strongboy',
         title: 'Strongboy Wall Support',
-        emoji: '🪵',
+        illustration: 'strongboy',
         specs: [
           'Steel strongboy wall support / prop attachment',
           'Used with adjustable acro props for lintel and wall support',
@@ -489,7 +496,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'builders-trestles',
         title: 'Builders Trestles (Sizes 1, 2, 3)',
-        emoji: '🪵',
+        illustration: 'trestle',
         specs: [
           'Folding steel builders trestles',
           'Available in sizes 1, 2 and 3',
@@ -500,7 +507,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'scaffold-boards',
         title: 'Scaffold Boards (3.9m)',
-        emoji: '🪵',
+        illustration: 'scaffold-board',
         specs: [
           'Kiln-dried and graded scaffold boards',
           'Length: 3.9m',
@@ -512,13 +519,14 @@ export const TOOL_HIRE_CATEGORIES = [
   },
   {
     id: 'gardening-equipment',
+    slug: 'gardening-equipment',
     label: 'Gardening Equipment',
     icon: '🌿',
     products: [
       {
         id: 'rotary-lawnmower',
         title: 'Rotary Lawnmower',
-        emoji: '🌿',
+        illustration: 'lawnmower',
         specs: [
           'Petrol rotary lawnmower',
           'Self-propelled or push options available',
@@ -529,7 +537,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'chainsaw-16',
         title: 'Chainsaw – Petrol 16"',
-        emoji: '🌿',
+        illustration: 'chainsaw',
         specs: [
           'Petrol engine chainsaw',
           '16" (400mm) guide bar',
@@ -541,7 +549,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'hedge-trimmer',
         title: 'Hedge Trimmer – Petrol 24"',
-        emoji: '🌿',
+        illustration: 'hedge-trimmer',
         specs: [
           'Petrol engine hedge trimmer',
           '24" (600mm) double-sided blade',
@@ -552,7 +560,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'rotavator',
         title: 'Heavy Duty Rotavator (Petrol)',
-        emoji: '🌿',
+        illustration: 'rotavator',
         specs: [
           'Heavy duty petrol rotavator / cultivator',
           'For breaking up and aerating compacted soil',
@@ -564,7 +572,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'turf-cutter',
         title: 'Turf Cutter (Petrol)',
-        emoji: '🌿',
+        illustration: 'poa',
         specs: [
           'Petrol engine turf cutter',
           'For removing turf/sod for new lawn or paving preparation',
@@ -576,7 +584,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'stump-grinder',
         title: 'Stump Grinder',
-        emoji: '🌿',
+        illustration: 'poa',
         specs: [
           'For grinding tree stumps below ground level',
           'Removes the need for excavation',
@@ -587,7 +595,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'log-splitter',
         title: 'Log Splitter',
-        emoji: '🌿',
+        illustration: 'poa',
         specs: [
           'Hydraulic log splitter',
           'For splitting logs and timber',
@@ -599,13 +607,14 @@ export const TOOL_HIRE_CATEGORIES = [
   },
   {
     id: 'access-scaffold-towers',
+    slug: 'access-scaffold-towers',
     label: 'Access Scaffold Towers',
     icon: '🪜',
     products: [
       {
         id: 'single-width-tower',
         title: 'Single Width Scaffold Tower (900mm × 2500mm)',
-        emoji: '🪜',
+        illustration: 'scaffold-tower',
         specs: [
           'Platform width: 900mm',
           'Platform length: 2500mm',
@@ -622,7 +631,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'double-width-tower',
         title: 'Double Width Scaffold Tower (1800mm × 2500mm)',
-        emoji: '🪜',
+        illustration: 'scaffold-tower',
         specs: [
           'Platform width: 1800mm',
           'Platform length: 2500mm',

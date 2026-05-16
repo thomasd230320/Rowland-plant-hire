@@ -1,32 +1,13 @@
-import LogoBanner from '@/components/LogoBanner'
-import SectionHeader from '@/components/SectionHeader'
-import CategoryCard from '@/components/CategoryCard'
-import CtaButton from '@/components/CtaButton'
-import Footer from '@/components/Footer'
+import CategoryPage from '@/components/CategoryPage'
+import { TOOL_HIRE_CATEGORIES } from '@/data/toolHireData'
 
-export const metadata = { title: 'Access Scaffold Towers' }
+const category = TOOL_HIRE_CATEGORIES.find(c => c.id === 'access-scaffold-towers')
 
-export default function AccessScaffoldPage() {
-  return (
-    <>
-      <LogoBanner />
-      <SectionHeader title="Access Scaffold Towers" icon="🪜" />
-      <div className="category-grid" style={{ maxWidth: '760px' }}>
-        <CategoryCard
-          title="Double Width Scaffold Tower"
-          emoji="🪜"
-          alt="Double Width"
-          linkTo="/tool-hire/access-scaffold-towers/double-width"
-        />
-        <CategoryCard
-          title="Single Width Scaffold Tower"
-          emoji="🪜"
-          alt="Single Width"
-          linkTo="/tool-hire/access-scaffold-towers/single-width"
-        />
-      </div>
-      <CtaButton />
-      <Footer />
-    </>
-  )
+export const metadata = {
+  title: `${category.label} | Rowland Tool & Plant Hire`,
+  description: 'Hire single and double width aluminium scaffold towers in Witney & West Oxfordshire. Working heights from 2.2m to 12.2m.',
+}
+
+export default function AccessScaffoldTowersPage() {
+  return <CategoryPage category={category} />
 }
