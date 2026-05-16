@@ -1505,6 +1505,17 @@ a.home-contact-strip__value:hover {
   justify-content: center;
 }
 
+.th-card__photo-wrap {
+  position: relative;
+  width: 108px;
+  height: 108px;
+}
+
+.th-card__photo {
+  object-fit: cover;
+  border-radius: 4px;
+}
+
 /* Middle: title + specs */
 .th-card__middle-col {
   display: flex;
