@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 function PricingTable({ pricing, pricingRows }) {
   if (pricingRows) {
     return (
@@ -48,14 +50,26 @@ function PricingTable({ pricing, pricingRows }) {
   )
 }
 
-export default function ToolProductCard({ title, emoji, specs, note, pricing, pricingRows }) {
+export default function ToolProductCard({ title, emoji, image, specs, note, pricing, pricingRows }) {
   return (
     <article className="th-card">
       <div className="th-card__body">
         <div className="th-card__img-col">
-          <div className="th-card__img-placeholder" role="img" aria-label={title}>
-            <span aria-hidden="true">{emoji || '🔧'}</span>
-          </div>
+          {image ? (
+            <div className="th-card__img-wrap">
+              <Image
+                src={image}
+                alt={title}
+                fill
+                sizes="148px"
+                style={{ objectFit: 'cover', borderRadius: '4px' }}
+              />
+            </div>
+          ) : (
+            <div className="th-card__img-placeholder" role="img" aria-label={title}>
+              <span aria-hidden="true">{emoji || '🔧'}</span>
+            </div>
+          )}
         </div>
 
         <div className="th-card__middle-col">

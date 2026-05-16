@@ -1,6 +1,7 @@
 export const TOOL_HIRE_CATEGORIES = [
   {
     id: 'concrete-breaking',
+    slug: 'concrete-breaking',
     label: 'Concrete Breaking',
     icon: '🔨',
     categoryNote: 'Sharpening charge per chisel @ £3.75 applies to all breakers.',
@@ -64,6 +65,7 @@ export const TOOL_HIRE_CATEGORIES = [
   },
   {
     id: 'concrete-mixing-laying',
+    slug: 'concrete-mixing-laying',
     label: 'Concrete Mixing & Laying',
     icon: '🪣',
     products: [
@@ -153,6 +155,7 @@ export const TOOL_HIRE_CATEGORIES = [
   },
   {
     id: 'masonry-diamond-tile',
+    slug: 'masonry-and-tile-cutting',
     label: 'Masonry, Diamond Core & Tile Cutting',
     icon: '🪚',
     products: [
@@ -289,6 +292,7 @@ export const TOOL_HIRE_CATEGORIES = [
   },
   {
     id: 'wood-metal-cutting',
+    slug: 'wood-metal-cutting',
     label: 'Wood & Metal Cutting',
     icon: '⚙️',
     products: [
@@ -351,6 +355,7 @@ export const TOOL_HIRE_CATEGORIES = [
   },
   {
     id: 'compacting-equipment',
+    slug: 'compacting-equipment',
     label: 'Compacting Equipment',
     icon: '🏗️',
     products: [
@@ -406,6 +411,7 @@ export const TOOL_HIRE_CATEGORIES = [
   },
   {
     id: 'metal-drilling',
+    slug: 'drilling',
     label: 'Metal Drilling',
     icon: '🔩',
     products: [
@@ -461,6 +467,7 @@ export const TOOL_HIRE_CATEGORIES = [
   },
   {
     id: 'acro-props-trestles-boards',
+    slug: 'acro-props-strongboys-trestles-scaffold',
     label: 'Acro Props, Trestles & Boards',
     icon: '🪵',
     products: [
@@ -512,6 +519,7 @@ export const TOOL_HIRE_CATEGORIES = [
   },
   {
     id: 'gardening-equipment',
+    slug: 'gardening-equipment',
     label: 'Gardening Equipment',
     icon: '🌿',
     products: [
@@ -599,6 +607,7 @@ export const TOOL_HIRE_CATEGORIES = [
   },
   {
     id: 'access-scaffold-towers',
+    slug: 'access-scaffold-towers',
     label: 'Access Scaffold Towers',
     icon: '🪜',
     products: [

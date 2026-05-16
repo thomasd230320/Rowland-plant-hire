@@ -1,5 +1,13 @@
-import StubPage from '@/components/StubPage'
-export const metadata = { title: 'Gardening Equipment' }
-export default function Page() {
-  return <StubPage title="Gardening Equipment" icon="🌿" emoji="🌱" />
+import CategoryPage from '@/components/CategoryPage'
+import { TOOL_HIRE_CATEGORIES } from '@/data/toolHireData'
+
+const category = TOOL_HIRE_CATEGORIES.find(c => c.id === 'gardening-equipment')
+
+export const metadata = {
+  title: `${category.label} | Rowland Tool & Plant Hire`,
+  description: 'Hire lawnmowers, chainsaws, hedge trimmers, rotavators and more in Witney & West Oxfordshire.',
+}
+
+export default function GardeningEquipmentPage() {
+  return <CategoryPage category={category} />
 }
