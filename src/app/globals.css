@@ -2193,12 +2193,11 @@ a.home-contact-strip__value:hover { color: var(--white); }
 
 .plant-cat-card {
   display: flex;
-  gap: 20px;
-  align-items: flex-start;
+  flex-direction: column;
   background: var(--white);
   border: 1px solid var(--grey-200);
   border-radius: 8px;
-  padding: 32px 24px;
+  overflow: hidden;
   text-decoration: none;
   color: var(--text);
   box-shadow: var(--shadow-card);
@@ -2208,26 +2207,48 @@ a.home-contact-strip__value:hover { color: var(--white); }
 .plant-cat-card:hover {
   border-color: var(--red);
   box-shadow: var(--shadow-hover);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
-.plant-cat-card__icon {
-  color: var(--red);
-  width: 56px;
-  height: 56px;
-  flex-shrink: 0;
+.plant-cat-card__img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--surface-dark);
 }
 
-.plant-cat-card__body { flex: 1; }
+.plant-cat-card__photo {
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.plant-cat-card:hover .plant-cat-card__photo {
+  transform: scale(1.04);
+}
+
+.plant-cat-card__img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.55) 100%);
+  pointer-events: none;
+}
+
+.plant-cat-card__body {
+  flex: 1;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
 
 .plant-cat-card__title {
   font-family: 'Oswald', sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--grey-900);
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .plant-cat-card__desc {
@@ -2239,11 +2260,12 @@ a.home-contact-strip__value:hover { color: var(--white); }
 
 .plant-cat-card__items {
   list-style: none;
-  margin: 0 0 16px;
+  margin: 0 0 20px;
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 4px;
+  flex: 1;
 }
 
 .plant-cat-card__items li {
@@ -3467,7 +3489,6 @@ a.home-contact-strip__value:hover { color: var(--white); }
   .coverage__badge { display: none; }
   .coverage__towns { grid-template-columns: 1fr; }
   .plant-cats__grid { grid-template-columns: 1fr; }
-  .plant-cat-card { flex-direction: column; }
   .plant-delivery__inner { grid-template-columns: 1fr; gap: 20px; }
   .about-intro { grid-template-columns: 1fr; }
   .about-intro__badge { display: none; }

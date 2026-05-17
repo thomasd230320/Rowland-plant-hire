@@ -104,11 +104,8 @@ export default function ToolProductCard({ id, title, image, specs, note, pricing
       </div>
 
       <div className="th-card__actions">
-        <a href="tel:+441865922611" className="th-card__call-btn">
-          <PhoneIcon /> Call us: 01865 922611
-        </a>
         <a href="mailto:Sales@Rowlandplant.co.uk" className="th-card__enquiry-link">
-          <MailIcon /> Enquire
+          <MailIcon /> Enquire by email
         </a>
         <AvailabilityChecker productTitle={title} availability={availability} />
         {!pricingRows && (

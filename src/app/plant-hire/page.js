@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import LogoBanner from '@/components/LogoBanner'
 import Footer from '@/components/Footer'
 
@@ -12,26 +13,16 @@ const CATEGORIES = [
     title: 'Mini Excavators & Diggers',
     desc: 'Compact excavators from 1T to 3T — ideal for footings, landscaping and restricted-access groundworks.',
     href: '/plant-hire/mini-excavators-diggers',
-    icon: (
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-        <polyline points="9 22 9 12 15 12 15 22"/>
-      </svg>
-    ),
+    image: '/images/IMG_7871.WEBP',
+    imageAlt: 'Hitachi 3T mini excavator for hire',
     items: ['1T Mini Excavator', '1.5T Kubota U10-3', '3.0T Hitachi ZX27-3'],
   },
   {
     title: 'Skip Loaders & Dumpers',
     desc: 'Tracked and wheeled site dumpers for moving spoil and aggregates across all ground conditions.',
     href: '/plant-hire/skip-loaders-dumpers',
-    icon: (
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <rect x="1" y="3" width="15" height="13" rx="2"/>
-        <path d="M16 8h4l3 5v3h-7V8z"/>
-        <circle cx="5.5" cy="18.5" r="2.5"/>
-        <circle cx="18.5" cy="18.5" r="2.5"/>
-      </svg>
-    ),
+    image: '/images/IMG_7872.WEBP',
+    imageAlt: 'Tracked mini dumper for hire',
     items: ['Tracked Mini Dumper (Kinowa HS701)', 'Wheeled Site Dumper (AUSA)'],
   },
 ]
@@ -67,7 +58,16 @@ export default function PlantHirePage() {
           <div className="plant-cats__grid">
             {CATEGORIES.map(cat => (
               <Link key={cat.href} href={cat.href} className="plant-cat-card">
-                <div className="plant-cat-card__icon">{cat.icon}</div>
+                <div className="plant-cat-card__img-wrap">
+                  <Image
+                    src={cat.image}
+                    alt={cat.imageAlt}
+                    fill
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                    className="plant-cat-card__photo"
+                  />
+                  <div className="plant-cat-card__img-overlay" aria-hidden="true" />
+                </div>
                 <div className="plant-cat-card__body">
                   <h3 className="plant-cat-card__title">{cat.title}</h3>
                   <p className="plant-cat-card__desc">{cat.desc}</p>
@@ -109,7 +109,7 @@ export default function PlantHirePage() {
               <circle cx="18.5" cy="18.5" r="2.5"/>
             </svg>
             <div>
-              <strong>Delivery & Collection</strong>
+              <strong>Delivery &amp; Collection</strong>
               <p>We deliver to and collect from site at a mutually convenient time</p>
             </div>
           </div>

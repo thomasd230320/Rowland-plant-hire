@@ -27,11 +27,6 @@ const PRODUCTS = [
       { period: 'Extra Day', price: 'POA' },
       { period: 'Week', price: '£180.00' },
     ],
-    downloads: [
-      { label: 'Wacker 1404 Spec Sheet', href: '#' },
-      { label: 'Bobcat E17 Spec Sheet', href: '#' },
-      { label: 'Bobcat E19 Spec Sheet', href: '#' },
-    ],
   },
   {
     title: '1.5T Mini Excavator (Kubota U10-3)',

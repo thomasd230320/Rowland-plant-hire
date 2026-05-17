@@ -88,12 +88,8 @@ export default function ProductCard({ title, image, altText, description, specs,
         <div className="product-card__pricing">
           {pricing && <PricingTable rows={pricing} />}
           <div className="product-card__cta">
-            <a href="tel:+441865922611" className="product-cta-btn">
-              <PhoneIcon />
-              Call: 01865 922611
-            </a>
             <a href="mailto:Sales@Rowlandplant.co.uk" className="product-ask-link">
-              Email an enquiry
+              Enquire by email
             </a>
             <AvailabilityChecker productTitle={title} availability={availability} />
             <AddToQuoteBtn item={{
