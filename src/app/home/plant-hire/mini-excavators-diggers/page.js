@@ -10,7 +10,7 @@ export const metadata = { title: 'Mini Excavators / Diggers' }
 const PRODUCTS = [
   {
     title: '1T Mini Excavator',
-    emoji: '⛏️',
+    image: '/images/IMG_7870.WEBP',
     altText: '1T Mini Excavator',
     description:
       'This super-compact, highly efficient and reliable mini excavator with enhanced operator protection, is the ideal super mini-excavator of choice for tough jobs where space is limited.',
@@ -33,7 +33,7 @@ const PRODUCTS = [
   },
   {
     title: '1.5T Mini Excavator (Kubota U10-3)',
-    emoji: '⛏️',
+    image: '/images/IMG_7869.WEBP',
     altText: '1.5T Mini Excavator',
     description:
       'This excavator is ideal for excavating most footings and can also make light work of the larger landscaping jobs, with a width of 980mm this excavator is easily maneuverable and the tracks can expand up to 1300mm for extra stability.',
@@ -51,7 +51,7 @@ const PRODUCTS = [
   },
   {
     title: '3.0T Excavator (Hitachi ZX27-3)',
-    emoji: '🏗️',
+    image: '/images/IMG_7871.WEBP',
     altText: '3T Excavator',
     description:
       'This larger excavator is ideal for excavating most footings and can also make light work of the larger landscaping jobs, with cab as standard this machine is the operator\'s choice in tough conditions.',

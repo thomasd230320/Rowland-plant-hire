@@ -23,7 +23,7 @@ const CATEGORIES = [
     title: 'Skip Loaders / Dumpers',
     emoji: '🚛',
     alt: 'Skip Loader / Dumper',
-    linkTo: '/home/plant-hire',
+    linkTo: '/home/plant-hire/skip-loaders-dumpers',
   },
 ]
 

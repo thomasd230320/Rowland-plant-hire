@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import CtaButton from './CtaButton'
 
 function PricingTable({ rows }) {
@@ -24,17 +25,22 @@ function PricingTable({ rows }) {
   )
 }
 
-export default function ProductCard({ title, emoji, altText, description, specs, pricing, downloads }) {
+export default function ProductCard({ title, image, altText, description, specs, pricing, downloads }) {
   return (
     <div className="product-card">
       <div className="product-card__title-bar">{title}</div>
       <div className="product-card__body">
         {/* Image */}
         <div className="product-card__img-col">
-          <div className="product-card__img-placeholder">
-            <span>{emoji || '🔧'}</span>
-            <span>{altText || title}</span>
-          </div>
+          {image ? (
+            <div className="product-card__photo-wrap">
+              <Image src={image} alt={altText || title} fill sizes="200px" className="product-card__photo" />
+            </div>
+          ) : (
+            <div className="product-card__img-placeholder">
+              <span>{altText || title}</span>
+            </div>
+          )}
         </div>
 
         {/* Description + Specs */}

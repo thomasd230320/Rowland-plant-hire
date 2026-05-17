@@ -72,7 +72,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'petrol-cement-mixer',
         title: 'Petrol 4/3 Tip Up Cement Mixer',
-        image: '/images/IMG_7808.WEBP',
         specs: [
           'Portable mixer for all small-to-medium building projects',
           'Barrow height tipping',
@@ -86,7 +85,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: '110v-cement-mixer',
         title: '110v 4/3 Tip Up Cement Mixer',
-        image: '/images/IMG_7808(1).WEBP',
         specs: [
           'Portable mixer for all small-to-medium building projects',
           'Barrow height tipping',
@@ -100,7 +98,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'diesel-site-mixer',
         title: 'Diesel 5/3.5 Wheelbarrow Cement Mixer',
-        image: '/images/IMG_7808.WEBP',
         specs: [
           'Heavy duty site mixer',
           'Engine: Yanmar L48 3.4HP Diesel',
@@ -299,7 +296,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'jigsaw',
         title: 'Jigsaw – 110v',
-        image: '/images/IMG_7776.WEBP',
         specs: [
           '110v electric',
           'For cutting curves and intricate shapes in wood, metal and plastics',
@@ -321,7 +317,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'circular-saw-185',
         title: '185mm Circular Saw – 110v',
-        image: '/images/IMG_7769.WEBP',
         specs: [
           '110v electric',
           '185mm blade diameter',
@@ -332,7 +327,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'circular-saw-235',
         title: '235mm Circular Saw – 110v',
-        image: '/images/IMG_7769.WEBP',
         specs: [
           '110v electric',
           '235mm blade diameter – greater cutting depth than 185mm',
@@ -386,7 +380,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'vibrating-roller-55',
         title: 'Vibrating Roller 55cm – Petrol',
-        image: '/images/IMG_7773.WEBP',
         specs: [
           'Petrol engine walk-behind vibratory roller',
           '55cm drum width',
@@ -398,7 +391,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'ride-on-roller',
         title: '960mm Ride-On Roller – Diesel',
-        image: '/images/IMG_7773.WEBP',
         specs: [
           'Diesel engine ride-on roller',
           '960mm roller drum width',
@@ -454,7 +446,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'magnetic-core-drill',
         title: '13mm Magnetic Core Drill – 110v',
-        image: '/images/IMG_7777.WEBP',
         specs: [
           '110v electric',
           'Powerful magnetic base for secure attachment to steel surfaces',
@@ -474,7 +465,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'adjustable-prop-size-0',
         title: 'Adjustable Prop – Size 0 (1044–1836mm)',
-        image: '/images/IMG_7773.WEBP',
         specs: [
           'Adjustable steel acro prop for temporary structural support',
           'Size 0 extension range: 1044–1836mm',
@@ -485,7 +475,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'adjustable-prop-size-1',
         title: 'Adjustable Prop – Size 1 (1250–1930mm)',
-        image: '/images/IMG_7773.WEBP',
         specs: [
           'Adjustable steel acro prop for temporary structural support',
           'Size 1 extension range: 1250–1930mm',
@@ -496,7 +485,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'adjustable-prop-size-2',
         title: 'Adjustable Prop – Size 2 (1984–3300mm)',
-        image: '/images/IMG_7773.WEBP',
         specs: [
           'Adjustable steel acro prop for temporary structural support',
           'Size 2 extension range: 1984–3300mm',
@@ -507,7 +495,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'adjustable-prop-size-3',
         title: 'Adjustable Prop – Size 3 (2356–3536mm)',
-        image: '/images/IMG_7773.WEBP',
         specs: [
           'Adjustable steel acro prop for temporary structural support',
           'Size 3 extension range: 2356–3536mm',
@@ -518,7 +505,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'strongboy',
         title: 'Strongboy Wall Support',
-        image: '/images/IMG_7773.WEBP',
         specs: [
           'Steel strongboy wall support / prop attachment',
           'Used with adjustable acro props for lintel and wall support',
@@ -529,7 +515,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'builders-trestle-size-1',
         title: 'Builders Trestle – Size 1 (0.29m–0.71m)',
-        image: '/images/IMG_7773.WEBP',
         specs: [
           'Folding steel builders trestle',
           'Size 1 height range: 0.29m–0.71m',
@@ -540,7 +525,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'builders-trestle-size-2',
         title: 'Builders Trestle – Size 2 (0.70m–1.07m)',
-        image: '/images/IMG_7773.WEBP',
         specs: [
           'Folding steel builders trestle',
           'Size 2 height range: 0.70m–1.07m',
@@ -551,7 +535,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'builders-trestle-size-3',
         title: 'Builders Trestle – Size 3 (1.07m–1.68m)',
-        image: '/images/IMG_7773.WEBP',
         specs: [
           'Folding steel builders trestle',
           'Size 3 height range: 1.07m–1.68m',
@@ -562,7 +545,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'scaffold-boards',
         title: 'Scaffold Boards (3.9m)',
-        image: '/images/IMG_7773.WEBP',
         specs: [
           'Kiln-dried and graded scaffold boards',
           'Length: 3.9m',
