@@ -6,7 +6,7 @@ import Footer from '@/components/Footer'
 import { TOOL_HIRE_CATEGORIES } from '@/data/toolHireData'
 
 export const metadata = {
-  title: 'Tool Hire | Rowland Tool & Plant Hire',
+  title: 'Tool Hire',
   description: 'Hire tools in Witney, West Oxfordshire & The Cotswolds. Breakers, mixers, saws, drills, compactors, scaffold towers and more.',
 }
 

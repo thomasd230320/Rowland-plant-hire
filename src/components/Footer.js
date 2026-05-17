@@ -2,7 +2,7 @@ import EnquiryForm from './EnquiryForm'
 
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" id="enquiry">
       <div className="footer__inner">
         {/* Left: brand + contact + social */}
         <div className="footer__social">

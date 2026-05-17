@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import LogoBanner from '@/components/LogoBanner'
 import Footer from '@/components/Footer'
 import ScrollVideoAnimation from '@/components/ScrollVideoAnimation'
 
@@ -49,6 +48,14 @@ function PlantIcon() {
   )
 }
 
+function QuoteIcon() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
+    </svg>
+  )
+}
+
 function LocationIcon() {
   return (
     <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -62,8 +69,6 @@ export default function HomePage() {
     <>
       {/* Scroll-driven video animation — very first thing on page */}
       <ScrollVideoAnimation />
-
-      <LogoBanner />
 
       {/* Hero */}
       <section className="home-hero">
@@ -87,6 +92,10 @@ export default function HomePage() {
             <a href="mailto:Sales@Rowlandplant.co.uk" className="home-hero__email-btn">
               <MailIcon />
               Sales@Rowlandplant.co.uk
+            </a>
+            <a href="#enquiry" className="home-hero__quote-btn">
+              <QuoteIcon />
+              Get a Quote
             </a>
           </div>
           <nav className="home-hero__nav" aria-label="Main sections">
