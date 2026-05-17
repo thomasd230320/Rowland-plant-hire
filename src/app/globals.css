@@ -5178,3 +5178,128 @@ a.home-contact-strip__value:hover { color: var(--white); }
   .avail-overlay { align-items: flex-end; padding: 0; }
   .avail-check-btn { margin-left: 0; }
 }
+
+/* ============================================================
+   HIRE AGREEMENT — quote drawer signature section
+   ============================================================ */
+
+.qd-agreement {
+  margin: 16px 0 12px;
+  padding: 16px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 6px;
+}
+
+.qd-agreement__title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--white);
+  margin: 0 0 10px;
+}
+
+.qd-agreement__bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.qd-agreement__bullets li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: rgba(255,255,255,0.60);
+  line-height: 1.5;
+  padding-left: 14px;
+  position: relative;
+}
+
+.qd-agreement__bullets li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--red);
+}
+
+.qd-agreement__terms-link {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: var(--red);
+  text-decoration: none;
+  margin-bottom: 14px;
+  transition: color var(--transition);
+}
+
+.qd-agreement__terms-link:hover { color: #ff3333; }
+
+.qd-agreement__sig-label {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.55);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin-bottom: 6px;
+}
+
+.qd-sig-input {
+  width: 100%;
+  padding: 10px 12px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 4px;
+  color: var(--white);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.qd-sig-input::placeholder { color: rgba(255,255,255,0.30); }
+
+.qd-sig-input:focus {
+  border-color: rgba(255,255,255,0.40);
+  background: rgba(255,255,255,0.08);
+}
+
+.qd-agreement__confirmed {
+  margin: 8px 0 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #4ade80;
+  font-weight: 600;
+}
+
+.qd-agreement__legal {
+  margin: 10px 0 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  color: rgba(255,255,255,0.35);
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/* Disabled state for the send button when not yet signed */
+.qd-enquiry-btn--disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Nudge text below disabled send button */
+.qd-sig-nudge {
+  margin: 6px 0 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: rgba(255,255,255,0.45);
+  text-align: center;
+}

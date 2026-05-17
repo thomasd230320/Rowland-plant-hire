@@ -55,7 +55,14 @@ function todayString() {
   return new Date().toISOString().split('T')[0]
 }
 
-function buildMailtoBody(items, startDate, days, userEmail) {
+function formatSignatureDate() {
+  const now = new Date()
+  const date = now.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
+  const time = now.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' })
+  return `${date} at ${time}`
+}
+
+function buildMailtoBody(items, startDate, days, userEmail, signatureName) {
   const durationLabel = DURATION_OPTIONS.find((o) => o.days === days)?.label ?? `${days} day(s)`
   const startLabel = startDate || 'TBC'
   const lines = items.map((item) => {
@@ -77,7 +84,71 @@ function buildMailtoBody(items, startDate, days, userEmail) {
     'Please confirm availability and pricing (inc. VAT).',
     '',
     'Many thanks',
+    '',
+    '--------------------------------',
+    'HIRE AGREEMENT',
+    'I agree to the Rowland Plant Ltd Terms & Conditions.',
+    `Signed: ${signatureName}`,
+    `Date: ${formatSignatureDate()}`,
+    '--------------------------------',
   ].join('\n')
+}
+
+// ---------------------------------------------------------------------------
+// Hire Agreement section
+// ---------------------------------------------------------------------------
+
+const AGREEMENT_BULLETS = [
+  'You are responsible for the care and custody of all equipment during hire.',
+  'Risk passes to you on delivery — hire insurance is available for a small additional fee.',
+  'Equipment must be returned clean and in the same condition as received.',
+  'Rowland Plant Ltd retains ownership of all goods at all times.',
+]
+
+function HireAgreement({ signatureName, onChange }) {
+  const today = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
+  const signed = signatureName.trim().length >= 2
+
+  return (
+    <div className="qd-agreement">
+      <p className="qd-agreement__title">Hire Agreement</p>
+      <ul className="qd-agreement__bullets">
+        {AGREEMENT_BULLETS.map((b, i) => <li key={i}>{b}</li>)}
+      </ul>
+      <Link
+        href="/terms-conditions"
+        className="qd-agreement__terms-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View full Terms &amp; Conditions →
+      </Link>
+
+      <label className="qd-agreement__sig-label" htmlFor="qd-sig-name">
+        Sign by typing your full name
+      </label>
+      <input
+        id="qd-sig-name"
+        className="qd-sig-input"
+        type="text"
+        placeholder="Your full name"
+        value={signatureName}
+        onChange={(e) => onChange(e.target.value)}
+        autoComplete="name"
+        aria-required="true"
+      />
+
+      {signed && (
+        <p className="qd-agreement__confirmed">
+          ✓ {signatureName} — {today}
+        </p>
+      )}
+
+      <p className="qd-agreement__legal">
+        By typing your name you confirm you have read and agree to the Rowland Plant Ltd Hire Terms &amp; Conditions.
+      </p>
+    </div>
+  )
 }
 
 // ---------------------------------------------------------------------------
@@ -86,11 +157,11 @@ function buildMailtoBody(items, startDate, days, userEmail) {
 
 function AuthPanel() {
   const { user, loading, signIn, signUp, signOut, authAvailable } = useAuth()
-  const [mode, setMode] = useState('signin') // 'signin' | 'signup'
+  const [mode, setMode] = useState('signin')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [busy, setBusy] = useState(false)
-  const [msg, setMsg] = useState(null) // { type: 'error'|'info', text }
+  const [msg, setMsg] = useState(null)
 
   if (!authAvailable) return null
 
@@ -110,9 +181,7 @@ function AuthPanel() {
             <span className="qd-auth__signed-in-label">Signed in</span>
             <span className="qd-auth__email">{user.email}</span>
           </div>
-          <button className="qd-auth__signout-btn" onClick={signOut}>
-            Sign out
-          </button>
+          <button className="qd-auth__signout-btn" onClick={signOut}>Sign out</button>
         </div>
         <p className="qd-auth__hint">Your email will be included in the enquiry so we can reply directly to you.</p>
       </div>
@@ -142,39 +211,19 @@ function AuthPanel() {
           {mode === 'signin' ? 'Sign in for faster booking' : 'Create account'}
         </p>
       </div>
-
       <form className="qd-auth__form" onSubmit={handleSubmit} noValidate>
-        <input
-          className="qd-auth__input"
-          type="email"
-          placeholder="Your email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          autoComplete="email"
-          required
-        />
-        <input
-          className="qd-auth__input"
-          type="password"
-          placeholder="Password"
-          value={password}
+        <input className="qd-auth__input" type="email" placeholder="Your email" value={email}
+          onChange={(e) => setEmail(e.target.value)} autoComplete="email" required />
+        <input className="qd-auth__input" type="password" placeholder="Password" value={password}
           onChange={(e) => setPassword(e.target.value)}
-          autoComplete={mode === 'signin' ? 'current-password' : 'new-password'}
-          required
-        />
-        {msg && (
-          <p className={`qd-auth__msg qd-auth__msg--${msg.type}`}>{msg.text}</p>
-        )}
+          autoComplete={mode === 'signin' ? 'current-password' : 'new-password'} required />
+        {msg && <p className={`qd-auth__msg qd-auth__msg--${msg.type}`}>{msg.text}</p>}
         <button className="qd-auth__submit" type="submit" disabled={busy}>
           {busy ? 'Please wait…' : mode === 'signin' ? 'Sign In' : 'Create Account'}
         </button>
       </form>
-
-      <button
-        className="qd-auth__toggle"
-        type="button"
-        onClick={() => { setMode(mode === 'signin' ? 'signup' : 'signin'); setMsg(null) }}
-      >
+      <button className="qd-auth__toggle" type="button"
+        onClick={() => { setMode(mode === 'signin' ? 'signup' : 'signin'); setMsg(null) }}>
         {mode === 'signin' ? 'No account? Create one' : 'Already have an account? Sign in'}
       </button>
     </div>
@@ -182,7 +231,7 @@ function AuthPanel() {
 }
 
 // ---------------------------------------------------------------------------
-// QuoteItem sub-component
+// QuoteItem
 // ---------------------------------------------------------------------------
 
 function QuoteItem({ item, days }) {
@@ -207,35 +256,18 @@ function QuoteItem({ item, days }) {
           </div>
         )}
       </div>
-
       <div className="qd-item__info">
         <p className="qd-item__title">{item.title}</p>
-
         <div className="qd-item__controls">
           <div className="qd-item__qty">
-            <button
-              className="qd-item__qty-btn"
-              onClick={() => updateQty(item.id, item.qty - 1)}
-              aria-label="Decrease quantity"
-            >−</button>
+            <button className="qd-item__qty-btn" onClick={() => updateQty(item.id, item.qty - 1)} aria-label="Decrease quantity">−</button>
             <span className="qd-item__qty-val">{item.qty}</span>
-            <button
-              className="qd-item__qty-btn"
-              onClick={() => updateQty(item.id, item.qty + 1)}
-              aria-label="Increase quantity"
-            >+</button>
+            <button className="qd-item__qty-btn" onClick={() => updateQty(item.id, item.qty + 1)} aria-label="Increase quantity">+</button>
           </div>
-          <span className={`qd-item__price${isPOA ? ' qd-item__price--poa' : ''}`}>
-            {priceLabel}
-          </span>
+          <span className={`qd-item__price${isPOA ? ' qd-item__price--poa' : ''}`}>{priceLabel}</span>
         </div>
       </div>
-
-      <button
-        className="qd-item__remove"
-        onClick={() => removeItem(item.id)}
-        aria-label={`Remove ${item.title}`}
-      >
+      <button className="qd-item__remove" onClick={() => removeItem(item.id)} aria-label={`Remove ${item.title}`}>
         <CloseIcon size={16} />
       </button>
     </div>
@@ -247,19 +279,17 @@ function QuoteItem({ item, days }) {
 // ---------------------------------------------------------------------------
 
 export default function QuoteDrawer() {
-  const {
-    items,
-    days,
-    setDays,
-    startDate,
-    setStartDate,
-    drawerOpen,
-    setDrawerOpen,
-    clearQuote,
-  } = useQuote()
-
+  const { items, days, setDays, startDate, setStartDate, drawerOpen, setDrawerOpen, clearQuote } = useQuote()
   const { user, authAvailable, signOut } = useAuth()
+  const [signatureName, setSignatureName] = useState('')
   const drawerRef = useRef(null)
+
+  const signed = signatureName.trim().length >= 2
+
+  // Reset signature when drawer closes
+  useEffect(() => {
+    if (!drawerOpen) setSignatureName('')
+  }, [drawerOpen])
 
   // Close on Escape
   useEffect(() => {
@@ -285,41 +315,24 @@ export default function QuoteDrawer() {
     }
   }, [drawerOpen])
 
-  // ---------------------------------------------------------------------------
   // Totals
-  // ---------------------------------------------------------------------------
-
-  const lineItems = items.map((item) => ({
-    ...item,
-    lineTotal: calcItemTotal(item.pricing, days, item.qty),
-  }))
-
+  const lineItems = items.map((item) => ({ ...item, lineTotal: calcItemTotal(item.pricing, days, item.qty) }))
   const hasPOA = lineItems.some((li) => li.lineTotal == null)
   const grandTotal = lineItems.reduce((sum, li) => sum + (li.lineTotal ?? 0), 0)
   const itemCount = items.reduce((sum, i) => sum + i.qty, 0)
 
-  // ---------------------------------------------------------------------------
-  // Mailto — include signed-in email in body so Rowland can reply directly
-  // ---------------------------------------------------------------------------
-
+  // Mailto — signature included in body
   const mailtoHref = `mailto:Sales@Rowlandplant.co.uk?subject=${encodeURIComponent(
     user
       ? `Quote Request from ${user.email} — Rowland Plant Hire`
       : 'Quote Request — Rowland Plant Hire'
-  )}&body=${encodeURIComponent(buildMailtoBody(items, startDate, days, user?.email))}`
+  )}&body=${encodeURIComponent(buildMailtoBody(items, startDate, days, user?.email, signatureName))}`
 
   function close() { setDrawerOpen(false) }
 
-  // ---------------------------------------------------------------------------
-  // Render
-  // ---------------------------------------------------------------------------
-
   return (
     <>
-      {/* Backdrop */}
-      {drawerOpen && (
-        <div className="quote-backdrop" onClick={close} aria-hidden="true" />
-      )}
+      {drawerOpen && <div className="quote-backdrop" onClick={close} aria-hidden="true" />}
 
       <aside
         ref={drawerRef}
@@ -329,21 +342,15 @@ export default function QuoteDrawer() {
         role="dialog"
         aria-modal="true"
       >
-        {/* ---- Header ---- */}
+        {/* Header */}
         <div className="qd-header">
           <div className="qd-header__left">
             <h2 className="qd-header__title">Your Quote</h2>
-            {itemCount > 0 && (
-              <span className="qd-header__count" aria-label={`${itemCount} items`}>
-                {itemCount}
-              </span>
-            )}
+            {itemCount > 0 && <span className="qd-header__count" aria-label={`${itemCount} items`}>{itemCount}</span>}
           </div>
           <div className="qd-header__actions">
             {items.length > 0 && (
-              <button className="qd-clear-btn" onClick={clearQuote} aria-label="Clear all items">
-                Clear all
-              </button>
+              <button className="qd-clear-btn" onClick={clearQuote} aria-label="Clear all items">Clear all</button>
             )}
             <button className="qd-close-btn" onClick={close} aria-label="Close quote drawer">
               <CloseIcon size={20} />
@@ -351,10 +358,10 @@ export default function QuoteDrawer() {
           </div>
         </div>
 
-        {/* ---- Scrollable body ---- */}
+        {/* Scrollable body */}
         <div className="qd-body">
 
-          {/* Only show status bar when signed in */}
+          {/* Signed-in status */}
           {authAvailable && user && (
             <div className="qd-status qd-status--ok">
               <span className="qd-status__dot" />
@@ -362,12 +369,10 @@ export default function QuoteDrawer() {
             </div>
           )}
 
-          {/* Auth panel — always open by default when not signed in */}
-          {authAvailable && !user && (
-            <AuthPanel />
-          )}
+          {/* Auth panel */}
+          {authAvailable && !user && <AuthPanel />}
 
-          {/* Signed-in strip */}
+          {/* Signed-in compact strip */}
           {authAvailable && user && (
             <div className="qd-auth qd-auth--signed-in qd-auth--compact">
               <div className="qd-auth__user-row">
@@ -375,36 +380,25 @@ export default function QuoteDrawer() {
                   <span className="qd-auth__signed-in-label">Enquiring as</span>
                   <span className="qd-auth__email">{user.email}</span>
                 </div>
-                <button className="qd-auth__signout-btn" onClick={signOut}>
-                  Sign out
-                </button>
+                <button className="qd-auth__signout-btn" onClick={signOut}>Sign out</button>
               </div>
             </div>
           )}
 
-          {/* Hire Dates */}
+          {/* Hire dates */}
           <div className="quote-dates">
             <p className="quote-dates__label">Hire Dates</p>
             <div className="quote-dates__row">
               <label className="quote-dates__field-label" htmlFor="qd-start-date">Start date</label>
-              <input
-                id="qd-start-date"
-                className="quote-dates__date-input"
-                type="date"
-                min={todayString()}
-                value={startDate}
-                onChange={(e) => setStartDate(e.target.value)}
-              />
+              <input id="qd-start-date" className="quote-dates__date-input" type="date"
+                min={todayString()} value={startDate} onChange={(e) => setStartDate(e.target.value)} />
             </div>
             <p className="quote-dates__field-label">Duration</p>
             <div className="quote-dates__duration-grid">
               {DURATION_OPTIONS.map((opt) => (
-                <button
-                  key={opt.days}
+                <button key={opt.days}
                   className={`quote-dates__dur-btn${days === opt.days ? ' quote-dates__dur-btn--active' : ''}`}
-                  onClick={() => setDays(opt.days)}
-                  aria-pressed={days === opt.days}
-                >
+                  onClick={() => setDays(opt.days)} aria-pressed={days === opt.days}>
                   {opt.label}
                 </button>
               ))}
@@ -417,43 +411,46 @@ export default function QuoteDrawer() {
               <div className="qd-empty">
                 <div className="qd-empty__icon" aria-hidden="true"><CartEmptyIcon /></div>
                 <p className="qd-empty__msg">Your quote is empty</p>
-                <Link href="/tool-hire" className="qd-empty__link" onClick={close}>
-                  Browse Equipment
-                </Link>
+                <Link href="/tool-hire" className="qd-empty__link" onClick={close}>Browse Equipment</Link>
               </div>
             ) : (
-              lineItems.map((item) => (
-                <QuoteItem key={item.id} item={item} days={days} />
-              ))
+              lineItems.map((item) => <QuoteItem key={item.id} item={item} days={days} />)
             )}
           </div>
         </div>
 
-        {/* ---- Footer ---- */}
+        {/* Footer */}
         {items.length > 0 ? (
           <div className="qd-footer">
             <div className="qd-total">
               <span className="qd-total__label">Estimated total</span>
-              <span className="qd-total__amount">
-                {grandTotal > 0 ? formatCurrency(grandTotal) : '—'}
-              </span>
+              <span className="qd-total__amount">{grandTotal > 0 ? formatCurrency(grandTotal) : '—'}</span>
             </div>
-            {hasPOA && (
-              <p className="qd-poa-notice">Includes POA items — call for full quote</p>
-            )}
-            <a href={mailtoHref} className="qd-enquiry-btn" target="_blank" rel="noopener noreferrer">
+            {hasPOA && <p className="qd-poa-notice">Includes POA items — call for full quote</p>}
+
+            {/* Hire agreement — must be signed before sending */}
+            <HireAgreement signatureName={signatureName} onChange={setSignatureName} />
+
+            <a
+              href={signed ? mailtoHref : undefined}
+              className={`qd-enquiry-btn${!signed ? ' qd-enquiry-btn--disabled' : ''}`}
+              aria-disabled={!signed}
+              onClick={(e) => { if (!signed) e.preventDefault() }}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Send Quote Enquiry
             </a>
+            {!signed && (
+              <p className="qd-sig-nudge">Sign the hire agreement above to send your enquiry</p>
+            )}
+
             <p className="qd-small-print">Prices are estimates only, subject to VAT at 20%</p>
-            <button className="qd-close-drawer-btn" onClick={close}>
-              ✕ Close
-            </button>
+            <button className="qd-close-drawer-btn" onClick={close}>✕ Close</button>
           </div>
         ) : (
           <div className="qd-footer qd-footer--empty">
-            <button className="qd-close-drawer-btn qd-close-drawer-btn--full" onClick={close}>
-              ✕ Close
-            </button>
+            <button className="qd-close-drawer-btn qd-close-drawer-btn--full" onClick={close}>✕ Close</button>
           </div>
         )}
       </aside>
