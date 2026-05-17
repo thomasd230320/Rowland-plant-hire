@@ -99,12 +99,12 @@ ul { list-style: none; }
 
 /* ===== NAVBAR ===== */
 .navbar {
-  background: var(--white);
-  border-bottom: 1px solid var(--grey-200);
+  background: var(--surface-dark);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
 }
 
 .navbar__inner {
@@ -124,11 +124,13 @@ ul { list-style: none; }
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--red);
+  color: var(--white);
   white-space: nowrap;
 }
 
-.navbar__brand a { color: var(--red); }
+.navbar__brand a { color: var(--white); }
+
+.navbar__brand span { color: var(--red); }
 
 /* Desktop links wrapper */
 .navbar__desktop {
@@ -155,7 +157,7 @@ ul { list-style: none; }
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: var(--grey-900);
+  color: rgba(255,255,255,0.75);
   cursor: pointer;
   border-bottom: 3px solid transparent;
   transition: border-color var(--transition), color var(--transition);
@@ -167,7 +169,7 @@ ul { list-style: none; }
   text-decoration: none;
 }
 
-.nav-link:hover { color: var(--red); border-bottom-color: var(--red); }
+.nav-link:hover { color: var(--white); border-bottom-color: var(--red); }
 
 .nav-chevron {
   transition: transform 0.2s;
@@ -185,10 +187,10 @@ ul { list-style: none; }
   top: 100%;
   right: 0;
   min-width: 240px;
-  background: var(--white);
-  border: 1px solid var(--grey-200);
+  background: var(--surface-dark-2);
+  border: 1px solid rgba(255,255,255,0.1);
   border-top: 3px solid var(--red);
-  box-shadow: var(--shadow-hover);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.4);
   opacity: 0;
   visibility: hidden;
   transform: translateY(-6px);
@@ -212,8 +214,8 @@ ul { list-style: none; }
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: var(--grey-900);
-  border-bottom: 1px solid var(--grey-100);
+  color: rgba(255,255,255,0.7);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
   transition: background var(--transition), color var(--transition), padding-left var(--transition);
   text-decoration: none;
 }
@@ -235,7 +237,7 @@ ul { list-style: none; }
   margin-left: 12px;
   min-width: 44px;
   min-height: 44px;
-  color: var(--grey-900);
+  color: rgba(255,255,255,0.85);
 }
 
 .nav-toggle span {
