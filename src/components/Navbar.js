@@ -1,6 +1,8 @@
 'use client'
 import { useState, lazy, Suspense } from 'react'
 import Link from 'next/link'
+import { useAuth } from '@/contexts/AuthContext'
+import { useQuote } from '@/contexts/QuoteContext'
 
 const SearchOverlay = lazy(() => import('./SearchOverlay'))
 
@@ -55,11 +57,22 @@ function CloseIcon() {
   )
 }
 
+function UserIcon() {
+  return (
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+    </svg>
+  )
+}
+
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [plantOpen, setPlantOpen] = useState(false)
   const [toolOpen, setToolOpen] = useState(false)
   const [searchOpen, setSearchOpen] = useState(false)
+
+  const { user, authAvailable } = useAuth()
+  const { setDrawerOpen } = useQuote()
 
   const closeAll = () => {
     setMobileOpen(false)
@@ -120,10 +133,31 @@ export default function Navbar() {
               <SearchIcon />
               <span>Search</span>
             </button>
+
+            {/* Sign in / account button */}
+            {authAvailable && (
+              <button
+                className={`nav-signin-btn${user ? ' nav-signin-btn--active' : ''}`}
+                onClick={() => setDrawerOpen(true)}
+                aria-label={user ? `Account: ${user.email}` : 'Sign in'}
+              >
+                <UserIcon />
+                {user ? user.email.split('@')[0] : 'Sign In'}
+              </button>
+            )}
           </div>
 
-          {/* Mobile controls: search + hamburger */}
+          {/* Mobile controls: sign-in + search + hamburger */}
           <div className="navbar__mobile-controls">
+            {authAvailable && (
+              <button
+                className={`nav-signin-icon-btn${user ? ' nav-signin-icon-btn--active' : ''}`}
+                onClick={() => setDrawerOpen(true)}
+                aria-label={user ? `Account: ${user.email}` : 'Sign in'}
+              >
+                <UserIcon />
+              </button>
+            )}
             <button
               className="nav-search-icon-btn"
               onClick={openSearch}

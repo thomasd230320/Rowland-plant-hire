@@ -84,7 +84,7 @@ function buildMailtoBody(items, startDate, days, userEmail) {
 // Auth panel
 // ---------------------------------------------------------------------------
 
-function AuthPanel({ onClose }) {
+function AuthPanel() {
   const { user, loading, signIn, signUp, signOut, authAvailable } = useAuth()
   const [mode, setMode] = useState('signin') // 'signin' | 'signup'
   const [email, setEmail] = useState('')
@@ -141,9 +141,6 @@ function AuthPanel({ onClose }) {
         <p className="qd-auth__title">
           {mode === 'signin' ? 'Sign in for faster booking' : 'Create account'}
         </p>
-        <button className="qd-auth__skip" onClick={onClose}>
-          Skip →
-        </button>
       </div>
 
       <form className="qd-auth__form" onSubmit={handleSubmit} noValidate>
@@ -262,18 +259,7 @@ export default function QuoteDrawer() {
   } = useQuote()
 
   const { user, authAvailable, signOut } = useAuth()
-  const [showAuth, setShowAuth] = useState(false)
   const drawerRef = useRef(null)
-
-  // Show auth panel automatically when drawer opens and user isn't signed in
-  useEffect(() => {
-    if (drawerOpen && authAvailable && !user) {
-      setShowAuth(true)
-    }
-    if (!drawerOpen) {
-      setShowAuth(false)
-    }
-  }, [drawerOpen, authAvailable, user])
 
   // Close on Escape
   useEffect(() => {
@@ -368,19 +354,22 @@ export default function QuoteDrawer() {
         {/* ---- Scrollable body ---- */}
         <div className="qd-body">
 
-          {/* Auth panel */}
-          {authAvailable && showAuth && !user && (
-            <AuthPanel onClose={() => setShowAuth(false)} />
+          {/* Supabase status indicator — always visible so you can verify connection */}
+          <div className={`qd-status ${authAvailable ? (user ? 'qd-status--ok' : 'qd-status--warn') : 'qd-status--error'}`}>
+            <span className="qd-status__dot" />
+            <span className="qd-status__text">
+              {!authAvailable && 'Supabase not connected — check Vercel env vars'}
+              {authAvailable && !user && 'Supabase connected — sign in below'}
+              {authAvailable && user && `Signed in as ${user.email}`}
+            </span>
+          </div>
+
+          {/* Auth panel — always open by default when not signed in */}
+          {authAvailable && !user && (
+            <AuthPanel />
           )}
 
-          {/* Signed-in strip (when auth panel dismissed but user still not signed in) */}
-          {authAvailable && !showAuth && !user && (
-            <button className="qd-auth__nudge" onClick={() => setShowAuth(true)}>
-              Sign in to pre-fill your email →
-            </button>
-          )}
-
-          {/* Signed-in confirmation */}
+          {/* Signed-in strip */}
           {authAvailable && user && (
             <div className="qd-auth qd-auth--signed-in qd-auth--compact">
               <div className="qd-auth__user-row">

@@ -348,6 +348,67 @@ ul { list-style: none; }
   background: rgba(255,255,255,0.08);
 }
 
+/* Sign-in button — desktop navbar */
+.nav-signin-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 12px;
+  height: 36px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 20px;
+  color: rgba(255,255,255,0.7);
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  margin-left: 6px;
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+}
+.nav-signin-btn:hover {
+  background: rgba(255,255,255,0.14);
+  color: var(--white);
+  border-color: rgba(255,255,255,0.3);
+}
+.nav-signin-btn--active {
+  background: var(--red);
+  border-color: var(--red);
+  color: var(--white);
+}
+.nav-signin-btn--active:hover {
+  background: var(--red-dark);
+  border-color: var(--red-dark);
+}
+
+/* Sign-in icon button — mobile */
+.nav-signin-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(255,255,255,0.8);
+  border-radius: 4px;
+  transition: color var(--transition), background var(--transition);
+}
+.nav-signin-icon-btn:hover {
+  color: var(--white);
+  background: rgba(255,255,255,0.08);
+}
+.nav-signin-icon-btn--active {
+  color: var(--red);
+}
+
 /* ===== SEARCH OVERLAY ===== */
 .search-overlay {
   position: fixed;
@@ -3709,6 +3770,43 @@ a.home-contact-strip__value:hover { color: var(--white); }
   flex-shrink: 0;
 }
 
+/* ===== SUPABASE STATUS INDICATOR ===== */
+.qd-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  flex-shrink: 0;
+}
+.qd-status__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+.qd-status__text {
+  font-family: 'Oswald', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+/* Green — signed in */
+.qd-status--ok .qd-status__dot { background: #4ade80; animation: none; }
+.qd-status--ok .qd-status__text { color: #4ade80; }
+/* Yellow — connected but not signed in */
+.qd-status--warn .qd-status__dot { background: #facc15; }
+.qd-status--warn .qd-status__text { color: #facc15; }
+/* Red — not connected */
+.qd-status--error .qd-status__dot { background: #f87171; }
+.qd-status--error .qd-status__text { color: #f87171; }
+
 /* ===== AUTH PANEL ===== */
 .qd-auth {
   border-bottom: 1px solid rgba(255,255,255,0.08);
@@ -3725,9 +3823,6 @@ a.home-contact-strip__value:hover { color: var(--white); }
   margin: 0;
 }
 .qd-auth__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 10px;
 }
 .qd-auth__title {
