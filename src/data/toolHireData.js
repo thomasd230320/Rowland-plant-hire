@@ -9,7 +9,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'light-duty-breaker',
         title: 'Light Duty Breaker – 110v',
-        image: '/images/IMG_7761.WEBP',
+        image: '/images/IMG_7830(1).WEBP',
         specs: [
           'For light duty breaking of plaster, render & small wall tiles',
           'Tool Holder: SDS Plus',
@@ -72,6 +72,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'petrol-cement-mixer',
         title: 'Petrol 4/3 Tip Up Cement Mixer',
+        image: '/images/IMG_7813(1).WEBP',
         specs: [
           'Portable mixer for all small-to-medium building projects',
           'Barrow height tipping',
@@ -85,6 +86,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: '110v-cement-mixer',
         title: '110v 4/3 Tip Up Cement Mixer',
+        image: '/images/IMG_7813(1).WEBP',
         specs: [
           'Portable mixer for all small-to-medium building projects',
           'Barrow height tipping',
@@ -98,6 +100,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'diesel-site-mixer',
         title: 'Diesel 5/3.5 Wheelbarrow Cement Mixer',
+        image: '/images/IMG_7815.WEBP',
         specs: [
           'Heavy duty site mixer',
           'Engine: Yanmar L48 3.4HP Diesel',
@@ -113,7 +116,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'vibrating-poker',
         title: 'Vibrating Poker Unit (Petrol)',
-        image: '/images/IMG_7847.webp',
+        image: '/images/IMG_7847.WEBP',
         specs: [
           'Vibrates fluid concrete to ensure total compaction and structural strength',
           'Removes trapped air for an improved finish',
@@ -124,7 +127,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'power-trowel',
         title: 'Petrol Power Trowel / Float (36 Inch)',
-        image: '/images/IMG_7817.webp',
+        image: '/images/IMG_7817.WEBP',
         specs: [
           'High performance 36" power trowel designed for safety and longevity',
           'Complete with set of finishing blades',
@@ -138,7 +141,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'twin-beam-screed',
         title: 'Twin Beam Air Screed (Petrol)',
-        image: '/images/IMG_7817.webp',
+        image: '/images/IMG_7817.WEBP',
         specs: [
           'High efficiency vibratory twin beam screed',
           'For accurate consolidation and levelling of concrete slabs',
@@ -238,7 +241,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'diamond-core-cutters',
         title: 'Diamond Core Cutters – Individual Sizes',
-        image: '/images/IMG_7799.WEBP',
+        image: '/images/IMG_7799(1).WEBP',
         specs: [
           'Available in sizes: 22mm, 28mm, 38mm, 48mm, 52mm, 65mm, 78mm, 107mm, 117mm, 127mm, 152mm',
           'Prices scale with cutter diameter – see pricing table',
@@ -296,6 +299,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'jigsaw',
         title: 'Jigsaw – 110v',
+        image: '/images/IMG_7818.WEBP',
         specs: [
           '110v electric',
           'For cutting curves and intricate shapes in wood, metal and plastics',
@@ -306,7 +310,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'reciprocating-saw',
         title: 'Reciprocating Saw – 110v',
-        image: '/images/IMG_7771.WEBP',
+        image: '/images/IMG_7819.WEBP',
         specs: [
           '110v electric',
           'Heavy duty demolition and cutting tool',
@@ -317,6 +321,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'circular-saw-185',
         title: '185mm Circular Saw – 110v',
+        image: '/images/IMG_7820.WEBP',
         specs: [
           '110v electric',
           '185mm blade diameter',
@@ -327,6 +332,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'circular-saw-235',
         title: '235mm Circular Saw – 110v',
+        image: '/images/IMG_7821.WEBP',
         specs: [
           '110v electric',
           '235mm blade diameter – greater cutting depth than 185mm',
@@ -337,7 +343,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'mitre-saw',
         title: 'Crosscut / Slide Mitre Saw – 110v',
-        image: '/images/IMG_7770.WEBP',
+        image: '/images/IMG_7822.WEBP',
         specs: [
           '110v electric sliding crosscut mitre saw',
           'For precision angled and straight crosscuts in timber',
@@ -356,7 +362,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'plate-compactor-12',
         title: '12" Plate Compactor – Petrol',
-        image: '/images/IMG_7773.WEBP',
+        image: '/images/IMG_7839.WEBP',
         specs: [
           'Petrol engine',
           '12" (300mm) plate width',
@@ -368,7 +374,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'plate-compactor-18',
         title: '18" Plate Compactor – Petrol',
-        image: '/images/IMG_7773.WEBP',
+        image: '/images/IMG_7839.WEBP',
         specs: [
           'Petrol engine',
           '18" (450mm) plate width – greater coverage per pass',
@@ -391,6 +397,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'ride-on-roller',
         title: '960mm Ride-On Roller – Diesel',
+        image: '/images/IMG_7841.WEBP',
         specs: [
           'Diesel engine ride-on roller',
           '960mm roller drum width',
@@ -422,7 +429,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'angle-drill-10mm',
         title: '10mm Angle Headed Drill – 110v',
-        image: '/images/IMG_7798.WEBP',
+        image: '/images/IMG_7837.WEBP',
         specs: [
           '110v electric',
           '10mm chuck capacity',
@@ -434,7 +441,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'angle-drill-13mm',
         title: '13mm Angle Headed Drill – 110v',
-        image: '/images/IMG_7798.WEBP',
+        image: '/images/IMG_7837.WEBP',
         specs: [
           '110v electric',
           '13mm chuck capacity',
@@ -446,6 +453,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'magnetic-core-drill',
         title: '13mm Magnetic Core Drill – 110v',
+        image: '/images/IMG_7838.WEBP',
         specs: [
           '110v electric',
           'Powerful magnetic base for secure attachment to steel surfaces',
@@ -465,6 +473,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'adjustable-prop-size-0',
         title: 'Adjustable Prop – Size 0 (1044–1836mm)',
+        image: '/images/IMG_7843.WEBP',
         specs: [
           'Adjustable steel acro prop for temporary structural support',
           'Size 0 extension range: 1044–1836mm',
@@ -475,6 +484,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'adjustable-prop-size-1',
         title: 'Adjustable Prop – Size 1 (1250–1930mm)',
+        image: '/images/IMG_7843.WEBP',
         specs: [
           'Adjustable steel acro prop for temporary structural support',
           'Size 1 extension range: 1250–1930mm',
@@ -485,6 +495,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'adjustable-prop-size-2',
         title: 'Adjustable Prop – Size 2 (1984–3300mm)',
+        image: '/images/IMG_7843.WEBP',
         specs: [
           'Adjustable steel acro prop for temporary structural support',
           'Size 2 extension range: 1984–3300mm',
@@ -495,6 +506,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'adjustable-prop-size-3',
         title: 'Adjustable Prop – Size 3 (2356–3536mm)',
+        image: '/images/IMG_7843.WEBP',
         specs: [
           'Adjustable steel acro prop for temporary structural support',
           'Size 3 extension range: 2356–3536mm',
@@ -505,6 +517,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'strongboy',
         title: 'Strongboy Wall Support',
+        image: '/images/IMG_7844.WEBP',
         specs: [
           'Steel strongboy wall support / prop attachment',
           'Used with adjustable acro props for lintel and wall support',
@@ -515,6 +528,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'builders-trestle-size-1',
         title: 'Builders Trestle – Size 1 (0.29m–0.71m)',
+        image: '/images/IMG_7852.WEBP',
         specs: [
           'Folding steel builders trestle',
           'Size 1 height range: 0.29m–0.71m',
@@ -525,6 +539,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'builders-trestle-size-2',
         title: 'Builders Trestle – Size 2 (0.70m–1.07m)',
+        image: '/images/IMG_7848(1).WEBP',
         specs: [
           'Folding steel builders trestle',
           'Size 2 height range: 0.70m–1.07m',
@@ -535,6 +550,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'builders-trestle-size-3',
         title: 'Builders Trestle – Size 3 (1.07m–1.68m)',
+        image: '/images/IMG_7845(1).WEBP',
         specs: [
           'Folding steel builders trestle',
           'Size 3 height range: 1.07m–1.68m',
@@ -545,6 +561,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'scaffold-boards',
         title: 'Scaffold Boards (3.9m)',
+        image: '/images/IMG_7829.WEBP',
         specs: [
           'Kiln-dried and graded scaffold boards',
           'Length: 3.9m',
@@ -563,7 +580,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'rotary-lawnmower',
         title: 'Rotary Lawnmower',
-        image: '/images/IMG_7861.webp',
+        image: '/images/IMG_7861.WEBP',
         specs: [
           'Petrol rotary lawnmower',
           'Self-propelled or push options available',
@@ -574,7 +591,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'chainsaw-16',
         title: 'Chainsaw – Petrol 16"',
-        image: '/images/IMG_7858.webp',
+        image: '/images/IMG_7858.WEBP',
         specs: [
           'Petrol engine chainsaw',
           '16" (400mm) guide bar',
@@ -586,7 +603,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'hedge-trimmer',
         title: 'Hedge Trimmer – Petrol 24"',
-        image: '/images/IMG_7858.webp',
+        image: '/images/IMG_7858.WEBP',
         specs: [
           'Petrol engine hedge trimmer',
           '24" (600mm) double-sided blade',
@@ -597,7 +614,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'rotavator',
         title: 'Heavy Duty Rotavator (Petrol)',
-        image: '/images/IMG_7861.webp',
+        image: '/images/IMG_7861.WEBP',
         specs: [
           'Heavy duty petrol rotavator / cultivator',
           'For breaking up and aerating compacted soil',
@@ -609,7 +626,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'turf-cutter',
         title: 'Turf Cutter (Petrol)',
-        image: '/images/IMG_7861.webp',
+        image: '/images/IMG_7861.WEBP',
         specs: [
           'Petrol engine turf cutter',
           'For removing turf/sod for new lawn or paving preparation',
@@ -621,7 +638,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'stump-grinder',
         title: 'Stump Grinder',
-        image: '/images/IMG_7865.webp',
+        image: '/images/IMG_7865.WEBP',
         specs: [
           'For grinding tree stumps below ground level',
           'Removes the need for excavation',
@@ -632,7 +649,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'log-splitter',
         title: 'Log Splitter',
-        image: '/images/IMG_7865.webp',
+        image: '/images/IMG_7865.WEBP',
         specs: [
           'Hydraulic log splitter',
           'For splitting logs and timber',
@@ -663,7 +680,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'single-width-tower-3-2m',
         title: 'Single Width Scaffold Tower – 3.2m Working Height',
-        image: '/images/IMG_7779.WEBP',
+        image: '/images/IMG_7779(1).WEBP',
         specs: [
           'Platform: 900mm × 2500mm',
           'Working height: 3.2m',
@@ -687,7 +704,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'single-width-tower-5-2m',
         title: 'Single Width Scaffold Tower – 5.2m Working Height',
-        image: '/images/IMG_7779(2).WEBP',
+        image: '/images/IMG_7779(1).WEBP',
         specs: [
           'Platform: 900mm × 2500mm',
           'Working height: 5.2m',
@@ -699,7 +716,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'single-width-tower-6-2m',
         title: 'Single Width Scaffold Tower – 6.2m Working Height',
-        image: '/images/IMG_7779(3).WEBP',
+        image: '/images/IMG_7779(1).WEBP',
         specs: [
           'Platform: 900mm × 2500mm',
           'Working height: 6.2m',
@@ -795,7 +812,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'double-width-tower-4-2m',
         title: 'Double Width Scaffold Tower – 4.2m Working Height',
-        image: '/images/IMG_7790.WEBP',
+        image: '/images/IMG_7790(1).WEBP',
         specs: [
           'Platform: 1450mm × 2500mm',
           'Working height: 4.2m',
@@ -819,7 +836,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'double-width-tower-6-2m',
         title: 'Double Width Scaffold Tower – 6.2m Working Height',
-        image: '/images/IMG_7790(2).WEBP',
+        image: '/images/IMG_7790(1).WEBP',
         specs: [
           'Platform: 1450mm × 2500mm',
           'Working height: 6.2m',
@@ -831,7 +848,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'double-width-tower-7-2m',
         title: 'Double Width Scaffold Tower – 7.2m Working Height',
-        image: '/images/IMG_7790(3).WEBP',
+        image: '/images/IMG_7790(1).WEBP',
         specs: [
           'Platform: 1450mm × 2500mm',
           'Working height: 7.2m',
@@ -843,7 +860,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'double-width-tower-8-2m',
         title: 'Double Width Scaffold Tower – 8.2m Working Height',
-        image: '/images/IMG_7790(4).WEBP',
+        image: '/images/IMG_7790(1).WEBP',
         specs: [
           'Platform: 1450mm × 2500mm',
           'Working height: 8.2m',
@@ -855,7 +872,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'double-width-tower-9-2m',
         title: 'Double Width Scaffold Tower – 9.2m Working Height',
-        image: '/images/IMG_7795.WEBP',
+        image: '/images/IMG_7795(1).WEBP',
         specs: [
           'Platform: 1450mm × 2500mm',
           'Working height: 9.2m',
@@ -879,7 +896,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'double-width-tower-11-2m',
         title: 'Double Width Scaffold Tower – 11.2m Working Height',
-        image: '/images/IMG_7795(2).WEBP',
+        image: '/images/IMG_7795(1).WEBP',
         specs: [
           'Platform: 1450mm × 2500mm',
           'Working height: 11.2m',
