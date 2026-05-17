@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import AvailabilityBadge from './AvailabilityBadge'
+import AvailabilityChecker from './AvailabilityChecker'
 
 function PhoneIcon() {
   return (
@@ -66,15 +68,15 @@ function PricingTable({ pricing, pricingRows }) {
   )
 }
 
-export default function ToolProductCard({ title, image, specs, note, pricing, pricingRows }) {
+export default function ToolProductCard({ title, image, specs, note, pricing, pricingRows, availability }) {
   return (
     <article className="th-card">
       <div className="th-card__header">
         <h3 className="th-card__title">{title}</h3>
+        <AvailabilityBadge availability={availability} />
       </div>
 
       <div className="th-card__body">
-        {/* Image column */}
         <div className="th-card__img-col">
           <div className="th-card__illustration">
             {image && (
@@ -85,7 +87,6 @@ export default function ToolProductCard({ title, image, specs, note, pricing, pr
           </div>
         </div>
 
-        {/* Specs column */}
         <div className="th-card__specs-col">
           {note && <p className="th-card__note">{note}</p>}
           <ul className="th-card__specs">
@@ -95,7 +96,6 @@ export default function ToolProductCard({ title, image, specs, note, pricing, pr
           </ul>
         </div>
 
-        {/* Pricing column */}
         <div className="th-card__pricing-col">
           <div className="th-card__pricing-header">Price From</div>
           <PricingTable pricing={pricing} pricingRows={pricingRows} />
@@ -107,8 +107,9 @@ export default function ToolProductCard({ title, image, specs, note, pricing, pr
           <PhoneIcon /> Call us: 01865 922611
         </a>
         <a href="mailto:Sales@Rowlandplant.co.uk" className="th-card__enquiry-link">
-          <MailIcon /> Enquire about this item
+          <MailIcon /> Enquire
         </a>
+        <AvailabilityChecker productTitle={title} availability={availability} />
       </div>
     </article>
   )

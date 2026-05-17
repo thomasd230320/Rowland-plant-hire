@@ -2,13 +2,16 @@ import Link from 'next/link'
 import LogoBanner from '@/components/LogoBanner'
 import SectionHeader from '@/components/SectionHeader'
 import ToolProductCard from '@/components/ToolProductCard'
+import HireHopBanner from '@/components/HireHopBanner'
 import Footer from '@/components/Footer'
+import { TOOL_AVAILABILITY } from '@/data/availability'
 
 export default function CategoryPage({ category }) {
   return (
     <>
       <LogoBanner />
       <SectionHeader title={category.label} />
+      <HireHopBanner />
 
       <div className="cat-page-wrapper">
         <Link href="/tool-hire" className="cat-page-back">
@@ -21,7 +24,11 @@ export default function CategoryPage({ category }) {
 
         <div className="cat-page-products">
           {category.products.map(product => (
-            <ToolProductCard key={product.id} {...product} />
+            <ToolProductCard
+              key={product.id}
+              {...product}
+              availability={TOOL_AVAILABILITY[product.id]}
+            />
           ))}
         </div>
 

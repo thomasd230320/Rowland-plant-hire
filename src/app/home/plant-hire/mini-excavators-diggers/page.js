@@ -1,6 +1,7 @@
 import LogoBanner from '@/components/LogoBanner'
 import SectionHeader from '@/components/SectionHeader'
 import ProductCard from '@/components/ProductCard'
+import HireHopBanner from '@/components/HireHopBanner'
 import PricingNotice from '@/components/PricingNotice'
 import CtaButton from '@/components/CtaButton'
 import Footer from '@/components/Footer'
@@ -12,6 +13,7 @@ const PRODUCTS = [
     title: '1T Mini Excavator',
     image: '/images/IMG_7870.WEBP',
     altText: '1T Mini Excavator',
+    availability: { status: 'available', units: 1, total: 1 },
     description:
       'This super-compact, highly efficient and reliable mini excavator with enhanced operator protection, is the ideal super mini-excavator of choice for tough jobs where space is limited.',
     specs: [
@@ -35,6 +37,7 @@ const PRODUCTS = [
     title: '1.5T Mini Excavator (Kubota U10-3)',
     image: '/images/IMG_7869.WEBP',
     altText: '1.5T Mini Excavator',
+    availability: { status: 'out', dueBack: 'Due back 29 May' },
     description:
       'This excavator is ideal for excavating most footings and can also make light work of the larger landscaping jobs, with a width of 980mm this excavator is easily maneuverable and the tracks can expand up to 1300mm for extra stability.',
     specs: [
@@ -53,6 +56,7 @@ const PRODUCTS = [
     title: '3.0T Excavator (Hitachi ZX27-3)',
     image: '/images/IMG_7871.WEBP',
     altText: '3T Excavator',
+    availability: { status: 'available', units: 1, total: 1 },
     description:
       'This larger excavator is ideal for excavating most footings and can also make light work of the larger landscaping jobs, with cab as standard this machine is the operator\'s choice in tough conditions.',
     specs: [
@@ -74,6 +78,7 @@ export default function MiniExcavatorsPage() {
     <>
       <LogoBanner />
       <SectionHeader title="Mini Diggers / Excavators" icon="⛏️" />
+      <HireHopBanner />
       <div className="product-section">
         {PRODUCTS.map(p => (
           <ProductCard key={p.title} {...p} />
