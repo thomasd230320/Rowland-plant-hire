@@ -31,35 +31,55 @@ function ArrowIcon() {
   )
 }
 
-function ToolIcon() {
-  return (
-    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
-    </svg>
-  )
-}
-
-function PlantIcon() {
-  return (
-    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-      <polyline points="9 22 9 12 15 12 15 22"/>
-    </svg>
-  )
-}
-
-function QuoteIcon() {
-  return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
-    </svg>
-  )
-}
-
 function LocationIcon() {
   return (
     <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
       <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+    </svg>
+  )
+}
+
+function ShieldIcon() {
+  return (
+    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+    </svg>
+  )
+}
+
+function TruckIcon() {
+  return (
+    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <rect x="1" y="3" width="15" height="13" rx="2"/>
+      <path d="M16 8h4l3 5v3h-7V8z"/>
+      <circle cx="5.5" cy="18.5" r="2.5"/>
+      <circle cx="18.5" cy="18.5" r="2.5"/>
+    </svg>
+  )
+}
+
+function ClockIcon() {
+  return (
+    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <circle cx="12" cy="12" r="10"/>
+      <polyline points="12 6 12 12 16 14"/>
+    </svg>
+  )
+}
+
+function StarIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+    </svg>
+  )
+}
+
+function MapPinIcon() {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+      <circle cx="12" cy="10" r="3"/>
     </svg>
   )
 }
@@ -78,31 +98,30 @@ export default function HomePage() {
             Witney, West Oxfordshire &amp; The Cotswolds
           </p>
           <h1 className="home-hero__title">
-            Tool &amp; Plant<br />
-            <span>Hire</span>
+            Professional Equipment<br />
+            <span>Hire for Every Job</span>
           </h1>
           <p className="home-hero__sub">
-            Professional equipment hire for trade and DIY — delivered with expert advice
+            Trade-quality tools and plant hire — delivered with expert advice
           </p>
           <div className="home-hero__ctas">
+            <a href="#enquiry" className="home-hero__quote-btn">
+              Get a Quote
+            </a>
             <a href="tel:+441865922611" className="home-hero__phone-btn">
               <PhoneIcon />
               01865 922611
             </a>
             <a href="mailto:Sales@Rowlandplant.co.uk" className="home-hero__email-btn">
               <MailIcon />
-              Sales@Rowlandplant.co.uk
-            </a>
-            <a href="#enquiry" className="home-hero__quote-btn">
-              <QuoteIcon />
-              Get a Quote
+              Email Us
             </a>
           </div>
           <nav className="home-hero__nav" aria-label="Main sections">
             <Link href="/tool-hire" className="home-hero__nav-link">Tool Hire</Link>
-            <Link href="/home/plant-hire" className="home-hero__nav-link">Plant Hire</Link>
-            <Link href="/home/about-us" className="home-hero__nav-link">About Us</Link>
-            <Link href="/home/terms-conditions" className="home-hero__nav-link">Terms</Link>
+            <Link href="/plant-hire" className="home-hero__nav-link">Plant Hire</Link>
+            <Link href="/about" className="home-hero__nav-link">About Us</Link>
+            <Link href="/terms-conditions" className="home-hero__nav-link">Terms</Link>
           </nav>
         </div>
       </section>
@@ -113,7 +132,9 @@ export default function HomePage() {
         <div className="home-cats__grid">
           <Link href="/tool-hire" className="home-cat-card">
             <div className="home-cat-card__icon">
-              <ToolIcon />
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+              </svg>
             </div>
             <div className="home-cat-card__body">
               <h3 className="home-cat-card__label">Tool Hire</h3>
@@ -121,15 +142,26 @@ export default function HomePage() {
                 Breakers, mixers, saws, drills, compactors, scaffold towers and more.
                 Browse our full tool hire range with transparent pricing.
               </p>
+              <ul className="home-cat-card__list">
+                <li>Concrete Breaking &amp; Mixing</li>
+                <li>Cutting &amp; Drilling</li>
+                <li>Compacting Equipment</li>
+                <li>Scaffold Towers &amp; Access</li>
+              </ul>
               <span className="home-cat-card__cta">
                 Browse tools <ArrowIcon />
               </span>
             </div>
           </Link>
 
-          <Link href="/home/plant-hire" className="home-cat-card">
+          <Link href="/plant-hire" className="home-cat-card">
             <div className="home-cat-card__icon">
-              <PlantIcon />
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <rect x="1" y="3" width="15" height="13" rx="2"/>
+                <path d="M16 8h4l3 5v3h-7V8z"/>
+                <circle cx="5.5" cy="18.5" r="2.5"/>
+                <circle cx="18.5" cy="18.5" r="2.5"/>
+              </svg>
             </div>
             <div className="home-cat-card__body">
               <h3 className="home-cat-card__label">Plant Hire</h3>
@@ -137,11 +169,110 @@ export default function HomePage() {
                 Mini excavators and diggers for groundworks, landscaping and construction.
                 Ideal for trade and domestic projects.
               </p>
+              <ul className="home-cat-card__list">
+                <li>Mini Excavators (1T–3T)</li>
+                <li>Tracked &amp; Wheeled Dumpers</li>
+                <li>Delivery &amp; Collection Available</li>
+                <li>Up to 3 Tonnes</li>
+              </ul>
               <span className="home-cat-card__cta">
                 View plant <ArrowIcon />
               </span>
             </div>
           </Link>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="why-choose">
+        <div className="why-choose__inner">
+          <h2 className="why-choose__heading">Why Choose Rowland?</h2>
+          <div className="why-choose__grid">
+            <div className="why-item">
+              <div className="why-item__icon"><ShieldIcon /></div>
+              <h3>HAE Accredited</h3>
+              <p>Full member of the Hire Association Europe — your guarantee of quality, safety and professional standards.</p>
+            </div>
+            <div className="why-item">
+              <div className="why-item__icon"><TruckIcon /></div>
+              <h3>Delivery &amp; Collection</h3>
+              <p>We deliver plant and equipment directly to your site and collect it when you're done — at a time that suits you.</p>
+            </div>
+            <div className="why-item">
+              <div className="why-item__icon"><ClockIcon /></div>
+              <h3>Flexible Hire Periods</h3>
+              <p>Hire by the day, week or longer. We work with your project timeline, not against it.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="testimonials">
+        <div className="testimonials__inner">
+          <h2 className="testimonials__heading">What Our Customers Say</h2>
+          <div className="testimonials__grid">
+            <div className="testimonial-card">
+              <div className="testimonial-card__stars">
+                <StarIcon /><StarIcon /><StarIcon /><StarIcon /><StarIcon />
+              </div>
+              <p className="testimonial-card__text">
+                "Excellent service from start to finish. The mini excavator was in perfect condition and the team gave us brilliant advice on which size we needed for the job."
+              </p>
+              <p className="testimonial-card__author">— Trade Customer, Witney</p>
+            </div>
+            <div className="testimonial-card">
+              <div className="testimonial-card__stars">
+                <StarIcon /><StarIcon /><StarIcon /><StarIcon /><StarIcon />
+              </div>
+              <p className="testimonial-card__text">
+                "Really helpful and knowledgeable. Hired a breaker and scaffold tower — both arrived on time and in great condition. Would absolutely recommend."
+              </p>
+              <p className="testimonial-card__author">— DIY Customer, Burford</p>
+            </div>
+            <div className="testimonial-card">
+              <div className="testimonial-card__stars">
+                <StarIcon /><StarIcon /><StarIcon /><StarIcon /><StarIcon />
+              </div>
+              <p className="testimonial-card__text">
+                "Best local hire company in the area. Very competitive pricing and always quick to respond. We use them for all our groundworks projects."
+              </p>
+              <p className="testimonial-card__author">— Building Contractor, Chipping Norton</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Coverage area */}
+      <section className="coverage">
+        <div className="coverage__inner">
+          <div className="coverage__text">
+            <h2>Covering West Oxfordshire &amp; The Cotswolds</h2>
+            <p>
+              Based in Witney, we serve trade and domestic customers across a wide area of
+              West Oxfordshire and the surrounding Cotswolds. Whether you're in Witney,
+              Chipping Norton, Burford, Carterton, Woodstock or further afield — get in
+              touch and we'll confirm we can help.
+            </p>
+            <ul className="coverage__towns">
+              <li><MapPinIcon /> Witney</li>
+              <li><MapPinIcon /> Chipping Norton</li>
+              <li><MapPinIcon /> Burford</li>
+              <li><MapPinIcon /> Carterton</li>
+              <li><MapPinIcon /> Woodstock</li>
+              <li><MapPinIcon /> Charlbury</li>
+            </ul>
+            <a href="tel:+441865922611" className="coverage__cta">
+              <PhoneIcon /> Call to check your area
+            </a>
+          </div>
+          <div className="coverage__badge">
+            <div className="coverage__badge-inner">
+              <p className="coverage__badge-label">Serving</p>
+              <p className="coverage__badge-area">West Oxfordshire</p>
+              <p className="coverage__badge-area coverage__badge-area--small">&amp; The Cotswolds</p>
+            </div>
+          </div>
         </div>
       </section>
 

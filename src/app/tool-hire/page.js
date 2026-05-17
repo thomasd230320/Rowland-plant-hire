@@ -37,7 +37,15 @@ export default function ToolHirePage() {
                   <div className="th-cat-card__img-placeholder" />
                 )}
               </div>
-              <span className="th-cat-card__label">{cat.label}</span>
+              <div className="th-cat-card__footer">
+                <span className="th-cat-card__label">{cat.label}</span>
+                <span className="th-cat-card__cta">
+                  View Equipment
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/>
+                  </svg>
+                </span>
+              </div>
             </Link>
           ))}
         </div>

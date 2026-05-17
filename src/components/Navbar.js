@@ -3,9 +3,9 @@ import { useState } from 'react'
 import Link from 'next/link'
 
 const PLANT_LINKS = [
-  { label: 'Plant Hire', href: '/home/plant-hire' },
-  { label: 'Mini Excavators / Diggers', href: '/home/plant-hire/mini-excavators-diggers' },
-  { label: 'Skip Loaders / Dumpers', href: '/home/plant-hire/skip-loaders-dumpers' },
+  { label: 'All Plant Hire', href: '/plant-hire' },
+  { label: 'Mini Excavators / Diggers', href: '/plant-hire/mini-excavators-diggers' },
+  { label: 'Skip Loaders / Dumpers', href: '/plant-hire/skip-loaders-dumpers' },
 ]
 
 const TOOL_LINKS = [
@@ -90,7 +90,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          <Link href="/home/about-us" className="nav-link">About</Link>
+          <Link href="/about" className="nav-link">About</Link>
         </div>
 
         {/* Hamburger */}
@@ -113,8 +113,8 @@ export default function Navbar() {
       {/* Mobile drawer — accordion groups */}
       <div className={`mobile-drawer${mobileOpen ? ' mobile-drawer--open' : ''}`} aria-hidden={!mobileOpen}>
         <Link href="/" className="mobile-link" onClick={closeAll}>Home</Link>
-        <Link href="/home/about-us" className="mobile-link" onClick={closeAll}>About Us</Link>
-        <Link href="/home/terms-conditions" className="mobile-link" onClick={closeAll}>Terms &amp; Conditions</Link>
+        <Link href="/about" className="mobile-link" onClick={closeAll}>About Us</Link>
+        <Link href="/terms-conditions" className="mobile-link" onClick={closeAll}>Terms &amp; Conditions</Link>
 
         <div className="mobile-divider" />
 
