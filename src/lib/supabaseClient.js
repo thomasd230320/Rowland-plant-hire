@@ -1,8 +1,13 @@
 import { createClient } from '@supabase/supabase-js'
 
-// Trim whitespace and trailing slash — common copy-paste mistakes
+// Normalise the URL — strip whitespace, trailing slash, and any path like /rest/v1
 const rawUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
-const supabaseUrl = rawUrl?.trim().replace(/\/$/, '')
+let supabaseUrl = rawUrl?.trim().replace(/\/$/, '')
+try {
+  if (supabaseUrl) supabaseUrl = new URL(supabaseUrl).origin
+} catch {
+  supabaseUrl = undefined
+}
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY?.trim()
 
 if (!supabaseUrl || !supabaseAnonKey) {
