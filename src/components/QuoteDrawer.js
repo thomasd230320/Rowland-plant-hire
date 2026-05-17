@@ -1,9 +1,10 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useQuote, calcItemTotal } from '@/contexts/QuoteContext'
+import { useAuth } from '@/contexts/AuthContext'
 
 // ---------------------------------------------------------------------------
 // Icons
@@ -54,7 +55,7 @@ function todayString() {
   return new Date().toISOString().split('T')[0]
 }
 
-function buildMailtoBody(items, startDate, days) {
+function buildMailtoBody(items, startDate, days, userEmail) {
   const durationLabel = DURATION_OPTIONS.find((o) => o.days === days)?.label ?? `${days} day(s)`
   const startLabel = startDate || 'TBC'
   const lines = items.map((item) => {
@@ -72,10 +73,115 @@ function buildMailtoBody(items, startDate, days) {
     `Start Date: ${startLabel}`,
     `Duration: ${durationLabel}`,
     '',
+    ...(userEmail ? [`Customer email: ${userEmail}`, ''] : []),
     'Please confirm availability and pricing (inc. VAT).',
     '',
     'Many thanks',
   ].join('\n')
+}
+
+// ---------------------------------------------------------------------------
+// Auth panel
+// ---------------------------------------------------------------------------
+
+function AuthPanel({ onClose }) {
+  const { user, loading, signIn, signUp, signOut, authAvailable } = useAuth()
+  const [mode, setMode] = useState('signin') // 'signin' | 'signup'
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [busy, setBusy] = useState(false)
+  const [msg, setMsg] = useState(null) // { type: 'error'|'info', text }
+
+  if (!authAvailable) return null
+
+  if (loading) {
+    return (
+      <div className="qd-auth">
+        <p className="qd-auth__loading">Loading…</p>
+      </div>
+    )
+  }
+
+  if (user) {
+    return (
+      <div className="qd-auth qd-auth--signed-in">
+        <div className="qd-auth__user-row">
+          <div className="qd-auth__user-info">
+            <span className="qd-auth__signed-in-label">Signed in</span>
+            <span className="qd-auth__email">{user.email}</span>
+          </div>
+          <button className="qd-auth__signout-btn" onClick={signOut}>
+            Sign out
+          </button>
+        </div>
+        <p className="qd-auth__hint">Your email will be included in the enquiry so we can reply directly to you.</p>
+      </div>
+    )
+  }
+
+  async function handleSubmit(e) {
+    e.preventDefault()
+    if (!email || !password) return
+    setBusy(true)
+    setMsg(null)
+    if (mode === 'signin') {
+      const { error } = await signIn(email, password)
+      if (error) setMsg({ type: 'error', text: error.message })
+    } else {
+      const { error, needsConfirm } = await signUp(email, password)
+      if (error) setMsg({ type: 'error', text: error.message })
+      else if (needsConfirm) setMsg({ type: 'info', text: 'Check your email to confirm your account, then sign in.' })
+    }
+    setBusy(false)
+  }
+
+  return (
+    <div className="qd-auth">
+      <div className="qd-auth__header">
+        <p className="qd-auth__title">
+          {mode === 'signin' ? 'Sign in for faster booking' : 'Create account'}
+        </p>
+        <button className="qd-auth__skip" onClick={onClose}>
+          Skip →
+        </button>
+      </div>
+
+      <form className="qd-auth__form" onSubmit={handleSubmit} noValidate>
+        <input
+          className="qd-auth__input"
+          type="email"
+          placeholder="Your email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          autoComplete="email"
+          required
+        />
+        <input
+          className="qd-auth__input"
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          autoComplete={mode === 'signin' ? 'current-password' : 'new-password'}
+          required
+        />
+        {msg && (
+          <p className={`qd-auth__msg qd-auth__msg--${msg.type}`}>{msg.text}</p>
+        )}
+        <button className="qd-auth__submit" type="submit" disabled={busy}>
+          {busy ? 'Please wait…' : mode === 'signin' ? 'Sign In' : 'Create Account'}
+        </button>
+      </form>
+
+      <button
+        className="qd-auth__toggle"
+        type="button"
+        onClick={() => { setMode(mode === 'signin' ? 'signup' : 'signin'); setMsg(null) }}
+      >
+        {mode === 'signin' ? 'No account? Create one' : 'Already have an account? Sign in'}
+      </button>
+    </div>
+  )
 }
 
 // ---------------------------------------------------------------------------
@@ -93,17 +199,11 @@ function QuoteItem({ item, days }) {
       <div className="qd-item__thumb">
         {item.image ? (
           <div className="qd-item__img-wrap">
-            <Image
-              src={item.image}
-              alt={item.title}
-              fill
-              sizes="64px"
-              className="qd-item__img"
-            />
+            <Image src={item.image} alt={item.title} fill sizes="52px" className="qd-item__img" />
           </div>
         ) : (
           <div className="qd-item__img-placeholder" aria-hidden="true">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
               <rect x="2" y="7" width="20" height="14" rx="2" />
               <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
             </svg>
@@ -113,11 +213,6 @@ function QuoteItem({ item, days }) {
 
       <div className="qd-item__info">
         <p className="qd-item__title">{item.title}</p>
-        {item.category && (
-          <span className={`qd-item__badge qd-item__badge--${item.category}`}>
-            {item.category}
-          </span>
-        )}
 
         <div className="qd-item__controls">
           <div className="qd-item__qty">
@@ -125,17 +220,13 @@ function QuoteItem({ item, days }) {
               className="qd-item__qty-btn"
               onClick={() => updateQty(item.id, item.qty - 1)}
               aria-label="Decrease quantity"
-            >
-              −
-            </button>
+            >−</button>
             <span className="qd-item__qty-val">{item.qty}</span>
             <button
               className="qd-item__qty-btn"
               onClick={() => updateQty(item.id, item.qty + 1)}
               aria-label="Increase quantity"
-            >
-              +
-            </button>
+            >+</button>
           </div>
           <span className={`qd-item__price${isPOA ? ' qd-item__price--poa' : ''}`}>
             {priceLabel}
@@ -170,38 +261,41 @@ export default function QuoteDrawer() {
     clearQuote,
   } = useQuote()
 
+  const { user, authAvailable, signOut } = useAuth()
+  const [showAuth, setShowAuth] = useState(false)
   const drawerRef = useRef(null)
 
-  // Close on Escape key
+  // Show auth panel automatically when drawer opens and user isn't signed in
+  useEffect(() => {
+    if (drawerOpen && authAvailable && !user) {
+      setShowAuth(true)
+    }
+    if (!drawerOpen) {
+      setShowAuth(false)
+    }
+  }, [drawerOpen, authAvailable, user])
+
+  // Close on Escape
   useEffect(() => {
     function handleKeyDown(e) {
-      if (e.key === 'Escape' && drawerOpen) {
-        setDrawerOpen(false)
-      }
+      if (e.key === 'Escape' && drawerOpen) setDrawerOpen(false)
     }
     document.addEventListener('keydown', handleKeyDown)
     return () => document.removeEventListener('keydown', handleKeyDown)
   }, [drawerOpen, setDrawerOpen])
 
-  // Scroll lock on body
+  // Scroll lock
   useEffect(() => {
-    if (drawerOpen) {
-      document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.overflow = ''
-    }
-    return () => {
-      document.body.style.overflow = ''
-    }
+    document.body.style.overflow = drawerOpen ? 'hidden' : ''
+    return () => { document.body.style.overflow = '' }
   }, [drawerOpen])
 
-  // Focus trap: move focus into drawer when it opens
+  // Focus trap
   useEffect(() => {
     if (drawerOpen && drawerRef.current) {
-      const firstFocusable = drawerRef.current.querySelector(
-        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
-      )
-      firstFocusable?.focus()
+      drawerRef.current
+        .querySelector('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')
+        ?.focus()
     }
   }, [drawerOpen])
 
@@ -216,33 +310,31 @@ export default function QuoteDrawer() {
 
   const hasPOA = lineItems.some((li) => li.lineTotal == null)
   const grandTotal = lineItems.reduce((sum, li) => sum + (li.lineTotal ?? 0), 0)
+  const itemCount = items.reduce((sum, i) => sum + i.qty, 0)
 
   // ---------------------------------------------------------------------------
-  // Mailto
+  // Mailto — include signed-in email in body so Rowland can reply directly
   // ---------------------------------------------------------------------------
 
   const mailtoHref = `mailto:Sales@Rowlandplant.co.uk?subject=${encodeURIComponent(
-    'Quote Request — Rowland Plant Hire'
-  )}&body=${encodeURIComponent(buildMailtoBody(items, startDate, days))}`
+    user
+      ? `Quote Request from ${user.email} — Rowland Plant Hire`
+      : 'Quote Request — Rowland Plant Hire'
+  )}&body=${encodeURIComponent(buildMailtoBody(items, startDate, days, user?.email))}`
+
+  function close() { setDrawerOpen(false) }
 
   // ---------------------------------------------------------------------------
   // Render
   // ---------------------------------------------------------------------------
 
-  const itemCount = items.reduce((sum, i) => sum + i.qty, 0)
-
   return (
     <>
       {/* Backdrop */}
       {drawerOpen && (
-        <div
-          className="quote-backdrop"
-          onClick={() => setDrawerOpen(false)}
-          aria-hidden="true"
-        />
+        <div className="quote-backdrop" onClick={close} aria-hidden="true" />
       )}
 
-      {/* Drawer panel */}
       <aside
         ref={drawerRef}
         className={`quote-drawer${drawerOpen ? ' quote-drawer--open' : ''}`}
@@ -263,19 +355,11 @@ export default function QuoteDrawer() {
           </div>
           <div className="qd-header__actions">
             {items.length > 0 && (
-              <button
-                className="qd-clear-btn"
-                onClick={clearQuote}
-                aria-label="Clear all items"
-              >
+              <button className="qd-clear-btn" onClick={clearQuote} aria-label="Clear all items">
                 Clear all
               </button>
             )}
-            <button
-              className="qd-close-btn"
-              onClick={() => setDrawerOpen(false)}
-              aria-label="Close quote drawer"
-            >
+            <button className="qd-close-btn" onClick={close} aria-label="Close quote drawer">
               <CloseIcon size={20} />
             </button>
           </div>
@@ -284,14 +368,38 @@ export default function QuoteDrawer() {
         {/* ---- Scrollable body ---- */}
         <div className="qd-body">
 
+          {/* Auth panel */}
+          {authAvailable && showAuth && !user && (
+            <AuthPanel onClose={() => setShowAuth(false)} />
+          )}
+
+          {/* Signed-in strip (when auth panel dismissed but user still not signed in) */}
+          {authAvailable && !showAuth && !user && (
+            <button className="qd-auth__nudge" onClick={() => setShowAuth(true)}>
+              Sign in to pre-fill your email →
+            </button>
+          )}
+
+          {/* Signed-in confirmation */}
+          {authAvailable && user && (
+            <div className="qd-auth qd-auth--signed-in qd-auth--compact">
+              <div className="qd-auth__user-row">
+                <div className="qd-auth__user-info">
+                  <span className="qd-auth__signed-in-label">Enquiring as</span>
+                  <span className="qd-auth__email">{user.email}</span>
+                </div>
+                <button className="qd-auth__signout-btn" onClick={signOut}>
+                  Sign out
+                </button>
+              </div>
+            </div>
+          )}
+
           {/* Hire Dates */}
           <div className="quote-dates">
             <p className="quote-dates__label">Hire Dates</p>
-
             <div className="quote-dates__row">
-              <label className="quote-dates__field-label" htmlFor="qd-start-date">
-                Start date
-              </label>
+              <label className="quote-dates__field-label" htmlFor="qd-start-date">Start date</label>
               <input
                 id="qd-start-date"
                 className="quote-dates__date-input"
@@ -301,7 +409,6 @@ export default function QuoteDrawer() {
                 onChange={(e) => setStartDate(e.target.value)}
               />
             </div>
-
             <p className="quote-dates__field-label">Duration</p>
             <div className="quote-dates__duration-grid">
               {DURATION_OPTIONS.map((opt) => (
@@ -321,15 +428,9 @@ export default function QuoteDrawer() {
           <div className="qd-items">
             {items.length === 0 ? (
               <div className="qd-empty">
-                <div className="qd-empty__icon" aria-hidden="true">
-                  <CartEmptyIcon />
-                </div>
+                <div className="qd-empty__icon" aria-hidden="true"><CartEmptyIcon /></div>
                 <p className="qd-empty__msg">Your quote is empty</p>
-                <Link
-                  href="/tool-hire"
-                  className="qd-empty__link"
-                  onClick={() => setDrawerOpen(false)}
-                >
+                <Link href="/tool-hire" className="qd-empty__link" onClick={close}>
                   Browse Equipment
                 </Link>
               </div>
@@ -341,20 +442,8 @@ export default function QuoteDrawer() {
           </div>
         </div>
 
-        {/* ---- Mobile close strip (shown when no footer) ---- */}
-        {items.length === 0 && (
-          <div className="qd-mobile-close">
-            <button
-              className="qd-mobile-close__btn"
-              onClick={() => setDrawerOpen(false)}
-            >
-              ✕ Close
-            </button>
-          </div>
-        )}
-
         {/* ---- Footer ---- */}
-        {items.length > 0 && (
+        {items.length > 0 ? (
           <div className="qd-footer">
             <div className="qd-total">
               <span className="qd-total__label">Estimated total</span>
@@ -363,29 +452,20 @@ export default function QuoteDrawer() {
               </span>
             </div>
             {hasPOA && (
-              <p className="qd-poa-notice">
-                Includes POA items — call for full quote
-              </p>
+              <p className="qd-poa-notice">Includes POA items — call for full quote</p>
             )}
-
-            <a
-              href={mailtoHref}
-              className="qd-enquiry-btn"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href={mailtoHref} className="qd-enquiry-btn" target="_blank" rel="noopener noreferrer">
               Send Quote Enquiry
             </a>
-
-            <p className="qd-small-print">
-              Prices are estimates only, subject to VAT at 20%
-            </p>
-
-            <button
-              className="qd-close-drawer-btn"
-              onClick={() => setDrawerOpen(false)}
-            >
-              ✕ Close Quote
+            <p className="qd-small-print">Prices are estimates only, subject to VAT at 20%</p>
+            <button className="qd-close-drawer-btn" onClick={close}>
+              ✕ Close
+            </button>
+          </div>
+        ) : (
+          <div className="qd-footer qd-footer--empty">
+            <button className="qd-close-drawer-btn qd-close-drawer-btn--full" onClick={close}>
+              ✕ Close
             </button>
           </div>
         )}

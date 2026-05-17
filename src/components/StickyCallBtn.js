@@ -1,5 +1,7 @@
 'use client'
 
+import { useQuote } from '@/contexts/QuoteContext'
+
 function PhoneIcon() {
   return (
     <svg
@@ -16,65 +18,23 @@ function PhoneIcon() {
 }
 
 export default function StickyCallBtn() {
+  const { drawerOpen } = useQuote()
+
+  // Hide when the quote drawer is open so it doesn't overlap drawer content
+  if (drawerOpen) return null
+
   return (
-    <div
-      className="sticky-call-bar"
-      style={{
-        position: 'fixed',
-        bottom: 0,
-        left: 0,
-        right: 0,
-        zIndex: 200,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        gap: '1rem',
-        background: 'var(--surface-dark)',
-        borderTop: '3px solid var(--red)',
-        paddingTop: '10px',
-        paddingLeft: '16px',
-        paddingRight: '16px',
-        paddingBottom: 'max(12px, env(safe-area-inset-bottom))',
-      }}
-    >
+    <div className="sticky-call-bar">
       <a
         href="tel:+441865922611"
         className="sticky-call-bar__phone"
         aria-label="Call us on 01865 922611"
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: '8px',
-          color: 'var(--white)',
-          textDecoration: 'none',
-          fontSize: '1.25rem',
-          fontWeight: 700,
-          letterSpacing: '-0.01em',
-          lineHeight: 1,
-        }}
       >
         <PhoneIcon />
         01865 922611
       </a>
 
-      <a
-        href="#enquiry"
-        className="sticky-call-bar__quote"
-        style={{
-          display: 'inline-flex',
-          alignItems: 'center',
-          padding: '6px 14px',
-          border: '1.5px solid var(--white)',
-          borderRadius: '4px',
-          color: 'var(--white)',
-          textDecoration: 'none',
-          fontSize: '0.875rem',
-          fontWeight: 600,
-          whiteSpace: 'nowrap',
-          background: 'transparent',
-          lineHeight: 1,
-        }}
-      >
+      <a href="#enquiry" className="sticky-call-bar__quote">
         Get a Quote
       </a>
     </div>
