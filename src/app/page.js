@@ -183,6 +183,48 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* How to Hire */}
+      <section className="how-to-hire">
+        <div className="how-to-hire__inner">
+          <h2 className="how-to-hire__heading">How to Hire</h2>
+          <p className="how-to-hire__sub">Simple, fast and flexible — getting equipment on site takes minutes</p>
+          <div className="how-to-hire__steps">
+            <div className="hire-step">
+              <div className="hire-step__num">1</div>
+              <div className="hire-step__icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+              </div>
+              <h3>Browse Equipment</h3>
+              <p>Search our full range of tools and plant hire, or call us and we&apos;ll recommend exactly what you need for your job.</p>
+            </div>
+            <div className="hire-step__connector" aria-hidden="true" />
+            <div className="hire-step">
+              <div className="hire-step__num">2</div>
+              <div className="hire-step__icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                </svg>
+              </div>
+              <h3>Call or Enquire</h3>
+              <p>Call <a href="tel:+441865922611" className="hire-step__link">01865 922611</a> or use our quote builder to confirm availability and get a price. Weekend and weekly rates available.</p>
+            </div>
+            <div className="hire-step__connector" aria-hidden="true" />
+            <div className="hire-step">
+              <div className="hire-step__num">3</div>
+              <div className="hire-step__icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
+                </svg>
+              </div>
+              <h3>Collect or Get Delivered</h3>
+              <p>Collect from our Witney depot or we deliver directly to your site at a time that suits you — and collect it when you&apos;re done.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us */}
       <section className="why-choose">
         <div className="why-choose__inner">

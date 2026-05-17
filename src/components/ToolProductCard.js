@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import AvailabilityBadge from './AvailabilityBadge'
 import AvailabilityChecker from './AvailabilityChecker'
+import AddToQuoteBtn from './AddToQuoteBtn'
 
 function PhoneIcon() {
   return (
@@ -68,7 +69,7 @@ function PricingTable({ pricing, pricingRows }) {
   )
 }
 
-export default function ToolProductCard({ title, image, specs, note, pricing, pricingRows, availability }) {
+export default function ToolProductCard({ id, title, image, specs, note, pricing, pricingRows, availability, categoryLabel }) {
   return (
     <article className="th-card">
       <div className="th-card__header">
@@ -110,6 +111,9 @@ export default function ToolProductCard({ title, image, specs, note, pricing, pr
           <MailIcon /> Enquire
         </a>
         <AvailabilityChecker productTitle={title} availability={availability} />
+        {!pricingRows && (
+          <AddToQuoteBtn item={{ id: id || title, title, type: 'tool', pricing, categoryLabel: categoryLabel || 'Tool Hire' }} />
+        )}
       </div>
     </article>
   )

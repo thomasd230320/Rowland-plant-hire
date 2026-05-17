@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import AvailabilityBadge from './AvailabilityBadge'
 import AvailabilityChecker from './AvailabilityChecker'
+import AddToQuoteBtn from './AddToQuoteBtn'
 
 function PhoneIcon() {
   return (
@@ -42,7 +43,7 @@ function PricingTable({ rows }) {
   )
 }
 
-export default function ProductCard({ title, image, altText, description, specs, pricing, downloads, availability }) {
+export default function ProductCard({ title, image, altText, description, specs, pricing, downloads, availability, categoryLabel }) {
   return (
     <article className="product-card">
       <div className="product-card__header">
@@ -95,6 +96,13 @@ export default function ProductCard({ title, image, altText, description, specs,
               Email an enquiry
             </a>
             <AvailabilityChecker productTitle={title} availability={availability} />
+            <AddToQuoteBtn item={{
+              id: title,
+              title,
+              type: 'plant',
+              pricing: pricing ? { day1: pricing[0]?.price, extraDay: pricing[1]?.price, week: pricing[2]?.price } : null,
+              categoryLabel: categoryLabel || 'Plant Hire',
+            }} />
           </div>
         </div>
       </div>

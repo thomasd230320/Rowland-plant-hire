@@ -109,6 +109,7 @@ export default function Navbar() {
             </div>
 
             <Link href="/about" className="nav-link">About</Link>
+          <Link href="/faq" className="nav-link">FAQ</Link>
 
             {/* Search button */}
             <button
@@ -151,6 +152,7 @@ export default function Navbar() {
         <div className={`mobile-drawer${mobileOpen ? ' mobile-drawer--open' : ''}`} aria-hidden={!mobileOpen}>
           <Link href="/" className="mobile-link" onClick={closeAll}>Home</Link>
           <Link href="/about" className="mobile-link" onClick={closeAll}>About Us</Link>
+          <Link href="/faq" className="mobile-link" onClick={closeAll}>FAQ</Link>
           <Link href="/terms-conditions" className="mobile-link" onClick={closeAll}>Terms &amp; Conditions</Link>
 
           <div className="mobile-divider" />

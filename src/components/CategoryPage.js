@@ -28,6 +28,7 @@ export default function CategoryPage({ category }) {
               key={product.id}
               {...product}
               availability={TOOL_AVAILABILITY[product.id]}
+              categoryLabel={category.label}
             />
           ))}
         </div>
