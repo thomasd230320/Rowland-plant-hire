@@ -9,7 +9,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'light-duty-breaker',
         title: 'Light Duty Breaker – 110v',
-        illustration: 'breaker',
+        image: '/images/IMG_7761.WEBP',
         specs: [
           'For light duty breaking of plaster, render & small wall tiles',
           'Tool Holder: SDS Plus',
@@ -24,7 +24,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'medium-duty-breaker',
         title: 'Medium Duty Breaker – 110v – 6.2Kg',
-        illustration: 'breaker',
         image: '/images/IMG_7761.WEBP',
         specs: [
           'Lightweight breaker intended for horizontal chiselling in concrete and stone',
@@ -38,7 +37,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'heavy-duty-breaker-11kg',
         title: 'Heavy Duty Breaker – 110v – 11.0Kg',
-        illustration: 'breaker',
         image: '/images/IMG_7762.WEBP',
         specs: [
           'Ideal for demolition and breaking up of concrete and hard material',
@@ -53,7 +51,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'heavy-duty-breaker-27kg',
         title: 'Heavy Duty Breaker – 110v (32AMP) – 27.0Kg',
-        illustration: 'breaker-large',
         image: '/images/IMG_7763.WEBP',
         specs: [
           'For breaking up concrete slabs, roads, footings and stone',
@@ -75,7 +72,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'petrol-cement-mixer',
         title: 'Petrol 4/3 Tip Up Cement Mixer',
-        illustration: 'mixer',
+        image: '/images/IMG_7808.WEBP',
         specs: [
           'Portable mixer for all small-to-medium building projects',
           'Barrow height tipping',
@@ -89,7 +86,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: '110v-cement-mixer',
         title: '110v 4/3 Tip Up Cement Mixer',
-        illustration: 'mixer',
+        image: '/images/IMG_7808(1).WEBP',
         specs: [
           'Portable mixer for all small-to-medium building projects',
           'Barrow height tipping',
@@ -103,7 +100,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'diesel-site-mixer',
         title: 'Diesel 5/3.5 Wheelbarrow Cement Mixer',
-        illustration: 'mixer-large',
+        image: '/images/IMG_7808.WEBP',
         specs: [
           'Heavy duty site mixer',
           'Engine: Yanmar L48 3.4HP Diesel',
@@ -119,7 +116,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'vibrating-poker',
         title: 'Vibrating Poker Unit (Petrol)',
-        illustration: 'poker',
         image: '/images/IMG_7847.webp',
         specs: [
           'Vibrates fluid concrete to ensure total compaction and structural strength',
@@ -131,7 +127,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'power-trowel',
         title: 'Petrol Power Trowel / Float (36 Inch)',
-        illustration: 'trowel',
         image: '/images/IMG_7817.webp',
         specs: [
           'High performance 36" power trowel designed for safety and longevity',
@@ -146,7 +141,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'twin-beam-screed',
         title: 'Twin Beam Air Screed (Petrol)',
-        illustration: 'screed',
+        image: '/images/IMG_7817.webp',
         specs: [
           'High efficiency vibratory twin beam screed',
           'For accurate consolidation and levelling of concrete slabs',
@@ -167,7 +162,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'angle-grinder-4-5',
         title: '4.5" Angle Grinder – 110v',
-        illustration: 'grinder',
         image: '/images/IMG_7764.WEBP',
         specs: [
           '110v electric',
@@ -179,7 +173,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'angle-grinder-9',
         title: '9" Angle Grinder – 110v',
-        illustration: 'grinder',
         image: '/images/IMG_7765.WEBP',
         specs: [
           '110v electric',
@@ -191,7 +184,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'cut-off-saw-12-electric',
         title: '12" Electric Cut-Off Saw (Disc Cutter)',
-        illustration: 'disc-cutter',
         image: '/images/IMG_7766.WEBP',
         specs: [
           '110v electric',
@@ -203,7 +195,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'cut-off-saw-12-petrol',
         title: '12" Petrol Cut-Off Saw (Disc Cutter)',
-        illustration: 'disc-cutter',
         image: '/images/IMG_7767.WEBP',
         specs: [
           'Petrol engine – suitable for outdoor use',
@@ -215,7 +206,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'cut-off-saw-14-petrol',
         title: '14" Petrol Cut-Off Saw (Disc Cutter)',
-        illustration: 'disc-cutter',
         image: '/images/IMG_7768.WEBP',
         specs: [
           'Petrol engine – suitable for outdoor use',
@@ -227,7 +217,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'petrol-floor-saw',
         title: 'Petrol Floor Saw (Max 14" Blade)',
-        illustration: 'floor-saw',
         image: '/images/IMG_7769.WEBP',
         specs: [
           'Petrol engine walk-behind floor saw',
@@ -240,7 +229,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'diamond-core-drill',
         title: 'Standard Diamond Core Drill Unit',
-        illustration: 'core-drill',
+        image: '/images/IMG_7801.WEBP',
         specs: [
           '110v electric core drill',
           'For precision core drilling through concrete and masonry',
@@ -252,7 +241,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'diamond-core-cutters',
         title: 'Diamond Core Cutters – Individual Sizes',
-        illustration: 'core-cutter',
         image: '/images/IMG_7799.WEBP',
         specs: [
           'Available in sizes: 22mm, 28mm, 38mm, 48mm, 52mm, 65mm, 78mm, 107mm, 117mm, 127mm, 152mm',
@@ -270,7 +258,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'tile-bench-saw',
         title: 'Tile Bench Saw / Bridge Saw',
-        illustration: 'tile-saw',
         image: '/images/IMG_7774.WEBP',
         specs: [
           'Electric tile bench / bridge saw',
@@ -282,7 +269,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'manual-tile-cutter',
         title: 'Manual Rail Tile Cutter (Heavy Duty)',
-        illustration: 'tile-cutter',
         image: '/images/IMG_7775.WEBP',
         specs: [
           'Manual operation – no power required',
@@ -294,7 +280,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'block-splitter',
         title: 'Block Splitter (Manual Hydraulic)',
-        illustration: 'block-splitter',
         image: '/images/IMG_7772.WEBP',
         specs: [
           'Manual hydraulic operation – no power required',
@@ -314,7 +299,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'jigsaw',
         title: 'Jigsaw – 110v',
-        illustration: 'jigsaw',
+        image: '/images/IMG_7776.WEBP',
         specs: [
           '110v electric',
           'For cutting curves and intricate shapes in wood, metal and plastics',
@@ -325,7 +310,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'reciprocating-saw',
         title: 'Reciprocating Saw – 110v',
-        illustration: 'recip-saw',
+        image: '/images/IMG_7771.WEBP',
         specs: [
           '110v electric',
           'Heavy duty demolition and cutting tool',
@@ -336,7 +321,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'circular-saw-185',
         title: '185mm Circular Saw – 110v',
-        illustration: 'circular-saw',
+        image: '/images/IMG_7769.WEBP',
         specs: [
           '110v electric',
           '185mm blade diameter',
@@ -347,7 +332,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'circular-saw-235',
         title: '235mm Circular Saw – 110v',
-        illustration: 'circular-saw',
+        image: '/images/IMG_7769.WEBP',
         specs: [
           '110v electric',
           '235mm blade diameter – greater cutting depth than 185mm',
@@ -358,7 +343,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'mitre-saw',
         title: 'Crosscut / Slide Mitre Saw – 110v',
-        illustration: 'mitre-saw',
+        image: '/images/IMG_7770.WEBP',
         specs: [
           '110v electric sliding crosscut mitre saw',
           'For precision angled and straight crosscuts in timber',
@@ -377,7 +362,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'plate-compactor-12',
         title: '12" Plate Compactor – Petrol',
-        illustration: 'compactor',
+        image: '/images/IMG_7773.WEBP',
         specs: [
           'Petrol engine',
           '12" (300mm) plate width',
@@ -389,7 +374,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'plate-compactor-18',
         title: '18" Plate Compactor – Petrol',
-        illustration: 'compactor',
+        image: '/images/IMG_7773.WEBP',
         specs: [
           'Petrol engine',
           '18" (450mm) plate width – greater coverage per pass',
@@ -401,7 +386,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'vibrating-roller-55',
         title: 'Vibrating Roller 55cm – Petrol',
-        illustration: 'roller',
+        image: '/images/IMG_7773.WEBP',
         specs: [
           'Petrol engine walk-behind vibratory roller',
           '55cm drum width',
@@ -413,7 +398,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'ride-on-roller',
         title: '960mm Ride-On Roller – Diesel',
-        illustration: 'poa',
+        image: '/images/IMG_7773.WEBP',
         specs: [
           'Diesel engine ride-on roller',
           '960mm roller drum width',
@@ -433,7 +418,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'sds-plus-drill',
         title: 'SDS Plus Hammer Drill – 110v',
-        illustration: 'sds-drill',
         image: '/images/IMG_7760.WEBP',
         specs: [
           '110v electric',
@@ -446,7 +430,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'angle-drill-10mm',
         title: '10mm Angle Headed Drill – 110v',
-        illustration: 'angle-drill',
         image: '/images/IMG_7798.WEBP',
         specs: [
           '110v electric',
@@ -459,7 +442,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'angle-drill-13mm',
         title: '13mm Angle Headed Drill – 110v',
-        illustration: 'angle-drill',
         image: '/images/IMG_7798.WEBP',
         specs: [
           '110v electric',
@@ -472,7 +454,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'magnetic-core-drill',
         title: '13mm Magnetic Core Drill – 110v',
-        illustration: 'mag-drill',
+        image: '/images/IMG_7777.WEBP',
         specs: [
           '110v electric',
           'Powerful magnetic base for secure attachment to steel surfaces',
@@ -490,12 +472,45 @@ export const TOOL_HIRE_CATEGORIES = [
     icon: '🪵',
     products: [
       {
-        id: 'adjustable-props',
-        title: 'Adjustable Props (Sizes 0, 1, 2, 3)',
-        illustration: 'acro-prop',
+        id: 'adjustable-prop-size-0',
+        title: 'Adjustable Prop – Size 0 (1044–1836mm)',
+        image: '/images/IMG_7773.WEBP',
         specs: [
-          'Adjustable steel acro props for temporary structural support',
-          'Available in sizes 0, 1, 2 and 3',
+          'Adjustable steel acro prop for temporary structural support',
+          'Size 0 extension range: 1044–1836mm',
+          'For supporting floors, ceilings, beams and lintels during construction',
+        ],
+        pricing: { day1: '£17.00', extraDay: '£3.40', week: '£17.00', weekend: '£13.60' },
+      },
+      {
+        id: 'adjustable-prop-size-1',
+        title: 'Adjustable Prop – Size 1 (1250–1930mm)',
+        image: '/images/IMG_7773.WEBP',
+        specs: [
+          'Adjustable steel acro prop for temporary structural support',
+          'Size 1 extension range: 1250–1930mm',
+          'For supporting floors, ceilings, beams and lintels during construction',
+        ],
+        pricing: { day1: '£17.00', extraDay: '£3.40', week: '£17.00', weekend: '£13.60' },
+      },
+      {
+        id: 'adjustable-prop-size-2',
+        title: 'Adjustable Prop – Size 2 (1984–3300mm)',
+        image: '/images/IMG_7773.WEBP',
+        specs: [
+          'Adjustable steel acro prop for temporary structural support',
+          'Size 2 extension range: 1984–3300mm',
+          'For supporting floors, ceilings, beams and lintels during construction',
+        ],
+        pricing: { day1: '£17.00', extraDay: '£3.40', week: '£17.00', weekend: '£13.60' },
+      },
+      {
+        id: 'adjustable-prop-size-3',
+        title: 'Adjustable Prop – Size 3 (2356–3536mm)',
+        image: '/images/IMG_7773.WEBP',
+        specs: [
+          'Adjustable steel acro prop for temporary structural support',
+          'Size 3 extension range: 2356–3536mm',
           'For supporting floors, ceilings, beams and lintels during construction',
         ],
         pricing: { day1: '£17.00', extraDay: '£3.40', week: '£17.00', weekend: '£13.60' },
@@ -503,7 +518,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'strongboy',
         title: 'Strongboy Wall Support',
-        illustration: 'strongboy',
+        image: '/images/IMG_7773.WEBP',
         specs: [
           'Steel strongboy wall support / prop attachment',
           'Used with adjustable acro props for lintel and wall support',
@@ -512,20 +527,42 @@ export const TOOL_HIRE_CATEGORIES = [
         pricing: { day1: '£17.00', extraDay: '£3.40', week: '£17.00', weekend: '£13.60' },
       },
       {
-        id: 'builders-trestles',
-        title: 'Builders Trestles (Sizes 1, 2, 3)',
-        illustration: 'trestle',
+        id: 'builders-trestle-size-1',
+        title: 'Builders Trestle – Size 1 (0.29m–0.71m)',
+        image: '/images/IMG_7773.WEBP',
         specs: [
-          'Folding steel builders trestles',
-          'Available in sizes 1, 2 and 3',
-          'Used with scaffold boards to form a working platform',
+          'Folding steel builders trestle',
+          'Size 1 height range: 0.29m–0.71m',
+          'Used with scaffold boards to form a low-level working platform',
+        ],
+        pricing: { day1: '£17.00', extraDay: '£3.40', week: '£17.00', weekend: '£13.60' },
+      },
+      {
+        id: 'builders-trestle-size-2',
+        title: 'Builders Trestle – Size 2 (0.70m–1.07m)',
+        image: '/images/IMG_7773.WEBP',
+        specs: [
+          'Folding steel builders trestle',
+          'Size 2 height range: 0.70m–1.07m',
+          'Used with scaffold boards to form a medium-level working platform',
+        ],
+        pricing: { day1: '£17.00', extraDay: '£3.40', week: '£17.00', weekend: '£13.60' },
+      },
+      {
+        id: 'builders-trestle-size-3',
+        title: 'Builders Trestle – Size 3 (1.07m–1.68m)',
+        image: '/images/IMG_7773.WEBP',
+        specs: [
+          'Folding steel builders trestle',
+          'Size 3 height range: 1.07m–1.68m',
+          'Used with scaffold boards to form a higher working platform',
         ],
         pricing: { day1: '£17.00', extraDay: '£3.40', week: '£17.00', weekend: '£13.60' },
       },
       {
         id: 'scaffold-boards',
         title: 'Scaffold Boards (3.9m)',
-        illustration: 'scaffold-board',
+        image: '/images/IMG_7773.WEBP',
         specs: [
           'Kiln-dried and graded scaffold boards',
           'Length: 3.9m',
@@ -544,7 +581,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'rotary-lawnmower',
         title: 'Rotary Lawnmower',
-        illustration: 'lawnmower',
+        image: '/images/IMG_7861.webp',
         specs: [
           'Petrol rotary lawnmower',
           'Self-propelled or push options available',
@@ -555,7 +592,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'chainsaw-16',
         title: 'Chainsaw – Petrol 16"',
-        illustration: 'chainsaw',
+        image: '/images/IMG_7858.webp',
         specs: [
           'Petrol engine chainsaw',
           '16" (400mm) guide bar',
@@ -567,7 +604,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'hedge-trimmer',
         title: 'Hedge Trimmer – Petrol 24"',
-        illustration: 'hedge-trimmer',
         image: '/images/IMG_7858.webp',
         specs: [
           'Petrol engine hedge trimmer',
@@ -579,7 +615,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'rotavator',
         title: 'Heavy Duty Rotavator (Petrol)',
-        illustration: 'rotavator',
         image: '/images/IMG_7861.webp',
         specs: [
           'Heavy duty petrol rotavator / cultivator',
@@ -592,7 +627,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'turf-cutter',
         title: 'Turf Cutter (Petrol)',
-        illustration: 'poa',
+        image: '/images/IMG_7861.webp',
         specs: [
           'Petrol engine turf cutter',
           'For removing turf/sod for new lawn or paving preparation',
@@ -604,7 +639,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'stump-grinder',
         title: 'Stump Grinder',
-        illustration: 'poa',
         image: '/images/IMG_7865.webp',
         specs: [
           'For grinding tree stumps below ground level',
@@ -616,7 +650,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'log-splitter',
         title: 'Log Splitter',
-        illustration: 'poa',
+        image: '/images/IMG_7865.webp',
         specs: [
           'Hydraulic log splitter',
           'For splitting logs and timber',
@@ -633,40 +667,244 @@ export const TOOL_HIRE_CATEGORIES = [
     icon: '🪜',
     products: [
       {
-        id: 'single-width-tower',
-        title: 'Single Width Scaffold Tower (900mm × 2500mm)',
-        illustration: 'scaffold-tower',
-        image: '/images/IMG_7778.webp',
+        id: 'single-width-tower-2-2m',
+        title: 'Single Width Scaffold Tower – 2.2m Working Height',
+        image: '/images/IMG_7778.WEBP',
         specs: [
-          'Platform width: 900mm',
-          'Platform length: 2500mm',
-          'Working heights from 2.2m to 12.2m',
-          'Aluminium frame – lightweight and quick to erect',
-          'Includes outriggers and guard rails for safety compliance',
-          'Full range of accessories available on request',
+          'Platform: 900mm × 2500mm',
+          'Working height: 2.2m',
+          'Aluminium alloy frame – lightweight and quick to erect',
+          'Outriggers and guardrails included',
         ],
-        pricingRows: [
-          { size: '2.2m working height', day1: '£21.50', extraDay: '–', week: '£43.00', weekend: '–' },
-          { size: 'Higher configurations', day1: 'Enquire', extraDay: 'Enquire', week: 'Enquire', weekend: 'Enquire' },
-        ],
+        pricing: { day1: '£21.50', extraDay: '–', week: '£43.00', weekend: '–' },
       },
       {
-        id: 'double-width-tower',
-        title: 'Double Width Scaffold Tower (1800mm × 2500mm)',
-        illustration: 'scaffold-tower',
-        image: '/images/IMG_7788.webp',
+        id: 'single-width-tower-3-2m',
+        title: 'Single Width Scaffold Tower – 3.2m Working Height',
+        image: '/images/IMG_7779.WEBP',
         specs: [
-          'Platform width: 1800mm',
-          'Platform length: 2500mm',
-          'Working heights from 2.2m to 12.2m',
-          'Aluminium frame – lightweight and quick to erect',
-          'Includes outriggers and guard rails for safety compliance',
-          'Full range of accessories available on request',
+          'Platform: 900mm × 2500mm',
+          'Working height: 3.2m',
+          'Aluminium alloy frame – lightweight and quick to erect',
+          'Outriggers and guardrails included',
         ],
-        pricingRows: [
-          { size: '2.2m working height', day1: '£24.00', extraDay: '–', week: '£48.00', weekend: '–' },
-          { size: 'Higher configurations', day1: 'Enquire', extraDay: 'Enquire', week: 'Enquire', weekend: 'Enquire' },
+        pricing: null,
+      },
+      {
+        id: 'single-width-tower-4-2m',
+        title: 'Single Width Scaffold Tower – 4.2m Working Height',
+        image: '/images/IMG_7779(1).WEBP',
+        specs: [
+          'Platform: 900mm × 2500mm',
+          'Working height: 4.2m',
+          'Aluminium alloy frame – lightweight and quick to erect',
+          'Outriggers and guardrails included',
         ],
+        pricing: null,
+      },
+      {
+        id: 'single-width-tower-5-2m',
+        title: 'Single Width Scaffold Tower – 5.2m Working Height',
+        image: '/images/IMG_7779(2).WEBP',
+        specs: [
+          'Platform: 900mm × 2500mm',
+          'Working height: 5.2m',
+          'Aluminium alloy frame – lightweight and quick to erect',
+          'Outriggers and guardrails included',
+        ],
+        pricing: null,
+      },
+      {
+        id: 'single-width-tower-6-2m',
+        title: 'Single Width Scaffold Tower – 6.2m Working Height',
+        image: '/images/IMG_7779(3).WEBP',
+        specs: [
+          'Platform: 900mm × 2500mm',
+          'Working height: 6.2m',
+          'Aluminium alloy frame – lightweight and quick to erect',
+          'Outriggers and guardrails included',
+        ],
+        pricing: null,
+      },
+      {
+        id: 'single-width-tower-7-2m',
+        title: 'Single Width Scaffold Tower – 7.2m Working Height',
+        image: '/images/IMG_7783.WEBP',
+        specs: [
+          'Platform: 900mm × 2500mm',
+          'Working height: 7.2m',
+          'Aluminium alloy frame – lightweight and quick to erect',
+          'Outriggers and guardrails included',
+        ],
+        pricing: null,
+      },
+      {
+        id: 'single-width-tower-8-2m',
+        title: 'Single Width Scaffold Tower – 8.2m Working Height',
+        image: '/images/IMG_7784.WEBP',
+        specs: [
+          'Platform: 900mm × 2500mm',
+          'Working height: 8.2m',
+          'Aluminium alloy frame – lightweight and quick to erect',
+          'Outriggers and guardrails included',
+        ],
+        pricing: null,
+      },
+      {
+        id: 'single-width-tower-9-2m',
+        title: 'Single Width Scaffold Tower – 9.2m Working Height',
+        image: '/images/IMG_7785.WEBP',
+        specs: [
+          'Platform: 900mm × 2500mm',
+          'Working height: 9.2m',
+          'Aluminium alloy frame – lightweight and quick to erect',
+          'Outriggers and guardrails included',
+        ],
+        pricing: null,
+      },
+      {
+        id: 'single-width-tower-10-2m',
+        title: 'Single Width Scaffold Tower – 10.2m Working Height',
+        image: '/images/IMG_7786.WEBP',
+        specs: [
+          'Platform: 900mm × 2500mm',
+          'Working height: 10.2m',
+          'Aluminium alloy frame – lightweight and quick to erect',
+          'Outriggers and guardrails included',
+        ],
+        pricing: null,
+      },
+      {
+        id: 'single-width-tower-12-2m',
+        title: 'Single Width Scaffold Tower – 12.2m Working Height',
+        image: '/images/IMG_7787.WEBP',
+        specs: [
+          'Platform: 900mm × 2500mm',
+          'Working height: 12.2m',
+          'Aluminium alloy frame – lightweight and quick to erect',
+          'Outriggers and guardrails included',
+        ],
+        pricing: null,
+      },
+      {
+        id: 'double-width-tower-2-2m',
+        title: 'Double Width Scaffold Tower – 2.2m Working Height',
+        image: '/images/IMG_7788.WEBP',
+        specs: [
+          'Platform: 1450mm × 2500mm',
+          'Working height: 2.2m',
+          'Aluminium alloy frame – lightweight and quick to erect',
+          'Outriggers and guardrails included',
+        ],
+        pricing: { day1: '£24.00', extraDay: '–', week: '£48.00', weekend: '–' },
+      },
+      {
+        id: 'double-width-tower-3-2m',
+        title: 'Double Width Scaffold Tower – 3.2m Working Height',
+        image: '/images/IMG_7789.WEBP',
+        specs: [
+          'Platform: 1450mm × 2500mm',
+          'Working height: 3.2m',
+          'Aluminium alloy frame – lightweight and quick to erect',
+          'Outriggers and guardrails included',
+        ],
+        pricing: null,
+      },
+      {
+        id: 'double-width-tower-4-2m',
+        title: 'Double Width Scaffold Tower – 4.2m Working Height',
+        image: '/images/IMG_7790.WEBP',
+        specs: [
+          'Platform: 1450mm × 2500mm',
+          'Working height: 4.2m',
+          'Aluminium alloy frame – lightweight and quick to erect',
+          'Outriggers and guardrails included',
+        ],
+        pricing: null,
+      },
+      {
+        id: 'double-width-tower-5-2m',
+        title: 'Double Width Scaffold Tower – 5.2m Working Height',
+        image: '/images/IMG_7790(1).WEBP',
+        specs: [
+          'Platform: 1450mm × 2500mm',
+          'Working height: 5.2m',
+          'Aluminium alloy frame – lightweight and quick to erect',
+          'Outriggers and guardrails included',
+        ],
+        pricing: null,
+      },
+      {
+        id: 'double-width-tower-6-2m',
+        title: 'Double Width Scaffold Tower – 6.2m Working Height',
+        image: '/images/IMG_7790(2).WEBP',
+        specs: [
+          'Platform: 1450mm × 2500mm',
+          'Working height: 6.2m',
+          'Aluminium alloy frame – lightweight and quick to erect',
+          'Outriggers and guardrails included',
+        ],
+        pricing: null,
+      },
+      {
+        id: 'double-width-tower-7-2m',
+        title: 'Double Width Scaffold Tower – 7.2m Working Height',
+        image: '/images/IMG_7790(3).WEBP',
+        specs: [
+          'Platform: 1450mm × 2500mm',
+          'Working height: 7.2m',
+          'Aluminium alloy frame – lightweight and quick to erect',
+          'Outriggers and guardrails included',
+        ],
+        pricing: null,
+      },
+      {
+        id: 'double-width-tower-8-2m',
+        title: 'Double Width Scaffold Tower – 8.2m Working Height',
+        image: '/images/IMG_7790(4).WEBP',
+        specs: [
+          'Platform: 1450mm × 2500mm',
+          'Working height: 8.2m',
+          'Aluminium alloy frame – lightweight and quick to erect',
+          'Outriggers and guardrails included',
+        ],
+        pricing: null,
+      },
+      {
+        id: 'double-width-tower-9-2m',
+        title: 'Double Width Scaffold Tower – 9.2m Working Height',
+        image: '/images/IMG_7795.WEBP',
+        specs: [
+          'Platform: 1450mm × 2500mm',
+          'Working height: 9.2m',
+          'Aluminium alloy frame – lightweight and quick to erect',
+          'Outriggers and guardrails included',
+        ],
+        pricing: null,
+      },
+      {
+        id: 'double-width-tower-10-2m',
+        title: 'Double Width Scaffold Tower – 10.2m Working Height',
+        image: '/images/IMG_7795(1).WEBP',
+        specs: [
+          'Platform: 1450mm × 2500mm',
+          'Working height: 10.2m',
+          'Aluminium alloy frame – lightweight and quick to erect',
+          'Outriggers and guardrails included',
+        ],
+        pricing: null,
+      },
+      {
+        id: 'double-width-tower-11-2m',
+        title: 'Double Width Scaffold Tower – 11.2m Working Height',
+        image: '/images/IMG_7795(2).WEBP',
+        specs: [
+          'Platform: 1450mm × 2500mm',
+          'Working height: 11.2m',
+          'Aluminium alloy frame – lightweight and quick to erect',
+          'Outriggers and guardrails included',
+        ],
+        pricing: null,
       },
     ],
   },

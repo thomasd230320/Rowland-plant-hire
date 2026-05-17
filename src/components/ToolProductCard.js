@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { ProductIllustration } from './ProductIllustrations'
 
 function PhoneIcon() {
   return (
@@ -67,18 +66,16 @@ function PricingTable({ pricing, pricingRows }) {
   )
 }
 
-export default function ToolProductCard({ title, image, illustration, specs, note, pricing, pricingRows }) {
+export default function ToolProductCard({ title, image, specs, note, pricing, pricingRows }) {
   return (
     <article className="th-card">
       <div className="th-card__body">
         <div className="th-card__img-col">
           <div className="th-card__illustration">
-            {image ? (
+            {image && (
               <div className="th-card__photo-wrap">
                 <Image src={image} alt={title} fill sizes="160px" className="th-card__photo" />
               </div>
-            ) : (
-              <ProductIllustration type={illustration} />
             )}
           </div>
         </div>
