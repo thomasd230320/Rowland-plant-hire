@@ -88,6 +88,14 @@ function quoteReducer(state, action) {
     case 'CLEAR':
       return { ...initialState }
 
+    case 'LOAD_QUOTE':
+      return {
+        ...state,
+        items: action.items ?? [],
+        days: action.days ?? state.days,
+        startDate: action.startDate ?? state.startDate,
+      }
+
     default:
       return state
   }
@@ -160,6 +168,10 @@ export function QuoteProvider({ children }) {
     dispatch({ type: 'CLEAR' })
   }
 
+  function loadQuote(items, days, startDate) {
+    dispatch({ type: 'LOAD_QUOTE', items, days, startDate })
+  }
+
   const value = {
     items: state.items,
     days: state.days,
@@ -173,6 +185,7 @@ export function QuoteProvider({ children }) {
     removeItem,
     updateQty,
     clearQuote,
+    loadQuote,
   }
 
   return <QuoteContext.Provider value={value}>{children}</QuoteContext.Provider>
