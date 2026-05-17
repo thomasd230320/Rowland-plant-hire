@@ -69,19 +69,24 @@ function PricingTable({ pricing, pricingRows }) {
 export default function ToolProductCard({ title, image, specs, note, pricing, pricingRows }) {
   return (
     <article className="th-card">
+      <div className="th-card__header">
+        <h3 className="th-card__title">{title}</h3>
+      </div>
+
       <div className="th-card__body">
+        {/* Image column */}
         <div className="th-card__img-col">
           <div className="th-card__illustration">
             {image && (
               <div className="th-card__photo-wrap">
-                <Image src={image} alt={title} fill sizes="160px" className="th-card__photo" />
+                <Image src={image} alt={title} fill sizes="140px" className="th-card__photo" />
               </div>
             )}
           </div>
         </div>
 
-        <div className="th-card__middle-col">
-          <div className="th-card__title-bar">{title}</div>
+        {/* Specs column */}
+        <div className="th-card__specs-col">
           {note && <p className="th-card__note">{note}</p>}
           <ul className="th-card__specs">
             {specs.map((spec, i) => (
@@ -90,6 +95,7 @@ export default function ToolProductCard({ title, image, specs, note, pricing, pr
           </ul>
         </div>
 
+        {/* Pricing column */}
         <div className="th-card__pricing-col">
           <div className="th-card__pricing-header">Price From</div>
           <PricingTable pricing={pricing} pricingRows={pricingRows} />
@@ -98,12 +104,10 @@ export default function ToolProductCard({ title, image, specs, note, pricing, pr
 
       <div className="th-card__actions">
         <a href="tel:+441865922611" className="th-card__call-btn">
-          <PhoneIcon />
-          Call us: 01865 922611
+          <PhoneIcon /> Call us: 01865 922611
         </a>
         <a href="mailto:Sales@Rowlandplant.co.uk" className="th-card__enquiry-link">
-          <MailIcon />
-          Enquire about this item
+          <MailIcon /> Enquire about this item
         </a>
       </div>
     </article>
