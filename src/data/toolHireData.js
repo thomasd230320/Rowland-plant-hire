@@ -9,7 +9,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'light-duty-breaker',
         title: 'Light Duty Breaker – 110v',
-        image: '/images/IMG_7830(1).WEBP',
+        image: '/images/IMG_7837.WEBP',
         specs: [
           'For light duty breaking of plaster, render & small wall tiles',
           'Tool Holder: SDS Plus',
@@ -116,7 +116,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'vibrating-poker',
         title: 'Vibrating Poker Unit (Petrol)',
-        image: '/images/IMG_7847.WEBP',
+        image: '/images/IMG_7816.WEBP',
         specs: [
           'Vibrates fluid concrete to ensure total compaction and structural strength',
           'Removes trapped air for an improved finish',
@@ -141,7 +141,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'twin-beam-screed',
         title: 'Twin Beam Air Screed (Petrol)',
-        image: '/images/IMG_7817.WEBP',
+        image: '/images/IMG_7818.WEBP',
         specs: [
           'High efficiency vibratory twin beam screed',
           'For accurate consolidation and levelling of concrete slabs',
@@ -229,7 +229,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'diamond-core-drill',
         title: 'Standard Diamond Core Drill Unit',
-        image: '/images/IMG_7801.WEBP',
         specs: [
           '110v electric core drill',
           'For precision core drilling through concrete and masonry',
@@ -299,7 +298,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'jigsaw',
         title: 'Jigsaw – 110v',
-        image: '/images/IMG_7818.WEBP',
+        image: '/images/IMG_7819.WEBP',
         specs: [
           '110v electric',
           'For cutting curves and intricate shapes in wood, metal and plastics',
@@ -310,7 +309,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'reciprocating-saw',
         title: 'Reciprocating Saw – 110v',
-        image: '/images/IMG_7819.WEBP',
+        image: '/images/IMG_7820.WEBP',
         specs: [
           '110v electric',
           'Heavy duty demolition and cutting tool',
@@ -321,7 +320,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'circular-saw-185',
         title: '185mm Circular Saw – 110v',
-        image: '/images/IMG_7820.WEBP',
+        image: '/images/IMG_7821.WEBP',
         specs: [
           '110v electric',
           '185mm blade diameter',
@@ -332,7 +331,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'circular-saw-235',
         title: '235mm Circular Saw – 110v',
-        image: '/images/IMG_7821.WEBP',
+        image: '/images/IMG_7822.WEBP',
         specs: [
           '110v electric',
           '235mm blade diameter – greater cutting depth than 185mm',
@@ -343,7 +342,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'mitre-saw',
         title: 'Crosscut / Slide Mitre Saw – 110v',
-        image: '/images/IMG_7822.WEBP',
         specs: [
           '110v electric sliding crosscut mitre saw',
           'For precision angled and straight crosscuts in timber',
@@ -362,7 +360,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'plate-compactor-12',
         title: '12" Plate Compactor – Petrol',
-        image: '/images/IMG_7839.WEBP',
+        image: '/images/IMG_7841.WEBP',
         specs: [
           'Petrol engine',
           '12" (300mm) plate width',
@@ -374,7 +372,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'plate-compactor-18',
         title: '18" Plate Compactor – Petrol',
-        image: '/images/IMG_7839.WEBP',
+        image: '/images/IMG_7841.WEBP',
         specs: [
           'Petrol engine',
           '18" (450mm) plate width – greater coverage per pass',
@@ -386,7 +384,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'vibrating-roller-55',
         title: 'Vibrating Roller 55cm – Petrol',
-        image: '/images/IMG_7843 (1).WEBP',
+        image: '/images/IMG_7843.WEBP',
         specs: [
           'Petrol engine walk-behind vibratory roller',
           '55cm drum width',
@@ -398,7 +396,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'ride-on-roller',
         title: '960mm Ride-On Roller – Diesel',
-        image: '/images/IMG_7841.WEBP',
+        image: '/images/IMG_7844.WEBP',
         specs: [
           'Diesel engine ride-on roller',
           '960mm roller drum width',
@@ -430,7 +428,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'angle-drill-10mm',
         title: '10mm Angle Headed Drill – 110v',
-        image: '/images/IMG_7837.WEBP',
+        image: '/images/IMG_7798.WEBP',
         specs: [
           '110v electric',
           '10mm chuck capacity',
@@ -442,7 +440,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'angle-drill-13mm',
         title: '13mm Angle Headed Drill – 110v',
-        image: '/images/IMG_7837.WEBP',
+        image: '/images/IMG_7838.WEBP',
         specs: [
           '110v electric',
           '13mm chuck capacity',
@@ -454,7 +452,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'magnetic-core-drill',
         title: '13mm Magnetic Core Drill – 110v',
-        image: '/images/IMG_7838.WEBP',
         specs: [
           '110v electric',
           'Powerful magnetic base for secure attachment to steel surfaces',
@@ -474,7 +471,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'adjustable-prop-size-0',
         title: 'Adjustable Prop – Size 0 (1044–1836mm)',
-        image: '/images/IMG_7843.WEBP',
+        image: '/images/IMG_7848(1).WEBP',
         specs: [
           'Adjustable steel acro prop for temporary structural support',
           'Size 0 extension range: 1044–1836mm',
@@ -485,7 +482,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'adjustable-prop-size-1',
         title: 'Adjustable Prop – Size 1 (1250–1930mm)',
-        image: '/images/IMG_7843.WEBP',
+        image: '/images/IMG_7848(1).WEBP',
         specs: [
           'Adjustable steel acro prop for temporary structural support',
           'Size 1 extension range: 1250–1930mm',
@@ -496,7 +493,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'adjustable-prop-size-2',
         title: 'Adjustable Prop – Size 2 (1984–3300mm)',
-        image: '/images/IMG_7843.WEBP',
+        image: '/images/IMG_7848(1).WEBP',
         specs: [
           'Adjustable steel acro prop for temporary structural support',
           'Size 2 extension range: 1984–3300mm',
@@ -507,7 +504,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'adjustable-prop-size-3',
         title: 'Adjustable Prop – Size 3 (2356–3536mm)',
-        image: '/images/IMG_7843.WEBP',
+        image: '/images/IMG_7848(1).WEBP',
         specs: [
           'Adjustable steel acro prop for temporary structural support',
           'Size 3 extension range: 2356–3536mm',
@@ -518,7 +515,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'strongboy',
         title: 'Strongboy Wall Support',
-        image: '/images/IMG_7844.WEBP',
+        image: '/images/IMG_7852.WEBP',
         specs: [
           'Steel strongboy wall support / prop attachment',
           'Used with adjustable acro props for lintel and wall support',
@@ -529,7 +526,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'builders-trestle-size-1',
         title: 'Builders Trestle – Size 1 (0.29m–0.71m)',
-        image: '/images/IMG_7852.WEBP',
+        image: '/images/IMG_7855.WEBP',
         specs: [
           'Folding steel builders trestle',
           'Size 1 height range: 0.29m–0.71m',
@@ -540,7 +537,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'builders-trestle-size-2',
         title: 'Builders Trestle – Size 2 (0.70m–1.07m)',
-        image: '/images/IMG_7848(1).WEBP',
+        image: '/images/IMG_7855.WEBP',
         specs: [
           'Folding steel builders trestle',
           'Size 2 height range: 0.70m–1.07m',
@@ -551,7 +548,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'builders-trestle-size-3',
         title: 'Builders Trestle – Size 3 (1.07m–1.68m)',
-        image: '/images/IMG_7845(1).WEBP',
+        image: '/images/IMG_7855.WEBP',
         specs: [
           'Folding steel builders trestle',
           'Size 3 height range: 1.07m–1.68m',
@@ -562,7 +559,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'scaffold-boards',
         title: 'Scaffold Boards (3.9m)',
-        image: '/images/IMG_7829.WEBP',
+        image: '/images/IMG_7830(1).WEBP',
         specs: [
           'Kiln-dried and graded scaffold boards',
           'Length: 3.9m',
@@ -581,7 +578,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'rotary-lawnmower',
         title: 'Rotary Lawnmower',
-        image: '/images/IMG_7861.WEBP',
         specs: [
           'Petrol rotary lawnmower',
           'Self-propelled or push options available',
@@ -592,7 +588,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'chainsaw-16',
         title: 'Chainsaw – Petrol 16"',
-        image: '/images/IMG_7858.WEBP',
         specs: [
           'Petrol engine chainsaw',
           '16" (400mm) guide bar',
@@ -627,7 +622,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'turf-cutter',
         title: 'Turf Cutter (Petrol)',
-        image: '/images/IMG_7861.WEBP',
         specs: [
           'Petrol engine turf cutter',
           'For removing turf/sod for new lawn or paving preparation',
@@ -650,7 +644,6 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'log-splitter',
         title: 'Log Splitter',
-        image: '/images/IMG_7865.WEBP',
         specs: [
           'Hydraulic log splitter',
           'For splitting logs and timber',
