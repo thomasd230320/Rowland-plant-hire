@@ -25,6 +25,7 @@ export const TOOL_HIRE_CATEGORIES = [
         id: 'medium-duty-breaker',
         title: 'Medium Duty Breaker – 110v – 6.2Kg',
         illustration: 'breaker',
+        image: '/images/IMG_7761.WEBP',
         specs: [
           'Lightweight breaker intended for horizontal chiselling in concrete and stone',
           'Tool Holder: SDS Max',
@@ -38,6 +39,7 @@ export const TOOL_HIRE_CATEGORIES = [
         id: 'heavy-duty-breaker-11kg',
         title: 'Heavy Duty Breaker – 110v – 11.0Kg',
         illustration: 'breaker',
+        image: '/images/IMG_7762.WEBP',
         specs: [
           'Ideal for demolition and breaking up of concrete and hard material',
           'Can be used inside and outside – flooring, tiles, brickwork and more',
@@ -52,6 +54,7 @@ export const TOOL_HIRE_CATEGORIES = [
         id: 'heavy-duty-breaker-27kg',
         title: 'Heavy Duty Breaker – 110v (32AMP) – 27.0Kg',
         illustration: 'breaker-large',
+        image: '/images/IMG_7763.WEBP',
         specs: [
           'For breaking up concrete slabs, roads, footings and stone',
           'Tool Holder: HEX 28mm',
@@ -165,6 +168,7 @@ export const TOOL_HIRE_CATEGORIES = [
         id: 'angle-grinder-4-5',
         title: '4.5" Angle Grinder – 110v',
         illustration: 'grinder',
+        image: '/images/IMG_7764.WEBP',
         specs: [
           '110v electric',
           'Suitable for masonry, metal and stone cutting/grinding',
@@ -176,6 +180,7 @@ export const TOOL_HIRE_CATEGORIES = [
         id: 'angle-grinder-9',
         title: '9" Angle Grinder – 110v',
         illustration: 'grinder',
+        image: '/images/IMG_7765.WEBP',
         specs: [
           '110v electric',
           'Heavy duty grinder for larger masonry and metal cutting',
@@ -187,6 +192,7 @@ export const TOOL_HIRE_CATEGORIES = [
         id: 'cut-off-saw-12-electric',
         title: '12" Electric Cut-Off Saw (Disc Cutter)',
         illustration: 'disc-cutter',
+        image: '/images/IMG_7766.WEBP',
         specs: [
           '110v electric',
           '12" blade capacity',
@@ -198,6 +204,7 @@ export const TOOL_HIRE_CATEGORIES = [
         id: 'cut-off-saw-12-petrol',
         title: '12" Petrol Cut-Off Saw (Disc Cutter)',
         illustration: 'disc-cutter',
+        image: '/images/IMG_7767.WEBP',
         specs: [
           'Petrol engine – suitable for outdoor use',
           '12" blade capacity',
@@ -209,6 +216,7 @@ export const TOOL_HIRE_CATEGORIES = [
         id: 'cut-off-saw-14-petrol',
         title: '14" Petrol Cut-Off Saw (Disc Cutter)',
         illustration: 'disc-cutter',
+        image: '/images/IMG_7768.WEBP',
         specs: [
           'Petrol engine – suitable for outdoor use',
           '14" blade capacity for greater cutting depth',
@@ -220,6 +228,7 @@ export const TOOL_HIRE_CATEGORIES = [
         id: 'petrol-floor-saw',
         title: 'Petrol Floor Saw (Max 14" Blade)',
         illustration: 'floor-saw',
+        image: '/images/IMG_7769.WEBP',
         specs: [
           'Petrol engine walk-behind floor saw',
           'Max 14" blade capacity',
@@ -244,6 +253,7 @@ export const TOOL_HIRE_CATEGORIES = [
         id: 'diamond-core-cutters',
         title: 'Diamond Core Cutters – Individual Sizes',
         illustration: 'core-cutter',
+        image: '/images/IMG_7799.WEBP',
         specs: [
           'Available in sizes: 22mm, 28mm, 38mm, 48mm, 52mm, 65mm, 78mm, 107mm, 117mm, 127mm, 152mm',
           'Prices scale with cutter diameter – see pricing table',
@@ -261,6 +271,7 @@ export const TOOL_HIRE_CATEGORIES = [
         id: 'tile-bench-saw',
         title: 'Tile Bench Saw / Bridge Saw',
         illustration: 'tile-saw',
+        image: '/images/IMG_7774.WEBP',
         specs: [
           'Electric tile bench / bridge saw',
           'For precision cutting of ceramic, porcelain and natural stone tiles',
@@ -272,6 +283,7 @@ export const TOOL_HIRE_CATEGORIES = [
         id: 'manual-tile-cutter',
         title: 'Manual Rail Tile Cutter (Heavy Duty)',
         illustration: 'tile-cutter',
+        image: '/images/IMG_7775.WEBP',
         specs: [
           'Manual operation – no power required',
           'Heavy duty construction for repeated professional use',
@@ -283,6 +295,7 @@ export const TOOL_HIRE_CATEGORIES = [
         id: 'block-splitter',
         title: 'Block Splitter (Manual Hydraulic)',
         illustration: 'block-splitter',
+        image: '/images/IMG_7772.WEBP',
         specs: [
           'Manual hydraulic operation – no power required',
           'For splitting concrete blocks, bricks and kerb stones',
@@ -421,6 +434,7 @@ export const TOOL_HIRE_CATEGORIES = [
         id: 'sds-plus-drill',
         title: 'SDS Plus Hammer Drill – 110v',
         illustration: 'sds-drill',
+        image: '/images/IMG_7760.WEBP',
         specs: [
           '110v electric',
           'SDS Plus chuck for rotary hammer drilling',
@@ -433,6 +447,7 @@ export const TOOL_HIRE_CATEGORIES = [
         id: 'angle-drill-10mm',
         title: '10mm Angle Headed Drill – 110v',
         illustration: 'angle-drill',
+        image: '/images/IMG_7798.WEBP',
         specs: [
           '110v electric',
           '10mm chuck capacity',
@@ -445,6 +460,7 @@ export const TOOL_HIRE_CATEGORIES = [
         id: 'angle-drill-13mm',
         title: '13mm Angle Headed Drill – 110v',
         illustration: 'angle-drill',
+        image: '/images/IMG_7798.WEBP',
         specs: [
           '110v electric',
           '13mm chuck capacity',
