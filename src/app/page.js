@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import LogoBanner from '@/components/LogoBanner'
 import Footer from '@/components/Footer'
+import FilmstripBanner from '@/components/FilmstripBanner'
 
 export const metadata = {
   title: 'Rowland Tool & Plant Hire | Witney, West Oxfordshire & The Cotswolds',
@@ -93,6 +94,9 @@ export default function HomePage() {
           </nav>
         </div>
       </section>
+
+      {/* Filmstrip scrolling animation */}
+      <FilmstripBanner />
 
       {/* Category feature cards */}
       <section className="home-cats">
