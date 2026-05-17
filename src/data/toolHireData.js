@@ -386,6 +386,7 @@ export const TOOL_HIRE_CATEGORIES = [
       {
         id: 'vibrating-roller-55',
         title: 'Vibrating Roller 55cm – Petrol',
+        image: '/images/IMG_7843 (1).WEBP',
         specs: [
           'Petrol engine walk-behind vibratory roller',
           '55cm drum width',
