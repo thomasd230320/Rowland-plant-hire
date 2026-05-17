@@ -341,6 +341,18 @@ export default function QuoteDrawer() {
           </div>
         </div>
 
+        {/* ---- Mobile close strip (shown when no footer) ---- */}
+        {items.length === 0 && (
+          <div className="qd-mobile-close">
+            <button
+              className="qd-mobile-close__btn"
+              onClick={() => setDrawerOpen(false)}
+            >
+              ✕ Close
+            </button>
+          </div>
+        )}
+
         {/* ---- Footer ---- */}
         {items.length > 0 && (
           <div className="qd-footer">
@@ -368,6 +380,13 @@ export default function QuoteDrawer() {
             <p className="qd-small-print">
               Prices are estimates only, subject to VAT at 20%
             </p>
+
+            <button
+              className="qd-close-drawer-btn"
+              onClick={() => setDrawerOpen(false)}
+            >
+              ✕ Close Quote
+            </button>
           </div>
         )}
       </aside>

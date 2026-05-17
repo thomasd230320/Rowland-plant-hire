@@ -3394,22 +3394,22 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 .qd-clear-btn:hover { color: #EF4444; }
 .qd-close-btn {
-  background: none;
-  border: none;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
   cursor: pointer;
-  color: rgba(255,255,255,0.5);
+  color: var(--white);
   padding: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 40px;
-  min-height: 40px;
+  min-width: 44px;
+  min-height: 44px;
   border-radius: 6px;
   transition: color var(--transition), background var(--transition);
 }
 .qd-close-btn:hover {
   color: var(--white);
-  background: rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.18);
 }
 
 /* Scrollable body */
@@ -3676,6 +3676,55 @@ a.home-contact-strip__value:hover { color: var(--white); }
   margin: 0;
 }
 
+/* Close button inside footer (mobile safety net) */
+.qd-close-drawer-btn {
+  display: none;
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px;
+  background: none;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 4px;
+  color: rgba(255,255,255,0.5);
+  font-family: 'Oswald', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: color var(--transition), border-color var(--transition);
+}
+.qd-close-drawer-btn:hover {
+  color: var(--white);
+  border-color: rgba(255,255,255,0.35);
+}
+
+/* Empty state close strip */
+.qd-mobile-close {
+  display: none;
+  padding: 16px;
+  flex-shrink: 0;
+}
+.qd-mobile-close__btn {
+  width: 100%;
+  padding: 14px;
+  background: none;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 4px;
+  color: rgba(255,255,255,0.6);
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: color var(--transition), border-color var(--transition);
+}
+.qd-mobile-close__btn:hover {
+  color: var(--white);
+  border-color: rgba(255,255,255,0.4);
+}
+
 /* ===== ADD TO QUOTE BUTTON ===== */
 .add-to-quote-btn {
   display: inline-flex;
@@ -3808,6 +3857,9 @@ a.home-contact-strip__value:hover { color: var(--white); }
     border-bottom: none;
   }
   .quote-drawer { width: 100vw; }
+  /* Show in-drawer close buttons on mobile since backdrop is unreachable */
+  .qd-close-drawer-btn { display: block; }
+  .qd-mobile-close { display: block; }
 
   .home-cat-card {
     flex-direction: column;
