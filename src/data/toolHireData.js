@@ -4,6 +4,7 @@ export const TOOL_HIRE_CATEGORIES = [
     slug: 'concrete-breaking',
     label: 'Concrete Breaking',
     icon: '🔨',
+    image: '/images/IMG_7762.WEBP',
     categoryNote: 'Sharpening charge per chisel @ £3.75 applies to all breakers.',
     products: [
       {
@@ -68,6 +69,7 @@ export const TOOL_HIRE_CATEGORIES = [
     slug: 'concrete-mixing-laying',
     label: 'Concrete Mixing & Laying',
     icon: '🪣',
+    image: '/images/IMG_7813(1).WEBP',
     products: [
       {
         id: 'petrol-cement-mixer',
@@ -158,6 +160,7 @@ export const TOOL_HIRE_CATEGORIES = [
     slug: 'masonry-and-tile-cutting',
     label: 'Masonry, Diamond Core & Tile Cutting',
     icon: '🪚',
+    image: '/images/IMG_7768.WEBP',
     products: [
       {
         id: 'angle-grinder-4-5',
@@ -294,6 +297,7 @@ export const TOOL_HIRE_CATEGORIES = [
     slug: 'wood-metal-cutting',
     label: 'Wood & Metal Cutting',
     icon: '⚙️',
+    image: '/images/IMG_7822.WEBP',
     products: [
       {
         id: 'jigsaw',
@@ -356,6 +360,7 @@ export const TOOL_HIRE_CATEGORIES = [
     slug: 'compacting-equipment',
     label: 'Compacting Equipment',
     icon: '🏗️',
+    image: '/images/IMG_7841.WEBP',
     products: [
       {
         id: 'plate-compactor-12',
@@ -412,6 +417,7 @@ export const TOOL_HIRE_CATEGORIES = [
     slug: 'drilling',
     label: 'Metal Drilling',
     icon: '🔩',
+    image: '/images/IMG_7798.WEBP',
     products: [
       {
         id: 'sds-plus-drill',
@@ -467,6 +473,7 @@ export const TOOL_HIRE_CATEGORIES = [
     slug: 'acro-props-strongboys-trestles-scaffold',
     label: 'Acro Props, Trestles & Boards',
     icon: '🪵',
+    image: '/images/IMG_7830(1).WEBP',
     products: [
       {
         id: 'adjustable-prop-size-0',
@@ -574,6 +581,7 @@ export const TOOL_HIRE_CATEGORIES = [
     slug: 'gardening-equipment',
     label: 'Gardening Equipment',
     icon: '🌿',
+    image: '/images/IMG_7861.WEBP',
     products: [
       {
         id: 'rotary-lawnmower',
@@ -658,6 +666,7 @@ export const TOOL_HIRE_CATEGORIES = [
     slug: 'access-scaffold-towers',
     label: 'Access Scaffold Towers',
     icon: '🪜',
+    image: '/images/IMG_7779(1).WEBP',
     products: [
       {
         id: 'single-width-tower-2-2m',
