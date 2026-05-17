@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useQuote, calcItemTotal } from '@/contexts/QuoteContext'
 import { useAuth } from '@/contexts/AuthContext'
+import { debugSupabaseUrl } from '@/lib/supabaseClient'
 
 // ---------------------------------------------------------------------------
 // Icons
@@ -354,12 +355,12 @@ export default function QuoteDrawer() {
         {/* ---- Scrollable body ---- */}
         <div className="qd-body">
 
-          {/* Supabase status indicator — always visible so you can verify connection */}
+          {/* Supabase status indicator — shows connection state and exact URL for diagnosis */}
           <div className={`qd-status ${authAvailable ? (user ? 'qd-status--ok' : 'qd-status--warn') : 'qd-status--error'}`}>
             <span className="qd-status__dot" />
             <span className="qd-status__text">
-              {!authAvailable && 'Supabase not connected — check Vercel env vars'}
-              {authAvailable && !user && 'Supabase connected — sign in below'}
+              {!authAvailable && <>Not connected — URL in Vercel: <strong>{debugSupabaseUrl}</strong></>}
+              {authAvailable && !user && <>Connected: <strong>{debugSupabaseUrl}</strong></>}
               {authAvailable && user && `Signed in as ${user.email}`}
             </span>
           </div>

@@ -35,19 +35,9 @@ export function AuthProvider({ children }) {
 
   async function signUp(email, password) {
     if (!supabase) return { error: { message: 'Auth not configured.' } }
-    const redirectTo = typeof window !== 'undefined' ? window.location.origin : undefined
-    const { data, error } = await supabase.auth.signUp({
-      email,
-      password,
-      options: { emailRedirectTo: redirectTo },
-    })
-    if (error) {
-      // Surface a friendlier message for the common URL misconfiguration
-      if (error.message?.toLowerCase().includes('invalid path') || error.message?.toLowerCase().includes('url')) {
-        return { error: { message: 'Sign-up failed. Please check your Supabase Site URL in Authentication → URL Configuration matches this site\'s URL.' } }
-      }
-      return { error }
-    }
+    // No emailRedirectTo — avoids "Invalid path" errors from URL allowlist mismatches
+    const { data, error } = await supabase.auth.signUp({ email, password })
+    if (error) return { error }
     if (data.user && !data.user.email_confirmed_at) {
       return { error: null, needsConfirm: true }
     }
