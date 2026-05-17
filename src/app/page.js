@@ -60,6 +60,9 @@ function LocationIcon() {
 export default function HomePage() {
   return (
     <>
+      {/* Scroll-driven video animation — very first thing on page */}
+      <ScrollVideoAnimation />
+
       <LogoBanner />
 
       {/* Hero */}
@@ -94,9 +97,6 @@ export default function HomePage() {
           </nav>
         </div>
       </section>
-
-      {/* Scroll-driven video animation */}
-      <ScrollVideoAnimation />
 
       {/* Category feature cards */}
       <section className="home-cats">
