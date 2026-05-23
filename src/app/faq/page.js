@@ -2,8 +2,96 @@ import LogoBanner from '@/components/LogoBanner'
 import Footer from '@/components/Footer'
 
 export const metadata = {
-  title: 'FAQ',
+  title: 'FAQ | Rowland Plant Hire, Witney',
   description: 'Frequently asked questions about hiring plant and tools from Rowland Plant Ltd in Witney, West Oxfordshire — including pricing, delivery, insurance and equipment.',
+  alternates: { canonical: '/faq' },
+}
+
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How do I hire equipment?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Browse our equipment online, then call us on 01865 922611 or fill in the enquiry form. We'll confirm availability and pricing, then you can collect from our Witney depot or we can deliver to your site.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do I need to book in advance?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'We recommend calling ahead, especially for plant hire. Some items may be available the same day, subject to availability — but to avoid disappointment, give us a call as early as you can.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What ID do I need to hire equipment?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "We require valid photo ID — a driving licence or passport. If you're hiring on a business account, we'll also need your company name and contact details.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can I hire equipment over a weekend?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Weekend rates are available on most tools and are often better value than booking two separate day rates. Call us to check weekend availability and pricing.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Are prices inclusive of VAT?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'All prices shown on this website are subject to VAT at the standard rate of 20%. VAT will be added to the total at checkout or on your invoice.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do I need to pay a deposit?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "A deposit may be required depending on the equipment and the length of the hire period. Please contact us on 01865 922611 and we'll let you know what applies to your hire.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you deliver equipment to site?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes — we deliver plant and tools directly to your site and collect at the end of the hire period. Please call us on 01865 922611 to arrange delivery and confirm applicable charges.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What areas do you cover?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'We are based in Witney and cover the surrounding West Oxfordshire area, including Chipping Norton, Burford, Carterton, Woodstock, Charlbury and The Cotswolds.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is hire insurance available?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes — we offer optional hire insurance across all our equipment ranges for a small additional fee. We strongly recommend taking out hire insurance, as it covers damage or loss during the hire period.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: "What happens if equipment breaks down during hire?",
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Call us immediately on 01865 922611. We will arrange a replacement or repair as quickly as possible to keep your project on track. Do not attempt to repair the equipment yourself.',
+      },
+    },
+  ],
 }
 
 const faqs = [
@@ -106,7 +194,7 @@ const faqs = [
         ),
       },
       {
-        q: 'Can you source equipment you don’t stock yourself?',
+        q: 'Can you source equipment you don\'t stock yourself?',
         a: 'As a member of the Hire Association Europe (HAE), we have access to a wide range of cross-hire equipment. This means we can often source specialist items on your behalf — without you needing to set up an account with another supplier.',
       },
     ],
@@ -116,6 +204,10 @@ const faqs = [
 export default function FaqPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }}
+      />
       <LogoBanner />
 
       <div className="faq-page">

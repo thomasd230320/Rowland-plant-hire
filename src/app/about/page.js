@@ -2,8 +2,9 @@ import LogoBanner from '@/components/LogoBanner'
 import Footer from '@/components/Footer'
 
 export const metadata = {
-  title: 'About Us',
+  title: 'About Us | Rowland Tool & Plant Hire, Witney',
   description: 'Rowland Plant Limited — plant and tool hire specialists in Witney, West Oxfordshire and The Cotswolds. HAE members with over 30 years of experience.',
+  alternates: { canonical: '/about' },
 }
 
 export default function AboutUsPage() {

@@ -1,4 +1,5 @@
 import './globals.css'
+import { Oswald, Open_Sans } from 'next/font/google'
 import Navbar from '@/components/Navbar'
 import AnnouncementBar from '@/components/AnnouncementBar'
 import Providers from '@/components/Providers'
@@ -6,13 +7,48 @@ import QuoteDrawer from '@/components/QuoteDrawer'
 import QuoteFloatingBtn from '@/components/QuoteFloatingBtn'
 import StickyCallBtn from '@/components/StickyCallBtn'
 
+const oswald = Oswald({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-oswald',
+  display: 'swap',
+})
+
+const openSans = Open_Sans({
+  subsets: ['latin'],
+  weight: ['400', '600'],
+  variable: '--font-open-sans',
+  display: 'swap',
+})
+
 export const metadata = {
+  metadataBase: new URL('https://rowlandplant.co.uk'),
   title: {
-    default: 'Rowland Tool & Plant Hire | Witney, West Oxfordshire',
-    template: '%s | Rowland Tool & Plant Hire',
+    default: 'Rowland Tool & Plant Hire | Witney, Oxfordshire',
+    template: '%s | Rowland Plant Hire',
   },
   description:
     'Plant hire and tool hire in Witney, West Oxfordshire and the Cotswolds. Mini excavators, dumpers, power tools, gardening equipment and more from Rowland Plant Ltd.',
+  alternates: { canonical: '/' },
+  openGraph: {
+    type: 'website',
+    siteName: 'Rowland Tool & Plant Hire',
+    title: 'Rowland Tool & Plant Hire | Witney, Oxfordshire',
+    description:
+      'Plant hire and tool hire in Witney, West Oxfordshire and the Cotswolds. Mini excavators, dumpers, power tools, gardening equipment and more.',
+    url: '/',
+    images: [
+      {
+        url: '/images/IMG_7760.WEBP',
+        width: 1200,
+        height: 630,
+        alt: 'Rowland Tool & Plant Hire — Witney, Oxfordshire',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+  },
 }
 
 const SCHEMA = {
@@ -25,8 +61,10 @@ const SCHEMA = {
   email: 'Sales@Rowlandplant.co.uk',
   address: {
     '@type': 'PostalAddress',
+    streetAddress: 'Wharton Buildings, 5 Downs Rd',
     addressLocality: 'Witney',
     addressRegion: 'Oxfordshire',
+    postalCode: 'OX29 0RF',
     addressCountry: 'GB',
   },
   geo: {
@@ -60,10 +98,8 @@ const SCHEMA = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${oswald.variable} ${openSans.variable}`}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(SCHEMA) }}

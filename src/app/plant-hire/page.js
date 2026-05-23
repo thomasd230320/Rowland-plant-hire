@@ -4,8 +4,9 @@ import LogoBanner from '@/components/LogoBanner'
 import Footer from '@/components/Footer'
 
 export const metadata = {
-  title: 'Plant Hire',
+  title: 'Plant Hire Witney | Rowland Plant Hire',
   description: 'Mini excavators, diggers and dumpers for hire in Witney, West Oxfordshire and The Cotswolds. Ideal for groundworks, landscaping and construction.',
+  alternates: { canonical: '/plant-hire' },
 }
 
 const CATEGORIES = [

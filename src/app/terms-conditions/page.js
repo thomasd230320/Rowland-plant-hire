@@ -3,8 +3,9 @@ import SectionHeader from '@/components/SectionHeader'
 import Footer from '@/components/Footer'
 
 export const metadata = {
-  title: 'Terms & Conditions',
+  title: 'Hire Terms & Conditions | Rowland Plant Hire',
   description: 'Hire terms and conditions for Rowland Plant Limited — Witney, West Oxfordshire.',
+  alternates: { canonical: '/terms-conditions' },
 }
 
 export default function TermsPage() {
@@ -26,7 +27,7 @@ export default function TermsPage() {
               padding: '10px 24px',
               background: 'var(--red)',
               color: '#fff',
-              fontFamily: 'Oswald, sans-serif',
+              fontFamily: 'var(--font-oswald), sans-serif',
               textTransform: 'uppercase',
               letterSpacing: '1px',
               borderRadius: '4px',

@@ -6,9 +6,20 @@ import HireHopBanner from '@/components/HireHopBanner'
 import Footer from '@/components/Footer'
 import { TOOL_AVAILABILITY } from '@/data/availability'
 
-export default function CategoryPage({ category }) {
+export default function CategoryPage({ category, intro }) {
+  const breadcrumb = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://rowlandplant.co.uk' },
+      { '@type': 'ListItem', position: 2, name: 'Tool Hire', item: 'https://rowlandplant.co.uk/tool-hire' },
+      { '@type': 'ListItem', position: 3, name: category.label, item: `https://rowlandplant.co.uk/tool-hire/${category.slug}` },
+    ],
+  }
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <LogoBanner />
       <SectionHeader title={category.label} />
       <HireHopBanner />
@@ -17,6 +28,8 @@ export default function CategoryPage({ category }) {
         <Link href="/tool-hire" className="cat-page-back">
           ← Back to all Tool Hire categories
         </Link>
+
+        {intro && <p className="cat-page-intro">{intro}</p>}
 
         {category.categoryNote && (
           <p className="cat-page-note">{category.categoryNote}</p>

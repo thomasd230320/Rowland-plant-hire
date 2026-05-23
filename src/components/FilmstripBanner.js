@@ -26,6 +26,7 @@ export default function FilmstripBanner() {
             key={i}
             src={`/video-frames/frame_${num}.jpg`}
             alt=""
+            width={213}
             height={120}
             loading="lazy"
           />

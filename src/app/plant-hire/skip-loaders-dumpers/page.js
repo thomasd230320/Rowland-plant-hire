@@ -6,7 +6,11 @@ import PricingNotice from '@/components/PricingNotice'
 import CtaButton from '@/components/CtaButton'
 import Footer from '@/components/Footer'
 
-export const metadata = { title: 'Skip Loaders / Dumpers' }
+export const metadata = {
+  title: 'Skip Loader & Dumper Hire Witney | Rowland Plant',
+  description: 'Hire tracked mini dumpers and skip loaders in Witney, West Oxfordshire. Perfect for moving materials on construction and landscaping sites. Delivery available.',
+  alternates: { canonical: '/plant-hire/skip-loaders-dumpers' },
+}
 
 const PRODUCTS = [
   {

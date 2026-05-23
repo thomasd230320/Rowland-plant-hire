@@ -6,7 +6,11 @@ import PricingNotice from '@/components/PricingNotice'
 import CtaButton from '@/components/CtaButton'
 import Footer from '@/components/Footer'
 
-export const metadata = { title: 'Mini Excavators / Diggers' }
+export const metadata = {
+  title: 'Mini Excavator Hire Witney | Rowland Plant Hire',
+  description: 'Hire 1T, 1.5T and 3T mini excavators and diggers in Witney, West Oxfordshire. Ideal for groundworks, landscaping, footings and restricted-access sites. Delivery available.',
+  alternates: { canonical: '/plant-hire/mini-excavators-diggers' },
+}
 
 const PRODUCTS = [
   {

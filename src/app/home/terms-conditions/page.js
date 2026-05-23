@@ -23,7 +23,7 @@ export default function TermsPage() {
               padding: '10px 24px',
               background: 'var(--red)',
               color: '#fff',
-              fontFamily: 'Oswald, sans-serif',
+              fontFamily: 'var(--font-oswald), sans-serif',
               textTransform: 'uppercase',
               letterSpacing: '1px',
               borderRadius: '4px',

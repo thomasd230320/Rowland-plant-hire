@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap');
 
 :root {
   --red: #CC0000;
@@ -38,7 +37,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: var(--font-open-sans), Arial, sans-serif;
   background: var(--white);
   color: var(--text);
   line-height: 1.6;
@@ -84,7 +83,7 @@ ul { list-style: none; }
 .announcement-bar {
   background: var(--red);
   color: var(--white);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 13px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -166,7 +165,7 @@ ul { list-style: none; }
 
 .navbar__brand {
   margin-right: auto;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -199,7 +198,7 @@ ul { list-style: none; }
   gap: 5px;
   padding: 0 16px;
   height: 64px;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
@@ -257,7 +256,7 @@ ul { list-style: none; }
 .dropdown__link {
   display: block;
   padding: 11px 18px;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -311,7 +310,7 @@ ul { list-style: none; }
   border: 1px solid rgba(255,255,255,0.15);
   border-radius: 20px;
   color: rgba(255,255,255,0.7);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
@@ -359,7 +358,7 @@ ul { list-style: none; }
   border: 1px solid rgba(255,255,255,0.15);
   border-radius: 20px;
   color: rgba(255,255,255,0.7);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -473,7 +472,7 @@ ul { list-style: none; }
   background: transparent;
   border: none;
   outline: none;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-open-sans), sans-serif;
   font-size: 17px;
   color: var(--white);
   padding: 10px 0;
@@ -537,7 +536,7 @@ ul { list-style: none; }
 }
 
 .search-popular__label {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
@@ -558,7 +557,7 @@ ul { list-style: none; }
   border: 1px solid rgba(255,255,255,0.12);
   border-radius: 20px;
   color: rgba(255,255,255,0.7);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
@@ -581,7 +580,7 @@ ul { list-style: none; }
 }
 
 .search-empty__msg {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 18px;
   font-weight: 600;
   color: var(--white);
@@ -595,7 +594,7 @@ ul { list-style: none; }
 
 /* Results count */
 .search-results__count {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
@@ -658,7 +657,7 @@ ul { list-style: none; }
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 9px;
   font-weight: 700;
   text-transform: uppercase;
@@ -680,7 +679,7 @@ ul { list-style: none; }
 }
 
 .search-result__title {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -724,7 +723,7 @@ ul { list-style: none; }
   color: rgba(255,255,255,0.3);
   text-align: center;
   padding: 10px 20px 16px;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -769,7 +768,7 @@ ul { list-style: none; }
 .mobile-link {
   display: block;
   padding: 14px 20px;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -800,7 +799,7 @@ ul { list-style: none; }
   padding: 15px 20px;
   background: none;
   border: none;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
@@ -825,7 +824,7 @@ ul { list-style: none; }
 .mobile-sub-link {
   display: block;
   padding: 12px 20px 12px 32px;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 13px;
   font-weight: 500;
   text-transform: uppercase;
@@ -854,7 +853,7 @@ ul { list-style: none; }
   padding: 14px 20px;
   background: var(--red);
   color: var(--white);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -890,7 +889,7 @@ ul { list-style: none; }
 }
 
 .logo-banner__top {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-weight: 700;
   font-size: clamp(32px, 7vw, 64px);
   letter-spacing: 4px;
@@ -900,7 +899,7 @@ ul { list-style: none; }
 }
 
 .logo-banner__bottom {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-weight: 600;
   font-size: clamp(11px, 2vw, 16px);
   letter-spacing: 3px;
@@ -932,7 +931,7 @@ ul { list-style: none; }
 }
 
 .section-header__title {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: clamp(20px, 3vw, 28px);
   font-weight: 700;
   text-transform: uppercase;
@@ -954,7 +953,7 @@ ul { list-style: none; }
   width: 100%;
   background: var(--red);
   color: var(--white);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: clamp(16px, 2.5vw, 22px);
   font-weight: 700;
   text-transform: uppercase;
@@ -1005,7 +1004,7 @@ ul { list-style: none; }
   background: var(--surface-dark);
   color: var(--white);
   padding: 12px 16px;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1056,7 +1055,7 @@ ul { list-style: none; }
 }
 
 .product-card__title {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1114,7 +1113,7 @@ ul { list-style: none; }
 .spec-row { display: flex; gap: 10px; font-size: 13px; align-items: baseline; }
 
 .spec-row__label {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-weight: 600;
   font-size: 12px;
   text-transform: uppercase;
@@ -1135,7 +1134,7 @@ ul { list-style: none; }
   background: var(--grey-100);
   border: 1px solid var(--grey-200);
   border-radius: 4px;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -1157,7 +1156,7 @@ ul { list-style: none; }
   color: var(--white);
   text-align: center;
   padding: 10px 16px;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1174,7 +1173,7 @@ ul { list-style: none; }
 .pricing-table th {
   background: var(--grey-50);
   padding: 8px 12px;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1195,7 +1194,7 @@ ul { list-style: none; }
   font-weight: 700;
   text-align: right;
   color: var(--red);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 15px;
 }
 
@@ -1217,7 +1216,7 @@ ul { list-style: none; }
   width: 100%;
   background: var(--red);
   color: var(--white);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1238,7 +1237,7 @@ ul { list-style: none; }
   color: var(--red);
   text-decoration: none;
   font-weight: 600;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.3px;
 }
@@ -1278,7 +1277,7 @@ ul { list-style: none; }
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
@@ -1297,7 +1296,7 @@ ul { list-style: none; }
 }
 
 .home-hero__title {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: clamp(36px, 7vw, 76px);
   font-weight: 700;
   text-transform: uppercase;
@@ -1312,7 +1311,7 @@ ul { list-style: none; }
 }
 
 .home-hero__sub {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
@@ -1335,7 +1334,7 @@ ul { list-style: none; }
   gap: 10px;
   background: var(--red);
   color: var(--white);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1356,7 +1355,7 @@ ul { list-style: none; }
   border: 2px solid rgba(255, 255, 255, 0.3);
   color: rgba(255, 255, 255, 0.9);
   background: transparent;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1380,7 +1379,7 @@ ul { list-style: none; }
   gap: 10px;
   border: 2px solid rgba(255, 255, 255, 0.15);
   color: rgba(255, 255, 255, 0.6);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 13px;
   font-weight: 500;
   text-transform: uppercase;
@@ -1408,7 +1407,7 @@ ul { list-style: none; }
 }
 
 .home-hero__nav-link {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1436,7 +1435,7 @@ ul { list-style: none; }
 }
 
 .home-cats__heading {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 28px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1486,7 +1485,7 @@ ul { list-style: none; }
 }
 
 .home-cat-card__label {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1511,7 +1510,7 @@ ul { list-style: none; }
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   margin-top: auto;
 }
 
@@ -1538,7 +1537,7 @@ ul { list-style: none; }
 }
 
 .home-contact-strip__label {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 10px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1548,7 +1547,7 @@ ul { list-style: none; }
 }
 
 .home-contact-strip__value {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 15px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.85);
@@ -1593,7 +1592,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .hae-badge__top {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 10px;
   font-weight: 600;
   color: rgba(255,255,255,0.8);
@@ -1603,7 +1602,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .hae-badge__main {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 26px;
   font-weight: 700;
   color: var(--white);
@@ -1613,7 +1612,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .hae-badge__sub {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 10px;
   font-weight: 500;
   color: rgba(255,255,255,0.8);
@@ -1637,7 +1636,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .terms-text h4 {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 700;
@@ -1658,7 +1657,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .terms-pdf-placeholder h3 {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -1679,7 +1678,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .stub-page__title {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 28px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1688,7 +1687,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .stub-page__text {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 15px;
   color: var(--text-muted);
   text-transform: uppercase;
@@ -1715,7 +1714,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 
 .footer__social h4,
 .footer__form h4 {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1738,7 +1737,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   padding: 10px 18px;
   background: #1877F2;
   color: var(--white);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1760,7 +1759,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 .form-field { display: flex; flex-direction: column; gap: 4px; }
 
 .form-field label {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -1775,7 +1774,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   border-radius: 4px;
   color: var(--white);
   font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-open-sans), sans-serif;
   transition: border-color var(--transition);
 }
 
@@ -1813,7 +1812,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   padding: 12px 24px;
   background: var(--red);
   color: var(--white);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1837,7 +1836,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   color: rgba(255,255,255,0.25);
   flex-wrap: wrap;
   gap: 8px;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -1894,7 +1893,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .why-choose__heading {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 28px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1928,7 +1927,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .why-item h3 {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1954,7 +1953,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .testimonials__heading {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 28px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1997,7 +1996,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .testimonial-card__author {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
@@ -2022,7 +2021,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .coverage__text h2 {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 28px;
   font-weight: 700;
   text-transform: uppercase;
@@ -2051,7 +2050,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -2070,7 +2069,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   gap: 10px;
   background: var(--red);
   color: var(--white);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
@@ -2104,7 +2103,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .coverage__badge-label {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
@@ -2113,7 +2112,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .coverage__badge-area {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -2142,7 +2141,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .plant-hero__eyebrow {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
@@ -2152,7 +2151,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .plant-hero__title {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: clamp(36px, 7vw, 72px);
   font-weight: 700;
   text-transform: uppercase;
@@ -2185,7 +2184,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   gap: 10px;
   background: var(--red);
   color: var(--white);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -2205,7 +2204,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   gap: 10px;
   border: 2px solid rgba(255,255,255,0.35);
   color: rgba(255,255,255,0.9);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 15px;
   font-weight: 600;
   text-transform: uppercase;
@@ -2234,7 +2233,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .plant-cats__heading {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 28px;
   font-weight: 700;
   text-transform: uppercase;
@@ -2303,7 +2302,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .plant-cat-card__title {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
@@ -2349,7 +2348,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   align-items: center;
   gap: 4px;
   color: var(--red);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -2382,7 +2381,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 
 .plant-delivery__item strong {
   display: block;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
@@ -2413,7 +2412,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .about-hero__eyebrow {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
@@ -2423,7 +2422,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .about-hero__title {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: clamp(32px, 6vw, 60px);
   font-weight: 700;
   text-transform: uppercase;
@@ -2457,7 +2456,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .about-intro__text h2 {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 26px;
   font-weight: 700;
   text-transform: uppercase;
@@ -2523,7 +2522,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .about-fact h3 {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
@@ -2546,7 +2545,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 .form-error {
   font-size: 11px;
   color: #F87171;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-top: 2px;
@@ -2577,7 +2576,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .enquiry-success h4 {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
@@ -2611,7 +2610,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .faq-hero__eyebrow {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 11px;
   font-weight: 500;
   text-transform: uppercase;
@@ -2621,7 +2620,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .faq-hero__title {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: clamp(32px, 6vw, 56px);
   font-weight: 700;
   text-transform: uppercase;
@@ -2641,7 +2640,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .faq-category__title {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 13px;
   font-weight: 500;
   text-transform: uppercase;
@@ -2657,7 +2656,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .faq-question {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -2723,7 +2722,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .not-found-page__code {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 120px;
   font-weight: 700;
   color: var(--red);
@@ -2732,7 +2731,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .not-found-page__title {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 32px;
   font-weight: 700;
   text-transform: uppercase;
@@ -2758,7 +2757,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .not-found-link {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 13px;
   font-weight: 500;
   text-transform: uppercase;
@@ -2782,7 +2781,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   gap: 10px;
   background: var(--red);
   color: var(--white);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -2811,7 +2810,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .how-to-hire__heading {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 28px;
   font-weight: 700;
   text-transform: uppercase;
@@ -2850,7 +2849,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   border-radius: 50%;
   background: var(--red);
   color: var(--white);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 22px;
   font-weight: 700;
   display: flex;
@@ -2868,7 +2867,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .hire-step h3 {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -2933,7 +2932,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   gap: 10px;
   color: var(--white);
   text-decoration: none;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -2951,7 +2950,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   justify-content: center;
   border: 1.5px solid rgba(255,255,255,0.3);
   color: rgba(255,255,255,0.8);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
@@ -2983,7 +2982,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   border: 1px solid rgba(255,255,255,0.15);
   border-radius: 28px;
   color: var(--white);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
@@ -3061,7 +3060,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .quote-drawer__title {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -3073,7 +3072,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 .quote-drawer__count {
   background: var(--red);
   color: var(--white);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 11px;
   font-weight: 700;
   padding: 2px 7px;
@@ -3084,7 +3083,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   background: none;
   border: none;
   cursor: pointer;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
@@ -3127,7 +3126,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .quote-dates__label {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
@@ -3142,7 +3141,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   border-radius: 4px;
   color: var(--white);
   font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-open-sans), sans-serif;
   width: 100%;
   color-scheme: dark;
 }
@@ -3164,7 +3163,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   border: 1px solid rgba(255,255,255,0.12);
   border-radius: 4px;
   color: rgba(255,255,255,0.6);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
@@ -3207,7 +3206,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 
 .quote-empty__link {
   color: var(--red);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
@@ -3253,7 +3252,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 
 .quote-item__type {
   display: inline-block;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 9px;
   font-weight: 700;
   text-transform: uppercase;
@@ -3263,7 +3262,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .quote-item__title {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
@@ -3306,7 +3305,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 .quote-item__qty-btn:hover { background: rgba(255,255,255,0.15); }
 
 .quote-item__qty {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 14px;
   font-weight: 700;
   color: var(--white);
@@ -3345,7 +3344,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .quote-total__label {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -3354,7 +3353,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .quote-total__amount {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 22px;
   font-weight: 700;
   color: var(--white);
@@ -3375,7 +3374,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   padding: 14px 20px;
   background: var(--red);
   color: var(--white);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -3395,7 +3394,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   font-size: 11px;
   color: rgba(255,255,255,0.25);
   text-align: center;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -3417,7 +3416,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   gap: 10px;
 }
 .qd-header__title {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 17px;
   font-weight: 700;
   text-transform: uppercase;
@@ -3428,7 +3427,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 .qd-header__count {
   background: var(--red);
   color: var(--white);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 11px;
   font-weight: 700;
   padding: 2px 8px;
@@ -3444,7 +3443,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   background: none;
   border: none;
   cursor: pointer;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
@@ -3491,7 +3490,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   gap: 4px;
 }
 .quote-dates__field-label {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
@@ -3506,7 +3505,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   border-radius: 4px;
   color: var(--white);
   font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-open-sans), sans-serif;
   width: 100%;
   color-scheme: dark;
 }
@@ -3545,7 +3544,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 .qd-empty__msg { font-size: 14px; margin: 0; }
 .qd-empty__link {
   color: var(--red);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
@@ -3594,7 +3593,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   min-width: 0;
 }
 .qd-item__title {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
@@ -3608,7 +3607,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 .qd-item__badge {
   display: inline-block;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 9px;
   font-weight: 700;
   text-transform: uppercase;
@@ -3644,7 +3643,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 .qd-item__qty-btn:hover { background: rgba(255,255,255,0.16); }
 .qd-item__qty-val {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 14px;
   font-weight: 700;
   color: var(--white);
@@ -3652,7 +3651,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   text-align: center;
 }
 .qd-item__price {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 13px;
   font-weight: 700;
   color: rgba(255,255,255,0.7);
@@ -3689,7 +3688,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   margin-bottom: 4px;
 }
 .qd-total__label {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
@@ -3697,7 +3696,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   color: rgba(255,255,255,0.4);
 }
 .qd-total__amount {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 22px;
   font-weight: 700;
   color: var(--white);
@@ -3715,7 +3714,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   padding: 14px 20px;
   background: var(--red);
   color: var(--white);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -3734,7 +3733,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   font-size: 11px;
   color: rgba(255,255,255,0.25);
   text-align: center;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin: 0;
@@ -3750,7 +3749,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   border: 1px solid rgba(255,255,255,0.15);
   border-radius: 4px;
   color: rgba(255,255,255,0.5);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
@@ -3794,7 +3793,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   50% { opacity: 0.5; }
 }
 .qd-status__text {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
@@ -3829,7 +3828,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   margin-bottom: 10px;
 }
 .qd-auth__title {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
@@ -3841,7 +3840,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   background: none;
   border: none;
   cursor: pointer;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
@@ -3864,7 +3863,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   border-radius: 4px;
   color: var(--white);
   font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-open-sans), sans-serif;
   width: 100%;
   color-scheme: dark;
   transition: border-color var(--transition);
@@ -3894,7 +3893,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   border: none;
   border-radius: 4px;
   color: var(--white);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
@@ -3932,7 +3931,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   min-width: 0;
 }
 .qd-auth__signed-in-label {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
@@ -3957,7 +3956,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   border: 1px solid rgba(255,255,255,0.15);
   border-radius: 3px;
   cursor: pointer;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 10px;
   font-weight: 600;
   text-transform: uppercase;
@@ -3981,7 +3980,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   border: none;
   border-bottom: 1px solid rgba(255,255,255,0.06);
   text-align: left;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
@@ -4004,7 +4003,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   border: 1.5px solid rgba(0,0,0,0.15);
   border-radius: 4px;
   color: var(--text-muted);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -4185,7 +4184,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 .th-sidebar__heading {
   background: var(--surface-dark);
   color: rgba(255,255,255,0.5);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
@@ -4212,7 +4211,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   align-items: center;
   gap: 10px;
   padding: 11px 14px;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
@@ -4245,7 +4244,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   gap: 12px;
   background: var(--surface-dark);
   color: var(--white);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -4289,7 +4288,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .th-card__title {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
@@ -4347,7 +4346,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   font-size: 12px;
   color: var(--red);
   font-weight: 600;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.3px;
   margin-bottom: 10px;
@@ -4390,7 +4389,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 .th-card__pricing-header {
   background: var(--red);
   color: var(--white);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
@@ -4410,7 +4409,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   background: var(--grey-50);
   border-bottom: 1px solid var(--grey-200);
   padding: 7px 8px;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 10px;
@@ -4428,7 +4427,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   font-weight: 700;
   color: var(--red);
   font-size: 13px;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
 }
 
 .th-price-table tr:last-child td { border-bottom: none; }
@@ -4438,7 +4437,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   font-weight: 500 !important;
   color: var(--text-muted) !important;
   font-size: 11px !important;
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: var(--font-open-sans), sans-serif !important;
 }
 
 /* Action bar */
@@ -4458,7 +4457,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   gap: 7px;
   background: var(--red);
   color: var(--white);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
@@ -4478,7 +4477,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   color: var(--red);
   font-weight: 600;
   text-decoration: none;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.3px;
   transition: color var(--transition);
@@ -4497,7 +4496,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   padding: 20px 28px;
   border-radius: var(--radius);
   margin: 32px 0 0;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.5px;
@@ -4582,7 +4581,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .th-cat-card__label {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
@@ -4597,7 +4596,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   display: inline-flex;
   align-items: center;
   gap: 3px;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
@@ -4622,7 +4621,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
@@ -4704,7 +4703,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .vsa-loader__text {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 12px;
   letter-spacing: 2px;
   color: rgba(255,255,255,0.5);
@@ -4840,7 +4839,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   flex: 1;
   font-size: 13px;
   color: rgba(255,255,255,0.6);
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-open-sans), sans-serif;
   line-height: 1.5;
   min-width: 200px;
 }
@@ -4848,7 +4847,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 .hirehop-banner__text strong { color: rgba(255,255,255,0.85); }
 
 .hirehop-banner__tag {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 10px;
   font-weight: 600;
   text-transform: uppercase;
@@ -4866,7 +4865,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
@@ -4913,7 +4912,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   background: transparent;
   color: rgba(255,255,255,0.75);
   border: 1px solid rgba(255,255,255,0.2);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
@@ -4980,7 +4979,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 .avail-modal__head-text { flex: 1; }
 
 .avail-modal__subtitle {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 10px;
   font-weight: 600;
   text-transform: uppercase;
@@ -4990,7 +4989,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .avail-modal__title {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 17px;
   font-weight: 700;
   text-transform: uppercase;
@@ -5029,7 +5028,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 .avail-modal__field { display: flex; flex-direction: column; gap: 6px; }
 
 .avail-modal__label {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
@@ -5044,7 +5043,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   border-radius: 4px;
   color: var(--white);
   font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-open-sans), sans-serif;
   transition: border-color var(--transition);
   color-scheme: dark;
 }
@@ -5056,7 +5055,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   padding: 13px 20px;
   background: var(--red);
   color: var(--white);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -5101,7 +5100,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 .avail-modal__result-icon--no { color: #f87171; }
 
 .avail-modal__result-title {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -5128,7 +5127,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   border: 1px solid rgba(255,255,255,0.12);
   border-radius: 4px;
   color: rgba(255,255,255,0.7);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
@@ -5156,13 +5155,13 @@ a.home-contact-strip__value:hover { color: var(--white); }
   gap: 6px;
   font-size: 11px;
   color: rgba(255,255,255,0.3);
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-open-sans), sans-serif;
 }
 
 .avail-modal__powered strong { color: #0072C6; font-weight: 700; }
 
 .avail-modal__demo-tag {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 10px;
   font-weight: 600;
   text-transform: uppercase;
@@ -5195,7 +5194,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .qd-agreement__title {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
@@ -5214,7 +5213,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .qd-agreement__bullets li {
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-open-sans), sans-serif;
   font-size: 12px;
   color: rgba(255,255,255,0.60);
   line-height: 1.5;
@@ -5231,7 +5230,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 
 .qd-agreement__terms-link {
   display: inline-block;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-open-sans), sans-serif;
   font-size: 12px;
   color: var(--red);
   text-decoration: none;
@@ -5243,7 +5242,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 
 .qd-agreement__sig-label {
   display: block;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-open-sans), sans-serif;
   font-size: 11px;
   font-weight: 600;
   color: rgba(255,255,255,0.55);
@@ -5259,7 +5258,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   border: 1px solid rgba(255,255,255,0.15);
   border-radius: 4px;
   color: var(--white);
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-open-sans), sans-serif;
   font-size: 14px;
   font-style: italic;
   outline: none;
@@ -5276,7 +5275,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 
 .qd-agreement__confirmed {
   margin: 8px 0 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-open-sans), sans-serif;
   font-size: 12px;
   color: #4ade80;
   font-weight: 600;
@@ -5284,7 +5283,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 
 .qd-agreement__legal {
   margin: 10px 0 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-open-sans), sans-serif;
   font-size: 11px;
   color: rgba(255,255,255,0.35);
   line-height: 1.5;
@@ -5301,7 +5300,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 /* Nudge text below disabled send button */
 .qd-sig-nudge {
   margin: 6px 0 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-open-sans), sans-serif;
   font-size: 12px;
   color: rgba(255,255,255,0.45);
   text-align: center;
@@ -5318,7 +5317,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 
 .qd-delivery__label {
   display: block;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-open-sans), sans-serif;
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
@@ -5341,7 +5340,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   border: 1px solid rgba(255,255,255,0.12);
   border-radius: 4px;
   color: var(--white);
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-open-sans), sans-serif;
   font-size: 13px;
   line-height: 1.5;
   outline: none;
@@ -5369,7 +5368,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .qd-item__waiver span {
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-open-sans), sans-serif;
   font-size: 11px;
   color: rgba(255,255,255,0.50);
   transition: color var(--transition);
@@ -5400,7 +5399,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   border: 1px solid rgba(37,211,102,0.30);
   border-radius: 4px;
   color: #25d366;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
@@ -5421,7 +5420,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
    ============================================================ */
 
 .qd-past__loading {
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-open-sans), sans-serif;
   font-size: 12px;
   color: rgba(255,255,255,0.35);
   margin: 8px 0 0;
@@ -5434,7 +5433,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .qd-past__title {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
@@ -5461,14 +5460,14 @@ a.home-contact-strip__value:hover { color: var(--white); }
 }
 
 .qd-past__date {
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-open-sans), sans-serif;
   font-size: 12px;
   font-weight: 600;
   color: rgba(255,255,255,0.70);
 }
 
 .qd-past__count {
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-open-sans), sans-serif;
   font-size: 11px;
   color: rgba(255,255,255,0.35);
 }
@@ -5479,7 +5478,7 @@ a.home-contact-strip__value:hover { color: var(--white); }
   border: 1px solid rgba(204,0,0,0.35);
   border-radius: 3px;
   color: #ff6666;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--font-oswald), sans-serif;
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
@@ -5492,4 +5491,14 @@ a.home-contact-strip__value:hover { color: var(--white); }
 .qd-past__hire-again:hover {
   background: rgba(204,0,0,0.28);
   border-color: rgba(204,0,0,0.55);
+}
+
+/* Category page intro paragraph (SEO text content) */
+.cat-page-intro {
+  font-family: var(--font-open-sans), sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.60);
+  margin: 0 0 20px;
+  max-width: 720px;
 }
