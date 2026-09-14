@@ -1,0 +1,62 @@
+label: Caravan & Camping Gas
+order: 2
+icon: "🚐"
+intro: >-
+  Butane and propane for caravans, motorhomes, campervans and awning heaters.
+  Propane keeps working through the winter, so it is the better choice if you
+  are away in the colder months.
+pricingNote: >-
+  Prices shown are for the gas. A refundable bottle deposit applies to your
+  first bottle and is returned in full when you bring the empty one back.
+products:
+  - title: Butane 4.5kg
+    size: 4.5kg
+    image: ""
+    specs:
+      - Compact bottle for caravans, campervans and awnings
+      - 21mm clip-on regulator fitting
+      - Best for spring through autumn use
+    refillPrice: "£20.00"
+    deposit: "£30.00"
+    hirePrice: ""
+    advanced:
+      id: butane-4-5kg
+  - title: Butane 7kg
+    size: 7kg
+    image: ""
+    specs:
+      - Mid-size bottle for longer trips
+      - 21mm clip-on regulator fitting
+    refillPrice: "£27.00"
+    deposit: "£35.00"
+    hirePrice: ""
+    advanced:
+      id: butane-7kg
+  - title: Butane 15kg
+    size: 15kg
+    image: ""
+    specs:
+      - For static caravans and larger installations
+      - 21mm clip-on regulator fitting
+    refillPrice: "£42.00"
+    deposit: "£45.00"
+    hirePrice: ""
+    advanced:
+      id: butane-15kg
+  - title: Propane 3.9kg
+    size: 3.9kg
+    image: ""
+    specs:
+      - Works down to well below freezing, unlike butane
+      - Screw-on regulator fitting
+      - Popular for winter caravanning and camping
+    refillPrice: "£24.00"
+    deposit: "£30.00"
+    hirePrice: ""
+    advanced:
+      id: propane-3-9kg
+seo:
+  title: Caravan & Camping Gas Bottles Witney
+  description: >-
+    Butane and propane gas bottles for caravans, motorhomes and camping in
+    Witney, West Oxfordshire. 4.5kg, 7kg, 15kg and 3.9kg sizes.

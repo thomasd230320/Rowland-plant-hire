@@ -1,0 +1,74 @@
+label: Trade & Plumbers Gas
+order: 3
+icon: "🔧"
+intro: >-
+  Propane for blowlamps, roofing torches, space heaters, bitumen boilers and
+  forklifts. Trade accounts welcome, and we hold the larger bottles in stock so
+  you are not waiting on a delivery.
+pricingNote: >-
+  Prices shown are for the gas. A refundable bottle deposit applies to your
+  first bottle and comes back to you in full when the empty is returned.
+products:
+  - title: Propane 6kg
+    size: 6kg
+    image: ""
+    specs:
+      - Portable size for blowlamps and roofing torches
+      - Screw-on regulator fitting
+      - Easy to carry up a ladder or onto a roof
+    refillPrice: "£28.00"
+    deposit: "£35.00"
+    hirePrice: ""
+    advanced:
+      id: propane-6kg
+  - title: Propane 13kg
+    size: 13kg
+    image: ""
+    specs:
+      - General trade bottle for heaters and torches
+      - Screw-on regulator fitting
+    refillPrice: "£40.00"
+    deposit: "£45.00"
+    hirePrice: ""
+    advanced:
+      id: propane-13kg
+  - title: Propane 19kg
+    size: 19kg
+    image: ""
+    specs:
+      - For space heaters, bitumen boilers and drying out sites
+      - Screw-on regulator fitting
+      - Commonly paired with hired site heaters
+    refillPrice: "£52.00"
+    deposit: "£50.00"
+    hirePrice: ""
+    advanced:
+      id: propane-19kg
+  - title: Propane 47kg
+    size: 47kg
+    image: ""
+    specs:
+      - The largest bottle we stock, for sustained heating
+      - Screw-on regulator fitting
+      - Delivery available across Witney and West Oxfordshire
+    refillPrice: "£95.00"
+    deposit: "£60.00"
+    hirePrice: ""
+    advanced:
+      id: propane-47kg
+  - title: Forklift Propane 18kg
+    size: 18kg
+    image: ""
+    specs:
+      - Purpose-made forklift bottle with the correct valve
+      - Available in both horizontal and vertical fitments
+    refillPrice: "£50.00"
+    deposit: "£50.00"
+    hirePrice: ""
+    advanced:
+      id: forklift-propane-18kg
+seo:
+  title: Propane Gas Bottles Witney | Trade & Plumbers Gas
+  description: >-
+    Propane gas bottles for trade in Witney, West Oxfordshire. 6kg to 47kg for
+    blowlamps, roofing torches, space heaters and forklifts.

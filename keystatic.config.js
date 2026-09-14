@@ -42,12 +42,122 @@ export default config({
   ui: {
     brand: { name: 'Rowland Tool & Plant Hire' },
     navigation: {
+      'Gas bottles': ['gasCategories'],
       'Tool hire': ['toolCategories'],
       'Site details': ['companyDetails'],
     },
   },
 
   collections: {
+    gasCategories: collection({
+      label: 'Gas bottles',
+      path: 'content/gas/*/',
+      format: { data: 'yaml' },
+      slugField: 'label',
+      columns: ['label'],
+      entryLayout: 'form',
+      schema: {
+        label: fields.slug({
+          name: {
+            label: 'Section name',
+            description: 'e.g. "Patio & BBQ Gas" or "Welding Gas".',
+          },
+          slug: {
+            label: 'Reference',
+            description: 'Used to link to this section. Best left alone once set.',
+          },
+        }),
+
+        order: fields.integer({
+          label: 'Position on the page',
+          description: '1 shows first, 2 second, and so on.',
+          defaultValue: 1,
+        }),
+
+        icon: fields.text({ label: 'Icon', description: 'A single emoji.', defaultValue: '🔥' }),
+
+        intro: fields.text({
+          label: 'Intro paragraph',
+          description: 'A sentence or two about this type of gas and who it suits.',
+          multiline: true,
+          validation: { isRequired: false },
+        }),
+
+        pricingNote: fields.text({
+          label: 'Note about how it is paid for',
+          description:
+            'e.g. "Bottle deposit is fully refunded when you bring the empty back." Shown in a highlighted box.',
+          multiline: true,
+          validation: { isRequired: false },
+        }),
+
+        products: fields.array(
+          fields.object({
+            title: fields.text({
+              label: 'Bottle name',
+              description: 'e.g. "Patio Gas 13kg"',
+            }),
+            size: fields.text({
+              label: 'Size',
+              description: 'e.g. "13kg" — shown as a label on the card.',
+              validation: { isRequired: false },
+            }),
+            image: fields.image({
+              label: 'Photo',
+              directory: 'public/images',
+              publicPath: '/images/',
+              validation: { isRequired: false },
+            }),
+            specs: fields.array(fields.text({ label: 'Detail' }), {
+              label: 'Details',
+              description: 'What it suits, fitting type, that sort of thing.',
+              itemLabel: props => props.value || 'New detail',
+            }),
+            refillPrice: fields.text({
+              label: 'Gas / refill price',
+              description: 'What the customer pays for the gas itself, e.g. £32.00. Blank shows "Call for price".',
+              validation: { isRequired: false },
+            }),
+            deposit: fields.text({
+              label: 'Refundable bottle deposit',
+              description: 'For non-welding gas. Refunded when the empty bottle comes back. Leave blank for welding gas.',
+              validation: { isRequired: false },
+            }),
+            hirePrice: fields.text({
+              label: 'Cylinder hire',
+              description: 'For welding gas hired by the period, e.g. "£45.00 / year". Leave blank for deposit bottles.',
+              validation: { isRequired: false },
+            }),
+            advanced: fields.object(
+              {
+                id: fields.text({
+                  label: 'Internal reference',
+                  description: 'Do not change this on an existing bottle.',
+                }),
+              },
+              { label: 'Advanced — leave this alone' },
+            ),
+          }),
+          {
+            label: 'Bottles',
+            itemLabel: props => props.fields.title.value || 'New bottle',
+          },
+        ),
+
+        seo: fields.object(
+          {
+            title: fields.text({ label: 'Google title', validation: { isRequired: false } }),
+            description: fields.text({
+              label: 'Google description',
+              multiline: true,
+              validation: { isRequired: false },
+            }),
+          },
+          { label: 'Google search listing' },
+        ),
+      },
+    }),
+
     toolCategories: collection({
       label: 'Tool hire categories',
       path: 'content/tool-hire/*/',
@@ -199,6 +309,20 @@ export default config({
           label: 'Opening hours',
           description: 'One line each, e.g. "Mon–Fri: 7:30am – 5:00pm"',
           itemLabel: props => props.value || 'New line',
+        }),
+
+        gasSupplier: fields.text({
+          label: 'Gas supplier name',
+          description:
+            'Shown on the gas page, e.g. "Calor" or "Hobbyweld". Leave blank and no supplier is named.',
+          validation: { isRequired: false },
+        }),
+
+        gasPricesAreIndicative: fields.checkbox({
+          label: 'Gas prices are a guide only',
+          description:
+            'While ticked, the gas page shows a notice that prices need confirming by phone. Untick once the real prices are in.',
+          defaultValue: true,
         }),
       },
     }),

@@ -2,7 +2,7 @@ import LogoBanner from '@/components/LogoBanner'
 import Footer from '@/components/Footer'
 
 export const metadata = {
-  title: 'FAQ | Rowland Plant Hire, Witney',
+  title: 'FAQ',
   description: 'Frequently asked questions about hiring plant and tools from Rowland Plant Ltd in Witney, West Oxfordshire — including pricing, delivery, insurance and equipment.',
   alternates: { canonical: '/faq' },
 }

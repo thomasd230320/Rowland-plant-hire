@@ -1,0 +1,40 @@
+label: Patio & BBQ Gas
+order: 1
+icon: "🔥"
+intro: >-
+  Propane patio gas for barbecues, patio heaters and outdoor cookers. Bring your
+  empty bottle in and swap it for a full one while you wait — no appointment, no
+  account needed.
+pricingNote: >-
+  Prices shown are for the gas. On your first bottle you also pay a refundable
+  deposit, which you get back in full when you return the empty bottle.
+products:
+  - title: Patio Gas 5kg
+    size: 5kg
+    image: ""
+    specs:
+      - Suits most portable barbecues and table-top heaters
+      - 27mm clip-on regulator fitting
+      - Light enough to carry one-handed
+    refillPrice: "£22.00"
+    deposit: "£30.00"
+    hirePrice: ""
+    advanced:
+      id: patio-gas-5kg
+  - title: Patio Gas 13kg
+    size: 13kg
+    image: ""
+    specs:
+      - The usual choice for gas barbecues and patio heaters
+      - 27mm clip-on regulator fitting
+      - Typically a full season of weekend barbecuing
+    refillPrice: "£38.00"
+    deposit: "£45.00"
+    hirePrice: ""
+    advanced:
+      id: patio-gas-13kg
+seo:
+  title: Patio & BBQ Gas Bottles Witney
+  description: >-
+    Patio gas and BBQ gas bottle refills in Witney, West Oxfordshire. 5kg and
+    13kg propane, swapped over while you wait.

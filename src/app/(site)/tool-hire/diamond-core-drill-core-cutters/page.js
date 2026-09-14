@@ -11,7 +11,7 @@ const category = {
 }
 
 export const metadata = {
-  title: 'Diamond Core Drill Hire Witney | Rowland Plant',
+  title: 'Diamond Core Drill Hire Witney',
   description: 'Hire diamond core drills and core cutters in Witney & West Oxfordshire. Sizes from 22mm to 152mm.',
   alternates: { canonical: '/tool-hire/diamond-core-drill-core-cutters' },
 }

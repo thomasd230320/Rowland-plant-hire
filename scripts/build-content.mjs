@@ -104,6 +104,57 @@ fs.writeFileSync(
   'utf8',
 )
 
+// --- Gas bottles ------------------------------------------------------------
+
+const gasEntries = await reader.collections.gasCategories.all()
+gasEntries.sort((a, b) => (a.entry.order ?? 99) - (b.entry.order ?? 99))
+
+let bottleCount = 0
+
+const gasCategories = gasEntries.map(({ slug, entry }) => ({
+  slug,
+  label: entry.label,
+  icon: entry.icon,
+  intro: entry.intro || '',
+  pricingNote: entry.pricingNote || '',
+  seo: { title: entry.seo?.title || '', description: entry.seo?.description || '' },
+  products: entry.products.map(p => {
+    bottleCount++
+    const image = normaliseImage(p.image)
+    return {
+      id: p.advanced.id,
+      title: p.title,
+      size: p.size || '',
+      ...(image ? { image } : {}),
+      specs: [...(p.specs ?? [])],
+      refillPrice: p.refillPrice || '',
+      deposit: p.deposit || '',
+      hirePrice: p.hirePrice || '',
+    }
+  }),
+}))
+
+const gasIds = gasCategories.flatMap(c => c.products.map(p => p.id))
+const gasDupes = gasIds.filter((id, i) => gasIds.indexOf(id) !== i)
+if (gasDupes.length) {
+  throw new Error(`Duplicate gas bottle ids found: ${[...new Set(gasDupes)].join(', ')}`)
+}
+const gasMissing = gasCategories.flatMap(c =>
+  c.products.filter(p => !p.id).map(p => `${c.slug}: "${p.title}"`),
+)
+if (gasMissing.length) {
+  throw new Error(
+    `These gas bottles have no internal reference set:\n  ${gasMissing.join('\n  ')}\n` +
+      'Open them at /keystatic and fill in "Advanced — leave this alone".',
+  )
+}
+
+fs.writeFileSync(
+  path.join(ROOT, 'src/data/gasData.js'),
+  `${banner}\nexport const GAS_CATEGORIES = ${JSON.stringify(gasCategories, null, 2)}\n`,
+  'utf8',
+)
+
 // Company details singleton -> its own module.
 const company = await reader.singletons.companyDetails.read()
 if (company) {
@@ -116,6 +167,8 @@ if (company) {
         email: company.email,
         addressLine: company.addressLine || '',
         openingHours: [...(company.openingHours ?? [])],
+        gasSupplier: company.gasSupplier || '',
+        gasPricesAreIndicative: company.gasPricesAreIndicative !== false,
       },
       null,
       2,
@@ -125,5 +178,6 @@ if (company) {
 }
 
 console.log(
-  `build-content: ${categories.length} categories, ${productCount} products -> src/data/toolHireData.js`,
+  `build-content: ${categories.length} tool categories / ${productCount} products, ` +
+    `${gasCategories.length} gas sections / ${bottleCount} bottles`,
 )

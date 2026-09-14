@@ -11,5 +11,7 @@ export const COMPANY = {
     "Mon–Fri: 7:30am – 5:30pm",
     "Saturday: 7:30am – 12:00pm",
     "Sunday: Closed"
-  ]
+  ],
+  "gasSupplier": "",
+  "gasPricesAreIndicative": true
 }

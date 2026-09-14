@@ -51,6 +51,43 @@ button next to it. Then **Save**.
 If you are only out of stock temporarily, it is better to leave the tool
 listed — customers still search for it.
 
+## Gas bottles
+
+Click **Gas bottles** in the left-hand menu. There is one entry per type of gas
+— Patio & BBQ, Caravan & Camping, Trade & Plumbers, and Welding — and each
+holds its own list of bottles.
+
+### Changing a gas price
+
+Open the section, find the bottle, and fill in whichever boxes apply:
+
+- **Gas / refill price** — what the customer pays for the gas itself.
+- **Refundable bottle deposit** — for everything except welding gas. This is
+  the deposit they get back when they bring the empty bottle in.
+- **Cylinder hire** — welding gas only, where the cylinder is on hire rather
+  than on deposit. Write it out in full, e.g. `£60.00 / year`.
+
+Leave a box empty and it simply does not appear. Leave all three empty and the
+website shows *Call for price*.
+
+### The "prices are a guide" notice
+
+Until the real prices are confirmed, the gas page carries a notice asking
+customers to ring. To remove it, go to **Company details** and untick
+**Gas prices are a guide only**.
+
+Do that once, when the prices on the page are genuinely right.
+
+### Naming the gas supplier
+
+**Company details → Gas supplier name.** Fill it in and the gas page mentions
+who supplies the gas. Leave it blank and no supplier is named.
+
+### Changing the order of the sections
+
+Each gas section has a **Position on the page** number. 1 shows first, 2
+second, and so on.
+
 ## Changing a photo
 
 Click the existing photo and choose a new file. Landscape photos work best.

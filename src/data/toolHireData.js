@@ -11,7 +11,7 @@ export const TOOL_HIRE_CATEGORIES = [
     "image": "/images/IMG_7779(1).WEBP",
     "intro": "Hire lightweight aluminium scaffold towers in single and double width configurations, with working heights from 2.2m to 12.2m. Ideal for painting, plastering, roofing and maintenance work across Witney and West Oxfordshire.",
     "seo": {
-      "title": "Scaffold Tower Hire Witney | Rowland Plant Hire",
+      "title": "Scaffold Tower Hire Witney",
       "description": "Hire single and double width aluminium scaffold towers in Witney & West Oxfordshire. Working heights from 2.2m to 12.2m."
     },
     "products": [
@@ -275,7 +275,7 @@ export const TOOL_HIRE_CATEGORIES = [
     "image": "/images/IMG_7830(1).WEBP",
     "intro": "Hire acro props, strongboys, builders trestles and scaffold boards for structural support and working-at-height tasks. Available for short and long-term hire across Witney, West Oxfordshire and The Cotswolds.",
     "seo": {
-      "title": "Acro Prop & Trestle Hire Witney | Rowland Plant",
+      "title": "Acro Prop & Trestle Hire Witney",
       "description": "Hire acro props, strongboys, builders trestles and scaffold boards in Witney & West Oxfordshire."
     },
     "products": [
@@ -433,7 +433,7 @@ export const TOOL_HIRE_CATEGORIES = [
     "image": "/images/IMG_7841.WEBP",
     "intro": "We hire plate compactors, vibrating rollers and ride-on rollers for compacting sub-bases, gravel, tarmac and soil across Witney and West Oxfordshire. Essential for driveways, paths and groundworks projects.",
     "seo": {
-      "title": "Compactor Hire Witney | Rowland Plant Hire",
+      "title": "Compactor Hire Witney",
       "description": "Hire plate compactors, vibrating rollers and ride-on rollers in Witney & West Oxfordshire."
     },
     "products": [
@@ -511,7 +511,7 @@ export const TOOL_HIRE_CATEGORIES = [
     "categoryNote": "Sharpening charge per chisel @ £3.75 applies to all breakers.",
     "intro": "We hire light, medium and heavy duty concrete breakers to trade and domestic customers across Witney, West Oxfordshire and The Cotswolds. Ideal for breaking up concrete slabs, foundations, block paving and masonry.",
     "seo": {
-      "title": "Concrete Breaker Hire Witney | Rowland Plant",
+      "title": "Concrete Breaker Hire Witney",
       "description": "Hire concrete breakers in Witney & West Oxfordshire. Light, medium and heavy duty options from 5kg to 27kg."
     },
     "products": [
@@ -600,7 +600,7 @@ export const TOOL_HIRE_CATEGORIES = [
     "image": "/images/IMG_7813(1).WEBP",
     "intro": "From cement mixers to power trowels and vibrating pokers, we have everything you need for concrete mixing and laying projects across Witney and West Oxfordshire. Available for day, weekend and weekly hire.",
     "seo": {
-      "title": "Concrete Mixer Hire Witney | Rowland Plant Hire",
+      "title": "Concrete Mixer Hire Witney",
       "description": "Hire cement mixers, vibrating pokers, power trowels and screeds in Witney & West Oxfordshire."
     },
     "products": [
@@ -726,7 +726,7 @@ export const TOOL_HIRE_CATEGORIES = [
     "image": "/images/IMG_7798.WEBP",
     "intro": "Hire SDS hammer drills, angle-head drills and magnetic core drills for construction and fabrication projects in Witney, West Oxfordshire and The Cotswolds. Available on flexible day, weekend and weekly rates.",
     "seo": {
-      "title": "Drill Hire Witney | Rowland Tool & Plant Hire",
+      "title": "Drill Hire Witney",
       "description": "Hire SDS hammer drills, angle-head drills and magnetic core drills in Witney & West Oxfordshire."
     },
     "products": [
@@ -807,7 +807,7 @@ export const TOOL_HIRE_CATEGORIES = [
     "image": "/images/IMG_7861.WEBP",
     "intro": "Hire lawnmowers, rotavators, chainsaws and hedge trimmers for garden maintenance, landscaping and groundswork projects. Serving domestic and trade customers across Witney, West Oxfordshire and The Cotswolds.",
     "seo": {
-      "title": "Garden Equipment Hire Witney | Rowland Plant",
+      "title": "Garden Equipment Hire Witney",
       "description": "Hire lawnmowers, chainsaws, hedge trimmers, rotavators and more in Witney & West Oxfordshire."
     },
     "products": [
@@ -917,7 +917,7 @@ export const TOOL_HIRE_CATEGORIES = [
     "image": "/images/IMG_7768.WEBP",
     "intro": "Hire angle grinders, disc cutters, tile saws and block splitters for brickwork, stonework and tiling projects in Witney and across West Oxfordshire. All equipment is 110v for site safety compliance.",
     "seo": {
-      "title": "Masonry & Tile Cutter Hire Witney | Rowland",
+      "title": "Masonry & Tile Cutter Hire Witney",
       "description": "Hire angle grinders, disc cutters, diamond core drills, tile saws and block splitters in Witney & West Oxfordshire."
     },
     "products": [
@@ -1140,7 +1140,7 @@ export const TOOL_HIRE_CATEGORIES = [
     "image": "/images/IMG_7822.WEBP",
     "intro": "Hire jigsaws, reciprocating saws, circular saws and mitre saws for carpentry, demolition and construction projects. Serving Witney, West Oxfordshire and The Cotswolds with flexible day and weekly hire rates.",
     "seo": {
-      "title": "Wood & Metal Cutting Tool Hire Witney | Rowland",
+      "title": "Wood & Metal Cutting Tool Hire Witney",
       "description": "Hire jigsaws, reciprocating saws, circular saws and mitre saws in Witney & West Oxfordshire."
     },
     "products": [

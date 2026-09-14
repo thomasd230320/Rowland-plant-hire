@@ -6,6 +6,7 @@ export default function sitemap() {
     { url: '/',                changeFrequency: 'weekly',  priority: 1.0 },
     { url: '/tool-hire',       changeFrequency: 'weekly',  priority: 0.9 },
     { url: '/plant-hire',      changeFrequency: 'weekly',  priority: 0.9 },
+    { url: '/gas-bottles',     changeFrequency: 'weekly',  priority: 0.9 },
     { url: '/about',           changeFrequency: 'monthly', priority: 0.7 },
     { url: '/faq',             changeFrequency: 'monthly', priority: 0.7 },
     { url: '/terms-conditions',changeFrequency: 'yearly',  priority: 0.3 },

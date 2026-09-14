@@ -3,7 +3,7 @@ import SectionHeader from '@/components/SectionHeader'
 import Footer from '@/components/Footer'
 
 export const metadata = {
-  title: 'Hire Terms & Conditions | Rowland Plant Hire',
+  title: 'Hire Terms & Conditions',
   description: 'Hire terms and conditions for Rowland Plant Limited — Witney, West Oxfordshire.',
   alternates: { canonical: '/terms-conditions' },
 }

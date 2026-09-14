@@ -3,7 +3,7 @@ import Footer from '@/components/Footer'
 import ScrollVideoAnimation from '@/components/ScrollVideoAnimation'
 
 export const metadata = {
-  title: 'Rowland Tool & Plant Hire | Witney, Oxfordshire',
+  title: { absolute: 'Rowland Tool & Plant Hire | Witney, Oxfordshire' },
   description: 'Tool and plant hire in Witney, West Oxfordshire and The Cotswolds. Breakers, mixers, saws, drills, compactors, scaffold towers, mini excavators and more.',
   alternates: { canonical: '/' },
 }
