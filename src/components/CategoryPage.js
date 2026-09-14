@@ -7,6 +7,9 @@ import Footer from '@/components/Footer'
 import { TOOL_AVAILABILITY } from '@/data/availability'
 
 export default function CategoryPage({ category, intro }) {
+  // Pages normally take the intro from the CMS; the derived diamond-core
+  // page passes its own.
+  const introText = intro ?? category.intro
   const breadcrumb = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -29,7 +32,7 @@ export default function CategoryPage({ category, intro }) {
           ← Back to all Tool Hire categories
         </Link>
 
-        {intro && <p className="cat-page-intro">{intro}</p>}
+        {introText && <p className="cat-page-intro">{introText}</p>}
 
         {category.categoryNote && (
           <p className="cat-page-note">{category.categoryNote}</p>

@@ -1,4 +1,5 @@
 import { TOOL_HIRE_CATEGORIES } from './toolHireData'
+import { GAS_CATEGORIES } from './gasData'
 
 // Extra tags for common user terms — appended to each product's searchable text
 const CATEGORY_TAGS = {
@@ -112,4 +113,38 @@ function buildPlantIndex() {
   }))
 }
 
-export const SEARCH_INDEX = [...buildToolIndex(), ...buildPlantIndex()]
+// Gas bottles are sold over the counter rather than hired, so they carry a
+// deposit/refill price instead of day rates.
+const GAS_SEARCH_TAGS = {
+  'patio-bbq-gas': ['patio gas', 'bbq gas', 'barbecue', 'barbeque', 'propane', 'patio heater', 'gas bottle', 'refill'],
+  'caravan-camping-gas': ['caravan gas', 'camping gas', 'butane', 'propane', 'motorhome', 'campervan', 'awning', 'gas bottle'],
+  'trade-plumbers-gas': ['propane', 'plumbers gas', 'blowlamp', 'blow torch', 'roofing torch', 'space heater', 'forklift gas', 'bitumen'],
+  'welding-gas': ['welding gas', 'argon', 'co2', 'mig', 'tig', 'oxygen', 'acetylene', 'shielding gas', 'cutting', 'brazing'],
+}
+
+function buildGasIndex() {
+  return GAS_CATEGORIES.flatMap(cat =>
+    cat.products.map(bottle => ({
+      id: bottle.id,
+      title: bottle.title,
+      categoryLabel: `Gas Bottles — ${cat.label}`,
+      categoryId: cat.slug,
+      url: `/gas-bottles#${cat.slug}`,
+      image: bottle.image || null,
+      type: 'gas',
+      pricing: bottle.refillPrice ? { day1: bottle.refillPrice, week: null } : null,
+      searchText: [
+        bottle.title,
+        bottle.size,
+        cat.label,
+        ...(bottle.specs ?? []),
+        ...(GAS_SEARCH_TAGS[cat.slug] ?? []),
+        'gas bottle cylinder',
+      ]
+        .join(' ')
+        .toLowerCase(),
+    })),
+  )
+}
+
+export const SEARCH_INDEX = [...buildToolIndex(), ...buildPlantIndex(), ...buildGasIndex()]

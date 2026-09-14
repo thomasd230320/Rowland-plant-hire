@@ -121,8 +121,10 @@ export default function Navbar() {
               </div>
             </div>
 
+            <Link href="/gas-bottles" className="nav-link">Gas Bottles</Link>
+
             <Link href="/about" className="nav-link">About</Link>
-          <Link href="/faq" className="nav-link">FAQ</Link>
+            <Link href="/faq" className="nav-link">FAQ</Link>
 
             {/* Search button */}
             <button
@@ -185,6 +187,7 @@ export default function Navbar() {
         {/* Mobile drawer — accordion groups */}
         <div className={`mobile-drawer${mobileOpen ? ' mobile-drawer--open' : ''}`} aria-hidden={!mobileOpen}>
           <Link href="/" className="mobile-link" onClick={closeAll}>Home</Link>
+          <Link href="/gas-bottles" className="mobile-link" onClick={closeAll}>Gas Bottles</Link>
           <Link href="/about" className="mobile-link" onClick={closeAll}>About Us</Link>
           <Link href="/faq" className="mobile-link" onClick={closeAll}>FAQ</Link>
           <Link href="/terms-conditions" className="mobile-link" onClick={closeAll}>Terms &amp; Conditions</Link>

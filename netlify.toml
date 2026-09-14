@@ -1,0 +1,51 @@
+# Netlify deployment for rowlandplant.co.uk
+#
+# The public pages are all prerendered at build time, so Netlify serves them as
+# static files from its CDN. Only the /keystatic admin panel and its API run as
+# functions, and only while Rowland is actually editing — which is what keeps
+# this inside the free plan.
+
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Photos and fonts are content-addressed by Next, so they can be cached hard.
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, must-revalidate"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+# The admin panel must never be cached or indexed.
+[[headers]]
+  for = "/keystatic/*"
+  [headers.values]
+    Cache-Control = "no-store"
+    X-Robots-Tag = "noindex, nofollow"
+
+# --- Old site URLs -----------------------------------------------------------
+# The previous site had a /tool-hire/rugdoctor page that has no equivalent here
+# yet. Send visitors to the tool hire index rather than a 404. Replace this with
+# a real page once we have the Rug Doctor pricing.
+[[redirects]]
+  from = "/tool-hire/rugdoctor"
+  to = "/tool-hire/"
+  status = 302

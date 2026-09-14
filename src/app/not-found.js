@@ -1,10 +1,11 @@
+import SiteChrome from '@/components/SiteChrome'
 import LogoBanner from '@/components/LogoBanner'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 
 export default function NotFound() {
   return (
-    <>
+    <SiteChrome>
       <LogoBanner />
 
       <div className="not-found-page">
@@ -41,6 +42,6 @@ export default function NotFound() {
       </div>
 
       <Footer />
-    </>
+    </SiteChrome>
   )
 }

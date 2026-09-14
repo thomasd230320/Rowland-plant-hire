@@ -40,6 +40,15 @@ function ToolIcon() {
   )
 }
 
+function GasIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M10 2h4v3h-4z"/>
+      <path d="M8 5h8a0 0 0 0 1 0 0v2a4 4 0 0 1-1 2.6V19a3 3 0 0 1-3 3h0a3 3 0 0 1-3-3V9.6A4 4 0 0 1 8 7V5z"/>
+    </svg>
+  )
+}
+
 function PlantIcon() {
   return (
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -184,14 +193,22 @@ export default function SearchOverlay({ onClose }) {
                       </div>
                       <div className="search-result__body">
                         <span className={`search-result__type search-result__type--${result.type}`}>
-                          {result.type === 'plant' ? <PlantIcon /> : <ToolIcon />}
-                          {result.type === 'tool' ? 'Tool Hire' : 'Plant Hire'}
+                          {result.type === 'gas' ? <GasIcon />
+                            : result.type === 'plant' ? <PlantIcon />
+                            : <ToolIcon />}
+                          {result.type === 'gas' ? 'Gas Bottles'
+                            : result.type === 'plant' ? 'Plant Hire'
+                            : 'Tool Hire'}
                         </span>
                         <p className="search-result__title">{result.title}</p>
                         <p className="search-result__cat">{result.categoryLabel}</p>
                         {result.pricing?.day1 && (
                           <p className="search-result__price">
-                            from <strong>{result.pricing.day1}</strong>/day
+                            {result.type === 'gas' ? (
+                              <><strong>{result.pricing.day1}</strong> per bottle</>
+                            ) : (
+                              <>from <strong>{result.pricing.day1}</strong>/day</>
+                            )}
                           </p>
                         )}
                       </div>

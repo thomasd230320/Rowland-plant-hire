@@ -1,0 +1,81 @@
+label: Wood & Metal Cutting
+icon: ⚙️
+image: /images/IMG_7822.WEBP
+intro: Hire jigsaws, reciprocating saws, circular saws and mitre saws for carpentry, demolition and construction projects. Serving Witney, West Oxfordshire and The Cotswolds with flexible day and weekly hire rates.
+categoryNote: ""
+products:
+  - title: Jigsaw – 110v
+    image: /images/IMG_7819.WEBP
+    specs:
+      - 110v electric
+      - For cutting curves and intricate shapes in wood, metal and plastics
+      - Variable speed control
+    pricing:
+      day1: £12.50
+      extraDay: £5.00
+      week: £25.00
+      weekend: £20.00
+    pricingRows: []
+    advanced:
+      id: jigsaw
+  - title: Reciprocating Saw – 110v
+    image: /images/IMG_7820.WEBP
+    specs:
+      - 110v electric
+      - Heavy duty demolition and cutting tool
+      - Cuts wood, metal, pipework and more
+    pricing:
+      day1: £16.50
+      extraDay: £6.60
+      week: £33.00
+      weekend: £26.40
+    pricingRows: []
+    advanced:
+      id: reciprocating-saw
+  - title: 185mm Circular Saw – 110v
+    image: /images/IMG_7821.WEBP
+    specs:
+      - 110v electric
+      - 185mm blade diameter
+      - For straight cuts in timber, sheet materials and more
+    pricing:
+      day1: £15.50
+      extraDay: £6.20
+      week: £31.00
+      weekend: £24.80
+    pricingRows: []
+    advanced:
+      id: circular-saw-185
+  - title: 235mm Circular Saw – 110v
+    image: /images/IMG_7822.WEBP
+    specs:
+      - 110v electric
+      - 235mm blade diameter – greater cutting depth than 185mm
+      - For thicker timber sections and heavy sheet materials
+    pricing:
+      day1: £15.50
+      extraDay: £6.20
+      week: £31.00
+      weekend: £24.80
+    pricingRows: []
+    advanced:
+      id: circular-saw-235
+  - title: Crosscut / Slide Mitre Saw – 110v
+    image: ""
+    specs:
+      - 110v electric sliding crosscut mitre saw
+      - For precision angled and straight crosscuts in timber
+      - Ideal for framing, skirting, architrave and joinery
+    pricing:
+      day1: £30.00
+      extraDay: £12.00
+      week: £60.00
+      weekend: £48.00
+    pricingRows: []
+    advanced:
+      id: mitre-saw
+seo:
+  title: Wood & Metal Cutting Tool Hire Witney
+  description: Hire jigsaws, reciprocating saws, circular saws and mitre saws in Witney & West Oxfordshire.
+advanced:
+  id: wood-metal-cutting

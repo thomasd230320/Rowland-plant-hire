@@ -1,913 +1,1228 @@
+// AUTO-GENERATED — DO NOT EDIT BY HAND.
+// Source of truth is the YAML in /content/tool-hire, edited at /keystatic.
+// Regenerate with: npm run build:content
+
 export const TOOL_HIRE_CATEGORIES = [
   {
-    id: 'concrete-breaking',
-    slug: 'concrete-breaking',
-    label: 'Concrete Breaking',
-    icon: '🔨',
-    image: '/images/IMG_7762.WEBP',
-    categoryNote: 'Sharpening charge per chisel @ £3.75 applies to all breakers.',
-    products: [
+    "id": "access-scaffold-towers",
+    "slug": "access-scaffold-towers",
+    "label": "Access Scaffold Towers",
+    "icon": "🪜",
+    "image": "/images/IMG_7779(1).WEBP",
+    "intro": "Hire lightweight aluminium scaffold towers in single and double width configurations, with working heights from 2.2m to 12.2m. Ideal for painting, plastering, roofing and maintenance work across Witney and West Oxfordshire.",
+    "seo": {
+      "title": "Scaffold Tower Hire Witney",
+      "description": "Hire single and double width aluminium scaffold towers in Witney & West Oxfordshire. Working heights from 2.2m to 12.2m."
+    },
+    "products": [
       {
-        id: 'light-duty-breaker',
-        title: 'Light Duty Breaker – 110v',
-        image: '/images/IMG_7837.WEBP',
-        specs: [
-          'For light duty breaking of plaster, render & small wall tiles',
-          'Tool Holder: SDS Plus',
-          'Max drill in concrete: 32mm',
-          'Input Voltage: 850W',
-          'Vibration Drilling: 11.5 m/sec²',
-          'Vibration Chiselling: 9 m/sec²',
-          'Net Weight: 5.1 – 5.6 kg',
+        "id": "single-width-tower-2-2m",
+        "title": "Single Width Scaffold Tower – 2.2m Working Height",
+        "image": "/images/IMG_7778.WEBP",
+        "specs": [
+          "Platform: 900mm × 2500mm",
+          "Working height: 2.2m",
+          "Aluminium alloy frame – lightweight and quick to erect",
+          "Outriggers and guardrails included"
         ],
-        pricing: { day1: '£17.50', extraDay: '£7.00', week: '£35.00', weekend: '£28.00' },
+        "pricing": {
+          "day1": "£21.50",
+          "extraDay": "–",
+          "week": "£43.00",
+          "weekend": "–"
+        }
       },
       {
-        id: 'medium-duty-breaker',
-        title: 'Medium Duty Breaker – 110v – 6.2Kg',
-        image: '/images/IMG_7761.WEBP',
-        specs: [
-          'Lightweight breaker intended for horizontal chiselling in concrete and stone',
-          'Tool Holder: SDS Max',
-          'Chiselling Vibration: 11 m/s²',
-          'Net Weight: 6.2 kg',
-          'Impact Energy: 8.5 J',
+        "id": "single-width-tower-3-2m",
+        "title": "Single Width Scaffold Tower – 3.2m Working Height",
+        "image": "/images/IMG_7779(1).WEBP",
+        "specs": [
+          "Platform: 900mm × 2500mm",
+          "Working height: 3.2m",
+          "Aluminium alloy frame – lightweight and quick to erect",
+          "Outriggers and guardrails included"
         ],
-        pricing: { day1: '£22.00', extraDay: '£8.80', week: '£44.00', weekend: '£35.20' },
+        "pricing": null
       },
       {
-        id: 'heavy-duty-breaker-11kg',
-        title: 'Heavy Duty Breaker – 110v – 11.0Kg',
-        image: '/images/IMG_7762.WEBP',
-        specs: [
-          'Ideal for demolition and breaking up of concrete and hard material',
-          'Can be used inside and outside – flooring, tiles, brickwork and more',
-          'Tool Holder: SDS Max',
-          'Chiselling Vibration: 20 m/s²',
-          'Net Weight: 11.0 kg',
-          'Impact Energy: 26 J',
+        "id": "single-width-tower-4-2m",
+        "title": "Single Width Scaffold Tower – 4.2m Working Height",
+        "image": "/images/IMG_7779(1).WEBP",
+        "specs": [
+          "Platform: 900mm × 2500mm",
+          "Working height: 4.2m",
+          "Aluminium alloy frame – lightweight and quick to erect",
+          "Outriggers and guardrails included"
         ],
-        pricing: { day1: '£27.50', extraDay: '£11.00', week: '£55.00', weekend: '£44.00' },
+        "pricing": null
       },
       {
-        id: 'heavy-duty-breaker-27kg',
-        title: 'Heavy Duty Breaker – 110v (32AMP) – 27.0Kg',
-        image: '/images/IMG_7763.WEBP',
-        specs: [
-          'For breaking up concrete slabs, roads, footings and stone',
-          'Tool Holder: HEX 28mm',
-          'Chiselling Vibration: 17 m/s²',
-          'Net Weight: 29.1 kg',
-          'Impact Energy: 62 J',
+        "id": "single-width-tower-5-2m",
+        "title": "Single Width Scaffold Tower – 5.2m Working Height",
+        "image": "/images/IMG_7779(1).WEBP",
+        "specs": [
+          "Platform: 900mm × 2500mm",
+          "Working height: 5.2m",
+          "Aluminium alloy frame – lightweight and quick to erect",
+          "Outriggers and guardrails included"
         ],
-        pricing: { day1: '£48.00', extraDay: '£19.20', week: '£96.00', weekend: '£76.80' },
+        "pricing": null
       },
-    ],
+      {
+        "id": "single-width-tower-6-2m",
+        "title": "Single Width Scaffold Tower – 6.2m Working Height",
+        "image": "/images/IMG_7779(1).WEBP",
+        "specs": [
+          "Platform: 900mm × 2500mm",
+          "Working height: 6.2m",
+          "Aluminium alloy frame – lightweight and quick to erect",
+          "Outriggers and guardrails included"
+        ],
+        "pricing": null
+      },
+      {
+        "id": "single-width-tower-7-2m",
+        "title": "Single Width Scaffold Tower – 7.2m Working Height",
+        "image": "/images/IMG_7783.WEBP",
+        "specs": [
+          "Platform: 900mm × 2500mm",
+          "Working height: 7.2m",
+          "Aluminium alloy frame – lightweight and quick to erect",
+          "Outriggers and guardrails included"
+        ],
+        "pricing": null
+      },
+      {
+        "id": "single-width-tower-8-2m",
+        "title": "Single Width Scaffold Tower – 8.2m Working Height",
+        "image": "/images/IMG_7784.WEBP",
+        "specs": [
+          "Platform: 900mm × 2500mm",
+          "Working height: 8.2m",
+          "Aluminium alloy frame – lightweight and quick to erect",
+          "Outriggers and guardrails included"
+        ],
+        "pricing": null
+      },
+      {
+        "id": "single-width-tower-9-2m",
+        "title": "Single Width Scaffold Tower – 9.2m Working Height",
+        "image": "/images/IMG_7785.WEBP",
+        "specs": [
+          "Platform: 900mm × 2500mm",
+          "Working height: 9.2m",
+          "Aluminium alloy frame – lightweight and quick to erect",
+          "Outriggers and guardrails included"
+        ],
+        "pricing": null
+      },
+      {
+        "id": "single-width-tower-10-2m",
+        "title": "Single Width Scaffold Tower – 10.2m Working Height",
+        "image": "/images/IMG_7786.WEBP",
+        "specs": [
+          "Platform: 900mm × 2500mm",
+          "Working height: 10.2m",
+          "Aluminium alloy frame – lightweight and quick to erect",
+          "Outriggers and guardrails included"
+        ],
+        "pricing": null
+      },
+      {
+        "id": "single-width-tower-12-2m",
+        "title": "Single Width Scaffold Tower – 12.2m Working Height",
+        "image": "/images/IMG_7787.WEBP",
+        "specs": [
+          "Platform: 900mm × 2500mm",
+          "Working height: 12.2m",
+          "Aluminium alloy frame – lightweight and quick to erect",
+          "Outriggers and guardrails included"
+        ],
+        "pricing": null
+      },
+      {
+        "id": "double-width-tower-2-2m",
+        "title": "Double Width Scaffold Tower – 2.2m Working Height",
+        "image": "/images/IMG_7788.WEBP",
+        "specs": [
+          "Platform: 1450mm × 2500mm",
+          "Working height: 2.2m",
+          "Aluminium alloy frame – lightweight and quick to erect",
+          "Outriggers and guardrails included"
+        ],
+        "pricing": {
+          "day1": "£24.00",
+          "extraDay": "–",
+          "week": "£48.00",
+          "weekend": "–"
+        }
+      },
+      {
+        "id": "double-width-tower-3-2m",
+        "title": "Double Width Scaffold Tower – 3.2m Working Height",
+        "image": "/images/IMG_7789.WEBP",
+        "specs": [
+          "Platform: 1450mm × 2500mm",
+          "Working height: 3.2m",
+          "Aluminium alloy frame – lightweight and quick to erect",
+          "Outriggers and guardrails included"
+        ],
+        "pricing": null
+      },
+      {
+        "id": "double-width-tower-4-2m",
+        "title": "Double Width Scaffold Tower – 4.2m Working Height",
+        "image": "/images/IMG_7790(1).WEBP",
+        "specs": [
+          "Platform: 1450mm × 2500mm",
+          "Working height: 4.2m",
+          "Aluminium alloy frame – lightweight and quick to erect",
+          "Outriggers and guardrails included"
+        ],
+        "pricing": null
+      },
+      {
+        "id": "double-width-tower-5-2m",
+        "title": "Double Width Scaffold Tower – 5.2m Working Height",
+        "image": "/images/IMG_7790(1).WEBP",
+        "specs": [
+          "Platform: 1450mm × 2500mm",
+          "Working height: 5.2m",
+          "Aluminium alloy frame – lightweight and quick to erect",
+          "Outriggers and guardrails included"
+        ],
+        "pricing": null
+      },
+      {
+        "id": "double-width-tower-6-2m",
+        "title": "Double Width Scaffold Tower – 6.2m Working Height",
+        "image": "/images/IMG_7790(1).WEBP",
+        "specs": [
+          "Platform: 1450mm × 2500mm",
+          "Working height: 6.2m",
+          "Aluminium alloy frame – lightweight and quick to erect",
+          "Outriggers and guardrails included"
+        ],
+        "pricing": null
+      },
+      {
+        "id": "double-width-tower-7-2m",
+        "title": "Double Width Scaffold Tower – 7.2m Working Height",
+        "image": "/images/IMG_7790(1).WEBP",
+        "specs": [
+          "Platform: 1450mm × 2500mm",
+          "Working height: 7.2m",
+          "Aluminium alloy frame – lightweight and quick to erect",
+          "Outriggers and guardrails included"
+        ],
+        "pricing": null
+      },
+      {
+        "id": "double-width-tower-8-2m",
+        "title": "Double Width Scaffold Tower – 8.2m Working Height",
+        "image": "/images/IMG_7790(1).WEBP",
+        "specs": [
+          "Platform: 1450mm × 2500mm",
+          "Working height: 8.2m",
+          "Aluminium alloy frame – lightweight and quick to erect",
+          "Outriggers and guardrails included"
+        ],
+        "pricing": null
+      },
+      {
+        "id": "double-width-tower-9-2m",
+        "title": "Double Width Scaffold Tower – 9.2m Working Height",
+        "image": "/images/IMG_7795(1).WEBP",
+        "specs": [
+          "Platform: 1450mm × 2500mm",
+          "Working height: 9.2m",
+          "Aluminium alloy frame – lightweight and quick to erect",
+          "Outriggers and guardrails included"
+        ],
+        "pricing": null
+      },
+      {
+        "id": "double-width-tower-10-2m",
+        "title": "Double Width Scaffold Tower – 10.2m Working Height",
+        "image": "/images/IMG_7795(1).WEBP",
+        "specs": [
+          "Platform: 1450mm × 2500mm",
+          "Working height: 10.2m",
+          "Aluminium alloy frame – lightweight and quick to erect",
+          "Outriggers and guardrails included"
+        ],
+        "pricing": null
+      },
+      {
+        "id": "double-width-tower-11-2m",
+        "title": "Double Width Scaffold Tower – 11.2m Working Height",
+        "image": "/images/IMG_7795(1).WEBP",
+        "specs": [
+          "Platform: 1450mm × 2500mm",
+          "Working height: 11.2m",
+          "Aluminium alloy frame – lightweight and quick to erect",
+          "Outriggers and guardrails included"
+        ],
+        "pricing": null
+      }
+    ]
   },
   {
-    id: 'concrete-mixing-laying',
-    slug: 'concrete-mixing-laying',
-    label: 'Concrete Mixing & Laying',
-    icon: '🪣',
-    image: '/images/IMG_7813(1).WEBP',
-    products: [
+    "id": "acro-props-trestles-boards",
+    "slug": "acro-props-strongboys-trestles-scaffold",
+    "label": "Acro Props, Trestles & Boards",
+    "icon": "🪵",
+    "image": "/images/IMG_7830(1).WEBP",
+    "intro": "Hire acro props, strongboys, builders trestles and scaffold boards for structural support and working-at-height tasks. Available for short and long-term hire across Witney, West Oxfordshire and The Cotswolds.",
+    "seo": {
+      "title": "Acro Prop & Trestle Hire Witney",
+      "description": "Hire acro props, strongboys, builders trestles and scaffold boards in Witney & West Oxfordshire."
+    },
+    "products": [
       {
-        id: 'petrol-cement-mixer',
-        title: 'Petrol 4/3 Tip Up Cement Mixer',
-        image: '/images/IMG_7813(1).WEBP',
-        specs: [
-          'Portable mixer for all small-to-medium building projects',
-          'Barrow height tipping',
-          'Drum Volume: 130 Litres',
-          'Mix Capacity: 90 Litres',
-          'Complete with stand',
-          'Petrol fuel engine',
+        "id": "adjustable-prop-size-0",
+        "title": "Adjustable Prop – Size 0 (1044–1836mm)",
+        "image": "/images/IMG_7848(1).WEBP",
+        "specs": [
+          "Adjustable steel acro prop for temporary structural support",
+          "Size 0 extension range: 1044–1836mm",
+          "For supporting floors, ceilings, beams and lintels during construction"
         ],
-        pricing: { day1: '£16.00', extraDay: '£6.40', week: '£32.00', weekend: '£25.60' },
+        "pricing": {
+          "day1": "£17.00",
+          "extraDay": "£3.40",
+          "week": "£17.00",
+          "weekend": "£13.60"
+        }
       },
       {
-        id: '110v-cement-mixer',
-        title: '110v 4/3 Tip Up Cement Mixer',
-        image: '/images/IMG_7813(1).WEBP',
-        specs: [
-          'Portable mixer for all small-to-medium building projects',
-          'Barrow height tipping',
-          'Drum Volume: 130 Litres',
-          'Mix Capacity: 90 Litres',
-          'Complete with stand',
-          '110v electric motor',
+        "id": "adjustable-prop-size-1",
+        "title": "Adjustable Prop – Size 1 (1250–1930mm)",
+        "image": "/images/IMG_7848(1).WEBP",
+        "specs": [
+          "Adjustable steel acro prop for temporary structural support",
+          "Size 1 extension range: 1250–1930mm",
+          "For supporting floors, ceilings, beams and lintels during construction"
         ],
-        pricing: { day1: '£16.00', extraDay: '£6.40', week: '£32.00', weekend: '£25.60' },
+        "pricing": {
+          "day1": "£17.00",
+          "extraDay": "£3.40",
+          "week": "£17.00",
+          "weekend": "£13.60"
+        }
       },
       {
-        id: 'diesel-site-mixer',
-        title: 'Diesel 5/3.5 Wheelbarrow Cement Mixer',
-        image: '/images/IMG_7815.WEBP',
-        specs: [
-          'Heavy duty site mixer',
-          'Engine: Yanmar L48 3.4HP Diesel',
-          'Sound Level: 101 dB(A)',
-          'Max Drum Capacity: 160 Litres',
-          'Max Mix Capacity: 115 Litres',
-          'Heavy duty chassis for tough site conditions',
-          'Net Weight: 340 kg',
-          'Dimensions W×H×L: 900mm × 1430mm × 1540mm',
+        "id": "adjustable-prop-size-2",
+        "title": "Adjustable Prop – Size 2 (1984–3300mm)",
+        "image": "/images/IMG_7848(1).WEBP",
+        "specs": [
+          "Adjustable steel acro prop for temporary structural support",
+          "Size 2 extension range: 1984–3300mm",
+          "For supporting floors, ceilings, beams and lintels during construction"
         ],
-        pricing: { day1: '£27.50', extraDay: '£11.00', week: '£55.00', weekend: '£44.00' },
+        "pricing": {
+          "day1": "£17.00",
+          "extraDay": "£3.40",
+          "week": "£17.00",
+          "weekend": "£13.60"
+        }
       },
       {
-        id: 'vibrating-poker',
-        title: 'Vibrating Poker Unit (Petrol)',
-        image: '/images/IMG_7816.WEBP',
-        specs: [
-          'Vibrates fluid concrete to ensure total compaction and structural strength',
-          'Removes trapped air for an improved finish',
-          'Core Diameter: 50mm',
+        "id": "adjustable-prop-size-3",
+        "title": "Adjustable Prop – Size 3 (2356–3536mm)",
+        "image": "/images/IMG_7848(1).WEBP",
+        "specs": [
+          "Adjustable steel acro prop for temporary structural support",
+          "Size 3 extension range: 2356–3536mm",
+          "For supporting floors, ceilings, beams and lintels during construction"
         ],
-        pricing: { day1: '£17.50', extraDay: '£7.00', week: '£35.00', weekend: '£28.00' },
+        "pricing": {
+          "day1": "£17.00",
+          "extraDay": "£3.40",
+          "week": "£17.00",
+          "weekend": "£13.60"
+        }
       },
       {
-        id: 'power-trowel',
-        title: 'Petrol Power Trowel / Float (36 Inch)',
-        image: '/images/IMG_7817.WEBP',
-        specs: [
-          'High performance 36" power trowel designed for safety and longevity',
-          'Complete with set of finishing blades',
-          'Accurate screw pitch control',
-          'Operating Weight: 73 kg',
-          'Engine: Honda GX160 5.5HP',
-          'Guard Ring Diameter: 900mm',
+        "id": "strongboy",
+        "title": "Strongboy Wall Support",
+        "image": "/images/IMG_7852.WEBP",
+        "specs": [
+          "Steel strongboy wall support / prop attachment",
+          "Used with adjustable acro props for lintel and wall support",
+          "For underpinning and new opening creation work"
         ],
-        pricing: { day1: '£29.50', extraDay: '£11.80', week: '£59.00', weekend: '£47.20' },
+        "pricing": {
+          "day1": "£17.00",
+          "extraDay": "£3.40",
+          "week": "£17.00",
+          "weekend": "£13.60"
+        }
       },
       {
-        id: 'twin-beam-screed',
-        title: 'Twin Beam Air Screed (Petrol)',
-        image: '/images/IMG_7818.WEBP',
-        specs: [
-          'High efficiency vibratory twin beam screed',
-          'For accurate consolidation and levelling of concrete slabs',
-          'Length options from 3.2m to 6.2m',
-          'Engine: Honda GX35 4-stroke',
-          'Variable vibration speed control',
+        "id": "builders-trestle-size-1",
+        "title": "Builders Trestle – Size 1 (0.29m–0.71m)",
+        "image": "/images/IMG_7855.WEBP",
+        "specs": [
+          "Folding steel builders trestle",
+          "Size 1 height range: 0.29m–0.71m",
+          "Used with scaffold boards to form a low-level working platform"
         ],
-        pricing: { day1: '£37.50', extraDay: '£15.00', week: '£75.00', weekend: '£60.00' },
+        "pricing": {
+          "day1": "£17.00",
+          "extraDay": "£3.40",
+          "week": "£17.00",
+          "weekend": "£13.60"
+        }
       },
-    ],
+      {
+        "id": "builders-trestle-size-2",
+        "title": "Builders Trestle – Size 2 (0.70m–1.07m)",
+        "image": "/images/IMG_7855.WEBP",
+        "specs": [
+          "Folding steel builders trestle",
+          "Size 2 height range: 0.70m–1.07m",
+          "Used with scaffold boards to form a medium-level working platform"
+        ],
+        "pricing": {
+          "day1": "£17.00",
+          "extraDay": "£3.40",
+          "week": "£17.00",
+          "weekend": "£13.60"
+        }
+      },
+      {
+        "id": "builders-trestle-size-3",
+        "title": "Builders Trestle – Size 3 (1.07m–1.68m)",
+        "image": "/images/IMG_7855.WEBP",
+        "specs": [
+          "Folding steel builders trestle",
+          "Size 3 height range: 1.07m–1.68m",
+          "Used with scaffold boards to form a higher working platform"
+        ],
+        "pricing": {
+          "day1": "£17.00",
+          "extraDay": "£3.40",
+          "week": "£17.00",
+          "weekend": "£13.60"
+        }
+      },
+      {
+        "id": "scaffold-boards",
+        "title": "Scaffold Boards (3.9m)",
+        "image": "/images/IMG_7830(1).WEBP",
+        "specs": [
+          "Kiln-dried and graded scaffold boards",
+          "Length: 3.9m",
+          "Used with builders trestles or scaffold towers to form a working platform"
+        ],
+        "pricing": {
+          "day1": "£17.00",
+          "extraDay": "£3.40",
+          "week": "£17.00",
+          "weekend": "£13.60"
+        }
+      }
+    ]
   },
   {
-    id: 'masonry-diamond-tile',
-    slug: 'masonry-and-tile-cutting',
-    label: 'Masonry, Diamond Core & Tile Cutting',
-    icon: '🪚',
-    image: '/images/IMG_7768.WEBP',
-    products: [
+    "id": "compacting-equipment",
+    "slug": "compacting-equipment",
+    "label": "Compacting Equipment",
+    "icon": "🏗️",
+    "image": "/images/IMG_7841.WEBP",
+    "intro": "We hire plate compactors, vibrating rollers and ride-on rollers for compacting sub-bases, gravel, tarmac and soil across Witney and West Oxfordshire. Essential for driveways, paths and groundworks projects.",
+    "seo": {
+      "title": "Compactor Hire Witney",
+      "description": "Hire plate compactors, vibrating rollers and ride-on rollers in Witney & West Oxfordshire."
+    },
+    "products": [
       {
-        id: 'angle-grinder-4-5',
-        title: '4.5" Angle Grinder – 110v',
-        image: '/images/IMG_7764.WEBP',
-        specs: [
-          '110v electric',
-          'Suitable for masonry, metal and stone cutting/grinding',
-          '4.5" disc diameter',
+        "id": "plate-compactor-12",
+        "title": "12\" Plate Compactor – Petrol",
+        "image": "/images/IMG_7841.WEBP",
+        "specs": [
+          "Petrol engine",
+          "12\" (300mm) plate width",
+          "For compacting gravel, soil, sand and asphalt",
+          "Suitable for small to medium areas and trenches"
         ],
-        pricing: { day1: '£8.00', extraDay: '£3.20', week: '£16.00', weekend: '£12.80' },
+        "pricing": {
+          "day1": "£25.00",
+          "extraDay": "£10.00",
+          "week": "£50.00",
+          "weekend": "£40.00"
+        }
       },
       {
-        id: 'angle-grinder-9',
-        title: '9" Angle Grinder – 110v',
-        image: '/images/IMG_7765.WEBP',
-        specs: [
-          '110v electric',
-          'Heavy duty grinder for larger masonry and metal cutting',
-          '9" disc diameter',
+        "id": "plate-compactor-18",
+        "title": "18\" Plate Compactor – Petrol",
+        "image": "/images/IMG_7841.WEBP",
+        "specs": [
+          "Petrol engine",
+          "18\" (450mm) plate width – greater coverage per pass",
+          "For compacting gravel, soil, sand and asphalt",
+          "Suitable for medium to large areas"
         ],
-        pricing: { day1: '£11.00', extraDay: '£4.40', week: '£22.00', weekend: '£17.60' },
+        "pricing": {
+          "day1": "£25.00",
+          "extraDay": "£10.00",
+          "week": "£50.00",
+          "weekend": "£40.00"
+        }
       },
       {
-        id: 'cut-off-saw-12-electric',
-        title: '12" Electric Cut-Off Saw (Disc Cutter)',
-        image: '/images/IMG_7766.WEBP',
-        specs: [
-          '110v electric',
-          '12" blade capacity',
-          'For cutting concrete, masonry, asphalt and stone',
+        "id": "vibrating-roller-55",
+        "title": "Vibrating Roller 55cm – Petrol",
+        "image": "/images/IMG_7843.WEBP",
+        "specs": [
+          "Petrol engine walk-behind vibratory roller",
+          "55cm drum width",
+          "For compacting soil, gravel and sub-base material",
+          "Double drum – front and rear compaction"
         ],
-        pricing: { day1: '£16.00', extraDay: '£6.40', week: '£32.00', weekend: '£25.60' },
+        "pricing": {
+          "day1": "£34.00",
+          "extraDay": "£13.60",
+          "week": "£68.00",
+          "weekend": "£54.40"
+        }
       },
       {
-        id: 'cut-off-saw-12-petrol',
-        title: '12" Petrol Cut-Off Saw (Disc Cutter)',
-        image: '/images/IMG_7767.WEBP',
-        specs: [
-          'Petrol engine – suitable for outdoor use',
-          '12" blade capacity',
-          'For cutting concrete, masonry and asphalt',
+        "id": "ride-on-roller",
+        "title": "960mm Ride-On Roller – Diesel",
+        "image": "/images/IMG_7844.WEBP",
+        "specs": [
+          "Diesel engine ride-on roller",
+          "960mm roller drum width",
+          "For large-scale compaction of roads and large surface areas",
+          "Please enquire for pricing and availability"
         ],
-        pricing: { day1: '£18.50', extraDay: '£7.40', week: '£37.00', weekend: '£29.60' },
-      },
-      {
-        id: 'cut-off-saw-14-petrol',
-        title: '14" Petrol Cut-Off Saw (Disc Cutter)',
-        image: '/images/IMG_7768.WEBP',
-        specs: [
-          'Petrol engine – suitable for outdoor use',
-          '14" blade capacity for greater cutting depth',
-          'For thicker concrete, kerbs and heavy masonry',
-        ],
-        pricing: { day1: '£21.00', extraDay: '£8.40', week: '£42.00', weekend: '£33.60' },
-      },
-      {
-        id: 'petrol-floor-saw',
-        title: 'Petrol Floor Saw (Max 14" Blade)',
-        image: '/images/IMG_7769.WEBP',
-        specs: [
-          'Petrol engine walk-behind floor saw',
-          'Max 14" blade capacity',
-          'For precision cutting of floors, roads and pavements',
-          'Controlled straight cutting for joint/trench work',
-        ],
-        pricing: { day1: '£32.50', extraDay: '£13.00', week: '£65.00', weekend: '£52.00' },
-      },
-      {
-        id: 'diamond-core-drill',
-        title: 'Standard Diamond Core Drill Unit',
-        specs: [
-          '110v electric core drill',
-          'For precision core drilling through concrete and masonry',
-          'Requires separate core cutter bit (sizes listed below)',
-          'Variable speed for different material densities',
-        ],
-        pricing: { day1: '£32.50', extraDay: '£13.00', week: '£65.00', weekend: '£52.00' },
-      },
-      {
-        id: 'diamond-core-cutters',
-        title: 'Diamond Core Cutters – Individual Sizes',
-        image: '/images/IMG_7799(1).WEBP',
-        specs: [
-          'Available in sizes: 22mm, 28mm, 38mm, 48mm, 52mm, 65mm, 78mm, 107mm, 117mm, 127mm, 152mm',
-          'Prices scale with cutter diameter – see pricing table',
-          'Used in conjunction with Standard Diamond Core Drill Unit',
-        ],
-        pricingRows: [
-          { size: '22mm', day1: '£6.00', extraDay: '£2.40', week: '£12.00', weekend: '£9.60' },
-          { size: '28mm – 65mm', day1: 'Enquire', extraDay: 'Enquire', week: 'Enquire', weekend: 'Enquire' },
-          { size: '78mm – 117mm', day1: 'Enquire', extraDay: 'Enquire', week: 'Enquire', weekend: 'Enquire' },
-          { size: '127mm', day1: '£14.00', extraDay: '£5.60', week: '£28.00', weekend: '£22.40' },
-          { size: '152mm', day1: 'Enquire', extraDay: 'Enquire', week: 'Enquire', weekend: 'Enquire' },
-        ],
-      },
-      {
-        id: 'tile-bench-saw',
-        title: 'Tile Bench Saw / Bridge Saw',
-        image: '/images/IMG_7774.WEBP',
-        specs: [
-          'Electric tile bench / bridge saw',
-          'For precision cutting of ceramic, porcelain and natural stone tiles',
-          'Sliding table for accurate cuts',
-        ],
-        pricing: { day1: '£31.50', extraDay: '£12.60', week: '£63.00', weekend: '£50.40' },
-      },
-      {
-        id: 'manual-tile-cutter',
-        title: 'Manual Rail Tile Cutter (Heavy Duty)',
-        image: '/images/IMG_7775.WEBP',
-        specs: [
-          'Manual operation – no power required',
-          'Heavy duty construction for repeated professional use',
-          'Suitable for ceramic and porcelain tiles',
-        ],
-        pricing: { day1: '£13.50', extraDay: '£5.40', week: '£27.00', weekend: '£21.60' },
-      },
-      {
-        id: 'block-splitter',
-        title: 'Block Splitter (Manual Hydraulic)',
-        image: '/images/IMG_7772.WEBP',
-        specs: [
-          'Manual hydraulic operation – no power required',
-          'For splitting concrete blocks, bricks and kerb stones',
-          'Clean accurate splits with no dust',
-        ],
-        pricing: { day1: '£16.50', extraDay: '£6.60', week: '£33.00', weekend: '£26.40' },
-      },
-    ],
+        "pricing": null
+      }
+    ]
   },
   {
-    id: 'wood-metal-cutting',
-    slug: 'wood-metal-cutting',
-    label: 'Wood & Metal Cutting',
-    icon: '⚙️',
-    image: '/images/IMG_7822.WEBP',
-    products: [
+    "id": "concrete-breaking",
+    "slug": "concrete-breaking",
+    "label": "Concrete Breaking",
+    "icon": "🔨",
+    "image": "/images/IMG_7762.WEBP",
+    "categoryNote": "Sharpening charge per chisel @ £3.75 applies to all breakers.",
+    "intro": "We hire light, medium and heavy duty concrete breakers to trade and domestic customers across Witney, West Oxfordshire and The Cotswolds. Ideal for breaking up concrete slabs, foundations, block paving and masonry.",
+    "seo": {
+      "title": "Concrete Breaker Hire Witney",
+      "description": "Hire concrete breakers in Witney & West Oxfordshire. Light, medium and heavy duty options from 5kg to 27kg."
+    },
+    "products": [
       {
-        id: 'jigsaw',
-        title: 'Jigsaw – 110v',
-        image: '/images/IMG_7819.WEBP',
-        specs: [
-          '110v electric',
-          'For cutting curves and intricate shapes in wood, metal and plastics',
-          'Variable speed control',
+        "id": "light-duty-breaker",
+        "title": "Light Duty Breaker – 110v",
+        "image": "/images/IMG_7837.WEBP",
+        "specs": [
+          "For light duty breaking of plaster, render & small wall tiles",
+          "Tool Holder: SDS Plus",
+          "Max drill in concrete: 32mm",
+          "Input Voltage: 850W",
+          "Vibration Drilling: 11.5 m/sec²",
+          "Vibration Chiselling: 9 m/sec²",
+          "Net Weight: 5.1 – 5.6 kg"
         ],
-        pricing: { day1: '£12.50', extraDay: '£5.00', week: '£25.00', weekend: '£20.00' },
+        "pricing": {
+          "day1": "£17.50",
+          "extraDay": "£7.00",
+          "week": "£35.00",
+          "weekend": "£28.00"
+        }
       },
       {
-        id: 'reciprocating-saw',
-        title: 'Reciprocating Saw – 110v',
-        image: '/images/IMG_7820.WEBP',
-        specs: [
-          '110v electric',
-          'Heavy duty demolition and cutting tool',
-          'Cuts wood, metal, pipework and more',
+        "id": "medium-duty-breaker",
+        "title": "Medium Duty Breaker – 110v – 6.2Kg",
+        "image": "/images/IMG_7761.WEBP",
+        "specs": [
+          "Lightweight breaker intended for horizontal chiselling in concrete and stone",
+          "Tool Holder: SDS Max",
+          "Chiselling Vibration: 11 m/s²",
+          "Net Weight: 6.2 kg",
+          "Impact Energy: 8.5 J"
         ],
-        pricing: { day1: '£16.50', extraDay: '£6.60', week: '£33.00', weekend: '£26.40' },
+        "pricing": {
+          "day1": "£22.00",
+          "extraDay": "£8.80",
+          "week": "£44.00",
+          "weekend": "£35.20"
+        }
       },
       {
-        id: 'circular-saw-185',
-        title: '185mm Circular Saw – 110v',
-        image: '/images/IMG_7821.WEBP',
-        specs: [
-          '110v electric',
-          '185mm blade diameter',
-          'For straight cuts in timber, sheet materials and more',
+        "id": "heavy-duty-breaker-11kg",
+        "title": "Heavy Duty Breaker – 110v – 11.0Kg",
+        "image": "/images/IMG_7762.WEBP",
+        "specs": [
+          "Ideal for demolition and breaking up of concrete and hard material",
+          "Can be used inside and outside – flooring, tiles, brickwork and more",
+          "Tool Holder: SDS Max",
+          "Chiselling Vibration: 20 m/s²",
+          "Net Weight: 11.0 kg",
+          "Impact Energy: 26 J"
         ],
-        pricing: { day1: '£15.50', extraDay: '£6.20', week: '£31.00', weekend: '£24.80' },
+        "pricing": {
+          "day1": "£27.50",
+          "extraDay": "£11.00",
+          "week": "£55.00",
+          "weekend": "£44.00"
+        }
       },
       {
-        id: 'circular-saw-235',
-        title: '235mm Circular Saw – 110v',
-        image: '/images/IMG_7822.WEBP',
-        specs: [
-          '110v electric',
-          '235mm blade diameter – greater cutting depth than 185mm',
-          'For thicker timber sections and heavy sheet materials',
+        "id": "heavy-duty-breaker-27kg",
+        "title": "Heavy Duty Breaker – 110v (32AMP) – 27.0Kg",
+        "image": "/images/IMG_7763.WEBP",
+        "specs": [
+          "For breaking up concrete slabs, roads, footings and stone",
+          "Tool Holder: HEX 28mm",
+          "Chiselling Vibration: 17 m/s²",
+          "Net Weight: 29.1 kg",
+          "Impact Energy: 62 J"
         ],
-        pricing: { day1: '£15.50', extraDay: '£6.20', week: '£31.00', weekend: '£24.80' },
-      },
-      {
-        id: 'mitre-saw',
-        title: 'Crosscut / Slide Mitre Saw – 110v',
-        specs: [
-          '110v electric sliding crosscut mitre saw',
-          'For precision angled and straight crosscuts in timber',
-          'Ideal for framing, skirting, architrave and joinery',
-        ],
-        pricing: { day1: '£30.00', extraDay: '£12.00', week: '£60.00', weekend: '£48.00' },
-      },
-    ],
+        "pricing": {
+          "day1": "£48.00",
+          "extraDay": "£19.20",
+          "week": "£96.00",
+          "weekend": "£76.80"
+        }
+      }
+    ]
   },
   {
-    id: 'compacting-equipment',
-    slug: 'compacting-equipment',
-    label: 'Compacting Equipment',
-    icon: '🏗️',
-    image: '/images/IMG_7841.WEBP',
-    products: [
+    "id": "concrete-mixing-laying",
+    "slug": "concrete-mixing-laying",
+    "label": "Concrete Mixing & Laying",
+    "icon": "🪣",
+    "image": "/images/IMG_7813(1).WEBP",
+    "intro": "From cement mixers to power trowels and vibrating pokers, we have everything you need for concrete mixing and laying projects across Witney and West Oxfordshire. Available for day, weekend and weekly hire.",
+    "seo": {
+      "title": "Concrete Mixer Hire Witney",
+      "description": "Hire cement mixers, vibrating pokers, power trowels and screeds in Witney & West Oxfordshire."
+    },
+    "products": [
       {
-        id: 'plate-compactor-12',
-        title: '12" Plate Compactor – Petrol',
-        image: '/images/IMG_7841.WEBP',
-        specs: [
-          'Petrol engine',
-          '12" (300mm) plate width',
-          'For compacting gravel, soil, sand and asphalt',
-          'Suitable for small to medium areas and trenches',
+        "id": "petrol-cement-mixer",
+        "title": "Petrol 4/3 Tip Up Cement Mixer",
+        "image": "/images/IMG_7813(1).WEBP",
+        "specs": [
+          "Portable mixer for all small-to-medium building projects",
+          "Barrow height tipping",
+          "Drum Volume: 130 Litres",
+          "Mix Capacity: 90 Litres",
+          "Complete with stand",
+          "Petrol fuel engine"
         ],
-        pricing: { day1: '£25.00', extraDay: '£10.00', week: '£50.00', weekend: '£40.00' },
+        "pricing": {
+          "day1": "£16.00",
+          "extraDay": "£6.40",
+          "week": "£32.00",
+          "weekend": "£25.60"
+        }
       },
       {
-        id: 'plate-compactor-18',
-        title: '18" Plate Compactor – Petrol',
-        image: '/images/IMG_7841.WEBP',
-        specs: [
-          'Petrol engine',
-          '18" (450mm) plate width – greater coverage per pass',
-          'For compacting gravel, soil, sand and asphalt',
-          'Suitable for medium to large areas',
+        "id": "110v-cement-mixer",
+        "title": "110v 4/3 Tip Up Cement Mixer",
+        "image": "/images/IMG_7813(1).WEBP",
+        "specs": [
+          "Portable mixer for all small-to-medium building projects",
+          "Barrow height tipping",
+          "Drum Volume: 130 Litres",
+          "Mix Capacity: 90 Litres",
+          "Complete with stand",
+          "110v electric motor"
         ],
-        pricing: { day1: '£25.00', extraDay: '£10.00', week: '£50.00', weekend: '£40.00' },
+        "pricing": {
+          "day1": "£16.00",
+          "extraDay": "£6.40",
+          "week": "£32.00",
+          "weekend": "£25.60"
+        }
       },
       {
-        id: 'vibrating-roller-55',
-        title: 'Vibrating Roller 55cm – Petrol',
-        image: '/images/IMG_7843.WEBP',
-        specs: [
-          'Petrol engine walk-behind vibratory roller',
-          '55cm drum width',
-          'For compacting soil, gravel and sub-base material',
-          'Double drum – front and rear compaction',
+        "id": "diesel-site-mixer",
+        "title": "Diesel 5/3.5 Wheelbarrow Cement Mixer",
+        "image": "/images/IMG_7815.WEBP",
+        "specs": [
+          "Heavy duty site mixer",
+          "Engine: Yanmar L48 3.4HP Diesel",
+          "Sound Level: 101 dB(A)",
+          "Max Drum Capacity: 160 Litres",
+          "Max Mix Capacity: 115 Litres",
+          "Heavy duty chassis for tough site conditions",
+          "Net Weight: 340 kg",
+          "Dimensions W×H×L: 900mm × 1430mm × 1540mm"
         ],
-        pricing: { day1: '£34.00', extraDay: '£13.60', week: '£68.00', weekend: '£54.40' },
+        "pricing": {
+          "day1": "£27.50",
+          "extraDay": "£11.00",
+          "week": "£55.00",
+          "weekend": "£44.00"
+        }
       },
       {
-        id: 'ride-on-roller',
-        title: '960mm Ride-On Roller – Diesel',
-        image: '/images/IMG_7844.WEBP',
-        specs: [
-          'Diesel engine ride-on roller',
-          '960mm roller drum width',
-          'For large-scale compaction of roads and large surface areas',
-          'Please enquire for pricing and availability',
+        "id": "vibrating-poker",
+        "title": "Vibrating Poker Unit (Petrol)",
+        "image": "/images/IMG_7816.WEBP",
+        "specs": [
+          "Vibrates fluid concrete to ensure total compaction and structural strength",
+          "Removes trapped air for an improved finish",
+          "Core Diameter: 50mm"
         ],
-        pricing: null,
+        "pricing": {
+          "day1": "£17.50",
+          "extraDay": "£7.00",
+          "week": "£35.00",
+          "weekend": "£28.00"
+        }
       },
-    ],
+      {
+        "id": "power-trowel",
+        "title": "Petrol Power Trowel / Float (36 Inch)",
+        "image": "/images/IMG_7817.WEBP",
+        "specs": [
+          "High performance 36\" power trowel designed for safety and longevity",
+          "Complete with set of finishing blades",
+          "Accurate screw pitch control",
+          "Operating Weight: 73 kg",
+          "Engine: Honda GX160 5.5HP",
+          "Guard Ring Diameter: 900mm"
+        ],
+        "pricing": {
+          "day1": "£29.50",
+          "extraDay": "£11.80",
+          "week": "£59.00",
+          "weekend": "£47.20"
+        }
+      },
+      {
+        "id": "twin-beam-screed",
+        "title": "Twin Beam Air Screed (Petrol)",
+        "image": "/images/IMG_7818.WEBP",
+        "specs": [
+          "High efficiency vibratory twin beam screed",
+          "For accurate consolidation and levelling of concrete slabs",
+          "Length options from 3.2m to 6.2m",
+          "Engine: Honda GX35 4-stroke",
+          "Variable vibration speed control"
+        ],
+        "pricing": {
+          "day1": "£37.50",
+          "extraDay": "£15.00",
+          "week": "£75.00",
+          "weekend": "£60.00"
+        }
+      }
+    ]
   },
   {
-    id: 'metal-drilling',
-    slug: 'drilling',
-    label: 'Metal Drilling',
-    icon: '🔩',
-    image: '/images/IMG_7798.WEBP',
-    products: [
+    "id": "metal-drilling",
+    "slug": "drilling",
+    "label": "Metal Drilling",
+    "icon": "🔩",
+    "image": "/images/IMG_7798.WEBP",
+    "intro": "Hire SDS hammer drills, angle-head drills and magnetic core drills for construction and fabrication projects in Witney, West Oxfordshire and The Cotswolds. Available on flexible day, weekend and weekly rates.",
+    "seo": {
+      "title": "Drill Hire Witney",
+      "description": "Hire SDS hammer drills, angle-head drills and magnetic core drills in Witney & West Oxfordshire."
+    },
+    "products": [
       {
-        id: 'sds-plus-drill',
-        title: 'SDS Plus Hammer Drill – 110v',
-        image: '/images/IMG_7760.WEBP',
-        specs: [
-          '110v electric',
-          'SDS Plus chuck for rotary hammer drilling',
-          'For drilling into concrete, masonry and stone',
-          'Rotary-only mode for timber and metal',
+        "id": "sds-plus-drill",
+        "title": "SDS Plus Hammer Drill – 110v",
+        "image": "/images/IMG_7760.WEBP",
+        "specs": [
+          "110v electric",
+          "SDS Plus chuck for rotary hammer drilling",
+          "For drilling into concrete, masonry and stone",
+          "Rotary-only mode for timber and metal"
         ],
-        pricing: { day1: '£19.00', extraDay: '£7.60', week: '£38.00', weekend: '£30.40' },
+        "pricing": {
+          "day1": "£19.00",
+          "extraDay": "£7.60",
+          "week": "£38.00",
+          "weekend": "£30.40"
+        }
       },
       {
-        id: 'angle-drill-10mm',
-        title: '10mm Angle Headed Drill – 110v',
-        image: '/images/IMG_7798.WEBP',
-        specs: [
-          '110v electric',
-          '10mm chuck capacity',
-          'Right-angle head for drilling in confined spaces',
-          'Ideal for plumbing and electrical installations',
+        "id": "angle-drill-10mm",
+        "title": "10mm Angle Headed Drill – 110v",
+        "image": "/images/IMG_7798.WEBP",
+        "specs": [
+          "110v electric",
+          "10mm chuck capacity",
+          "Right-angle head for drilling in confined spaces",
+          "Ideal for plumbing and electrical installations"
         ],
-        pricing: { day1: '£17.00', extraDay: '£6.80', week: '£34.00', weekend: '£27.20' },
+        "pricing": {
+          "day1": "£17.00",
+          "extraDay": "£6.80",
+          "week": "£34.00",
+          "weekend": "£27.20"
+        }
       },
       {
-        id: 'angle-drill-13mm',
-        title: '13mm Angle Headed Drill – 110v',
-        image: '/images/IMG_7838.WEBP',
-        specs: [
-          '110v electric',
-          '13mm chuck capacity',
-          'Right-angle head for drilling in confined spaces',
-          'Greater torque for larger diameter holes',
+        "id": "angle-drill-13mm",
+        "title": "13mm Angle Headed Drill – 110v",
+        "image": "/images/IMG_7838.WEBP",
+        "specs": [
+          "110v electric",
+          "13mm chuck capacity",
+          "Right-angle head for drilling in confined spaces",
+          "Greater torque for larger diameter holes"
         ],
-        pricing: { day1: '£17.00', extraDay: '£6.80', week: '£34.00', weekend: '£27.20' },
+        "pricing": {
+          "day1": "£17.00",
+          "extraDay": "£6.80",
+          "week": "£34.00",
+          "weekend": "£27.20"
+        }
       },
       {
-        id: 'magnetic-core-drill',
-        title: '13mm Magnetic Core Drill – 110v',
-        specs: [
-          '110v electric',
-          'Powerful magnetic base for secure attachment to steel surfaces',
-          'For precision hole cutting in structural steel and metal fabrication',
-          '13mm annular cutter capacity',
+        "id": "magnetic-core-drill",
+        "title": "13mm Magnetic Core Drill – 110v",
+        "specs": [
+          "110v electric",
+          "Powerful magnetic base for secure attachment to steel surfaces",
+          "For precision hole cutting in structural steel and metal fabrication",
+          "13mm annular cutter capacity"
         ],
-        pricing: { day1: '£42.00', extraDay: '£16.80', week: '£84.00', weekend: '£67.20' },
-      },
-    ],
+        "pricing": {
+          "day1": "£42.00",
+          "extraDay": "£16.80",
+          "week": "£84.00",
+          "weekend": "£67.20"
+        }
+      }
+    ]
   },
   {
-    id: 'acro-props-trestles-boards',
-    slug: 'acro-props-strongboys-trestles-scaffold',
-    label: 'Acro Props, Trestles & Boards',
-    icon: '🪵',
-    image: '/images/IMG_7830(1).WEBP',
-    products: [
+    "id": "gardening-equipment",
+    "slug": "gardening-equipment",
+    "label": "Gardening Equipment",
+    "icon": "🌿",
+    "image": "/images/IMG_7861.WEBP",
+    "intro": "Hire lawnmowers, rotavators, chainsaws and hedge trimmers for garden maintenance, landscaping and groundswork projects. Serving domestic and trade customers across Witney, West Oxfordshire and The Cotswolds.",
+    "seo": {
+      "title": "Garden Equipment Hire Witney",
+      "description": "Hire lawnmowers, chainsaws, hedge trimmers, rotavators and more in Witney & West Oxfordshire."
+    },
+    "products": [
       {
-        id: 'adjustable-prop-size-0',
-        title: 'Adjustable Prop – Size 0 (1044–1836mm)',
-        image: '/images/IMG_7848(1).WEBP',
-        specs: [
-          'Adjustable steel acro prop for temporary structural support',
-          'Size 0 extension range: 1044–1836mm',
-          'For supporting floors, ceilings, beams and lintels during construction',
+        "id": "rotary-lawnmower",
+        "title": "Rotary Lawnmower",
+        "specs": [
+          "Petrol rotary lawnmower",
+          "Self-propelled or push options available",
+          "For domestic and commercial lawn cutting"
         ],
-        pricing: { day1: '£17.00', extraDay: '£3.40', week: '£17.00', weekend: '£13.60' },
+        "pricing": {
+          "day1": "£17.50",
+          "extraDay": "£7.00",
+          "week": "£35.00",
+          "weekend": "£28.00"
+        }
       },
       {
-        id: 'adjustable-prop-size-1',
-        title: 'Adjustable Prop – Size 1 (1250–1930mm)',
-        image: '/images/IMG_7848(1).WEBP',
-        specs: [
-          'Adjustable steel acro prop for temporary structural support',
-          'Size 1 extension range: 1250–1930mm',
-          'For supporting floors, ceilings, beams and lintels during construction',
+        "id": "chainsaw-16",
+        "title": "Chainsaw – Petrol 16\"",
+        "specs": [
+          "Petrol engine chainsaw",
+          "16\" (400mm) guide bar",
+          "For felling, pruning and cutting logs",
+          "Safety equipment available on request"
         ],
-        pricing: { day1: '£17.00', extraDay: '£3.40', week: '£17.00', weekend: '£13.60' },
+        "pricing": {
+          "day1": "£29.50",
+          "extraDay": "£11.80",
+          "week": "£59.00",
+          "weekend": "£47.20"
+        }
       },
       {
-        id: 'adjustable-prop-size-2',
-        title: 'Adjustable Prop – Size 2 (1984–3300mm)',
-        image: '/images/IMG_7848(1).WEBP',
-        specs: [
-          'Adjustable steel acro prop for temporary structural support',
-          'Size 2 extension range: 1984–3300mm',
-          'For supporting floors, ceilings, beams and lintels during construction',
+        "id": "hedge-trimmer",
+        "title": "Hedge Trimmer – Petrol 24\"",
+        "image": "/images/IMG_7858.WEBP",
+        "specs": [
+          "Petrol engine hedge trimmer",
+          "24\" (600mm) double-sided blade",
+          "For trimming and shaping hedges and shrubs"
         ],
-        pricing: { day1: '£17.00', extraDay: '£3.40', week: '£17.00', weekend: '£13.60' },
+        "pricing": {
+          "day1": "£20.00",
+          "extraDay": "£8.00",
+          "week": "£40.00",
+          "weekend": "£32.00"
+        }
       },
       {
-        id: 'adjustable-prop-size-3',
-        title: 'Adjustable Prop – Size 3 (2356–3536mm)',
-        image: '/images/IMG_7848(1).WEBP',
-        specs: [
-          'Adjustable steel acro prop for temporary structural support',
-          'Size 3 extension range: 2356–3536mm',
-          'For supporting floors, ceilings, beams and lintels during construction',
+        "id": "rotavator",
+        "title": "Heavy Duty Rotavator (Petrol)",
+        "image": "/images/IMG_7861.WEBP",
+        "specs": [
+          "Heavy duty petrol rotavator / cultivator",
+          "For breaking up and aerating compacted soil",
+          "Ideal for vegetable gardens, new beds and lawn preparation",
+          "Adjustable tine depth"
         ],
-        pricing: { day1: '£17.00', extraDay: '£3.40', week: '£17.00', weekend: '£13.60' },
+        "pricing": {
+          "day1": "£36.00",
+          "extraDay": "£14.40",
+          "week": "£72.00",
+          "weekend": "£57.60"
+        }
       },
       {
-        id: 'strongboy',
-        title: 'Strongboy Wall Support',
-        image: '/images/IMG_7852.WEBP',
-        specs: [
-          'Steel strongboy wall support / prop attachment',
-          'Used with adjustable acro props for lintel and wall support',
-          'For underpinning and new opening creation work',
+        "id": "turf-cutter",
+        "title": "Turf Cutter (Petrol)",
+        "specs": [
+          "Petrol engine turf cutter",
+          "For removing turf/sod for new lawn or paving preparation",
+          "Adjustable cutting depth",
+          "Please enquire for pricing and availability"
         ],
-        pricing: { day1: '£17.00', extraDay: '£3.40', week: '£17.00', weekend: '£13.60' },
+        "pricing": null
       },
       {
-        id: 'builders-trestle-size-1',
-        title: 'Builders Trestle – Size 1 (0.29m–0.71m)',
-        image: '/images/IMG_7855.WEBP',
-        specs: [
-          'Folding steel builders trestle',
-          'Size 1 height range: 0.29m–0.71m',
-          'Used with scaffold boards to form a low-level working platform',
+        "id": "stump-grinder",
+        "title": "Stump Grinder",
+        "image": "/images/IMG_7865.WEBP",
+        "specs": [
+          "For grinding tree stumps below ground level",
+          "Removes the need for excavation",
+          "Multiple sizes available on enquiry"
         ],
-        pricing: { day1: '£17.00', extraDay: '£3.40', week: '£17.00', weekend: '£13.60' },
+        "pricing": null
       },
       {
-        id: 'builders-trestle-size-2',
-        title: 'Builders Trestle – Size 2 (0.70m–1.07m)',
-        image: '/images/IMG_7855.WEBP',
-        specs: [
-          'Folding steel builders trestle',
-          'Size 2 height range: 0.70m–1.07m',
-          'Used with scaffold boards to form a medium-level working platform',
+        "id": "log-splitter",
+        "title": "Log Splitter",
+        "specs": [
+          "Hydraulic log splitter",
+          "For splitting logs and timber",
+          "Various sizes available on enquiry"
         ],
-        pricing: { day1: '£17.00', extraDay: '£3.40', week: '£17.00', weekend: '£13.60' },
-      },
-      {
-        id: 'builders-trestle-size-3',
-        title: 'Builders Trestle – Size 3 (1.07m–1.68m)',
-        image: '/images/IMG_7855.WEBP',
-        specs: [
-          'Folding steel builders trestle',
-          'Size 3 height range: 1.07m–1.68m',
-          'Used with scaffold boards to form a higher working platform',
-        ],
-        pricing: { day1: '£17.00', extraDay: '£3.40', week: '£17.00', weekend: '£13.60' },
-      },
-      {
-        id: 'scaffold-boards',
-        title: 'Scaffold Boards (3.9m)',
-        image: '/images/IMG_7830(1).WEBP',
-        specs: [
-          'Kiln-dried and graded scaffold boards',
-          'Length: 3.9m',
-          'Used with builders trestles or scaffold towers to form a working platform',
-        ],
-        pricing: { day1: '£17.00', extraDay: '£3.40', week: '£17.00', weekend: '£13.60' },
-      },
-    ],
+        "pricing": null
+      }
+    ]
   },
   {
-    id: 'gardening-equipment',
-    slug: 'gardening-equipment',
-    label: 'Gardening Equipment',
-    icon: '🌿',
-    image: '/images/IMG_7861.WEBP',
-    products: [
+    "id": "masonry-diamond-tile",
+    "slug": "masonry-and-tile-cutting",
+    "label": "Masonry, Diamond Core & Tile Cutting",
+    "icon": "🪚",
+    "image": "/images/IMG_7768.WEBP",
+    "intro": "Hire angle grinders, disc cutters, tile saws and block splitters for brickwork, stonework and tiling projects in Witney and across West Oxfordshire. All equipment is 110v for site safety compliance.",
+    "seo": {
+      "title": "Masonry & Tile Cutter Hire Witney",
+      "description": "Hire angle grinders, disc cutters, diamond core drills, tile saws and block splitters in Witney & West Oxfordshire."
+    },
+    "products": [
       {
-        id: 'rotary-lawnmower',
-        title: 'Rotary Lawnmower',
-        specs: [
-          'Petrol rotary lawnmower',
-          'Self-propelled or push options available',
-          'For domestic and commercial lawn cutting',
+        "id": "angle-grinder-4-5",
+        "title": "4.5\" Angle Grinder – 110v",
+        "image": "/images/IMG_7764.WEBP",
+        "specs": [
+          "110v electric",
+          "Suitable for masonry, metal and stone cutting/grinding",
+          "4.5\" disc diameter"
         ],
-        pricing: { day1: '£17.50', extraDay: '£7.00', week: '£35.00', weekend: '£28.00' },
+        "pricing": {
+          "day1": "£8.00",
+          "extraDay": "£3.20",
+          "week": "£16.00",
+          "weekend": "£12.80"
+        }
       },
       {
-        id: 'chainsaw-16',
-        title: 'Chainsaw – Petrol 16"',
-        specs: [
-          'Petrol engine chainsaw',
-          '16" (400mm) guide bar',
-          'For felling, pruning and cutting logs',
-          'Safety equipment available on request',
+        "id": "angle-grinder-9",
+        "title": "9\" Angle Grinder – 110v",
+        "image": "/images/IMG_7765.WEBP",
+        "specs": [
+          "110v electric",
+          "Heavy duty grinder for larger masonry and metal cutting",
+          "9\" disc diameter"
         ],
-        pricing: { day1: '£29.50', extraDay: '£11.80', week: '£59.00', weekend: '£47.20' },
+        "pricing": {
+          "day1": "£11.00",
+          "extraDay": "£4.40",
+          "week": "£22.00",
+          "weekend": "£17.60"
+        }
       },
       {
-        id: 'hedge-trimmer',
-        title: 'Hedge Trimmer – Petrol 24"',
-        image: '/images/IMG_7858.WEBP',
-        specs: [
-          'Petrol engine hedge trimmer',
-          '24" (600mm) double-sided blade',
-          'For trimming and shaping hedges and shrubs',
+        "id": "cut-off-saw-12-electric",
+        "title": "12\" Electric Cut-Off Saw (Disc Cutter)",
+        "image": "/images/IMG_7766.WEBP",
+        "specs": [
+          "110v electric",
+          "12\" blade capacity",
+          "For cutting concrete, masonry, asphalt and stone"
         ],
-        pricing: { day1: '£20.00', extraDay: '£8.00', week: '£40.00', weekend: '£32.00' },
+        "pricing": {
+          "day1": "£16.00",
+          "extraDay": "£6.40",
+          "week": "£32.00",
+          "weekend": "£25.60"
+        }
       },
       {
-        id: 'rotavator',
-        title: 'Heavy Duty Rotavator (Petrol)',
-        image: '/images/IMG_7861.WEBP',
-        specs: [
-          'Heavy duty petrol rotavator / cultivator',
-          'For breaking up and aerating compacted soil',
-          'Ideal for vegetable gardens, new beds and lawn preparation',
-          'Adjustable tine depth',
+        "id": "cut-off-saw-12-petrol",
+        "title": "12\" Petrol Cut-Off Saw (Disc Cutter)",
+        "image": "/images/IMG_7767.WEBP",
+        "specs": [
+          "Petrol engine – suitable for outdoor use",
+          "12\" blade capacity",
+          "For cutting concrete, masonry and asphalt"
         ],
-        pricing: { day1: '£36.00', extraDay: '£14.40', week: '£72.00', weekend: '£57.60' },
+        "pricing": {
+          "day1": "£18.50",
+          "extraDay": "£7.40",
+          "week": "£37.00",
+          "weekend": "£29.60"
+        }
       },
       {
-        id: 'turf-cutter',
-        title: 'Turf Cutter (Petrol)',
-        specs: [
-          'Petrol engine turf cutter',
-          'For removing turf/sod for new lawn or paving preparation',
-          'Adjustable cutting depth',
-          'Please enquire for pricing and availability',
+        "id": "cut-off-saw-14-petrol",
+        "title": "14\" Petrol Cut-Off Saw (Disc Cutter)",
+        "image": "/images/IMG_7768.WEBP",
+        "specs": [
+          "Petrol engine – suitable for outdoor use",
+          "14\" blade capacity for greater cutting depth",
+          "For thicker concrete, kerbs and heavy masonry"
         ],
-        pricing: null,
+        "pricing": {
+          "day1": "£21.00",
+          "extraDay": "£8.40",
+          "week": "£42.00",
+          "weekend": "£33.60"
+        }
       },
       {
-        id: 'stump-grinder',
-        title: 'Stump Grinder',
-        image: '/images/IMG_7865.WEBP',
-        specs: [
-          'For grinding tree stumps below ground level',
-          'Removes the need for excavation',
-          'Multiple sizes available on enquiry',
+        "id": "petrol-floor-saw",
+        "title": "Petrol Floor Saw (Max 14\" Blade)",
+        "image": "/images/IMG_7769.WEBP",
+        "specs": [
+          "Petrol engine walk-behind floor saw",
+          "Max 14\" blade capacity",
+          "For precision cutting of floors, roads and pavements",
+          "Controlled straight cutting for joint/trench work"
         ],
-        pricing: null,
+        "pricing": {
+          "day1": "£32.50",
+          "extraDay": "£13.00",
+          "week": "£65.00",
+          "weekend": "£52.00"
+        }
       },
       {
-        id: 'log-splitter',
-        title: 'Log Splitter',
-        specs: [
-          'Hydraulic log splitter',
-          'For splitting logs and timber',
-          'Various sizes available on enquiry',
+        "id": "diamond-core-drill",
+        "title": "Standard Diamond Core Drill Unit",
+        "specs": [
+          "110v electric core drill",
+          "For precision core drilling through concrete and masonry",
+          "Requires separate core cutter bit (sizes listed below)",
+          "Variable speed for different material densities"
         ],
-        pricing: null,
+        "pricing": {
+          "day1": "£32.50",
+          "extraDay": "£13.00",
+          "week": "£65.00",
+          "weekend": "£52.00"
+        }
       },
-    ],
+      {
+        "id": "diamond-core-cutters",
+        "title": "Diamond Core Cutters – Individual Sizes",
+        "image": "/images/IMG_7799(1).WEBP",
+        "specs": [
+          "Available in sizes: 22mm, 28mm, 38mm, 48mm, 52mm, 65mm, 78mm, 107mm, 117mm, 127mm, 152mm",
+          "Prices scale with cutter diameter – see pricing table",
+          "Used in conjunction with Standard Diamond Core Drill Unit"
+        ],
+        "pricing": null,
+        "pricingRows": [
+          {
+            "size": "22mm",
+            "day1": "£6.00",
+            "extraDay": "£2.40",
+            "week": "£12.00",
+            "weekend": "£9.60"
+          },
+          {
+            "size": "28mm – 65mm",
+            "day1": "Enquire",
+            "extraDay": "Enquire",
+            "week": "Enquire",
+            "weekend": "Enquire"
+          },
+          {
+            "size": "78mm – 117mm",
+            "day1": "Enquire",
+            "extraDay": "Enquire",
+            "week": "Enquire",
+            "weekend": "Enquire"
+          },
+          {
+            "size": "127mm",
+            "day1": "£14.00",
+            "extraDay": "£5.60",
+            "week": "£28.00",
+            "weekend": "£22.40"
+          },
+          {
+            "size": "152mm",
+            "day1": "Enquire",
+            "extraDay": "Enquire",
+            "week": "Enquire",
+            "weekend": "Enquire"
+          }
+        ]
+      },
+      {
+        "id": "tile-bench-saw",
+        "title": "Tile Bench Saw / Bridge Saw",
+        "image": "/images/IMG_7774.WEBP",
+        "specs": [
+          "Electric tile bench / bridge saw",
+          "For precision cutting of ceramic, porcelain and natural stone tiles",
+          "Sliding table for accurate cuts"
+        ],
+        "pricing": {
+          "day1": "£31.50",
+          "extraDay": "£12.60",
+          "week": "£63.00",
+          "weekend": "£50.40"
+        }
+      },
+      {
+        "id": "manual-tile-cutter",
+        "title": "Manual Rail Tile Cutter (Heavy Duty)",
+        "image": "/images/IMG_7775.WEBP",
+        "specs": [
+          "Manual operation – no power required",
+          "Heavy duty construction for repeated professional use",
+          "Suitable for ceramic and porcelain tiles"
+        ],
+        "pricing": {
+          "day1": "£13.50",
+          "extraDay": "£5.40",
+          "week": "£27.00",
+          "weekend": "£21.60"
+        }
+      },
+      {
+        "id": "block-splitter",
+        "title": "Block Splitter (Manual Hydraulic)",
+        "image": "/images/IMG_7772.WEBP",
+        "specs": [
+          "Manual hydraulic operation – no power required",
+          "For splitting concrete blocks, bricks and kerb stones",
+          "Clean accurate splits with no dust"
+        ],
+        "pricing": {
+          "day1": "£16.50",
+          "extraDay": "£6.60",
+          "week": "£33.00",
+          "weekend": "£26.40"
+        }
+      }
+    ]
   },
   {
-    id: 'access-scaffold-towers',
-    slug: 'access-scaffold-towers',
-    label: 'Access Scaffold Towers',
-    icon: '🪜',
-    image: '/images/IMG_7779(1).WEBP',
-    products: [
+    "id": "wood-metal-cutting",
+    "slug": "wood-metal-cutting",
+    "label": "Wood & Metal Cutting",
+    "icon": "⚙️",
+    "image": "/images/IMG_7822.WEBP",
+    "intro": "Hire jigsaws, reciprocating saws, circular saws and mitre saws for carpentry, demolition and construction projects. Serving Witney, West Oxfordshire and The Cotswolds with flexible day and weekly hire rates.",
+    "seo": {
+      "title": "Wood & Metal Cutting Tool Hire Witney",
+      "description": "Hire jigsaws, reciprocating saws, circular saws and mitre saws in Witney & West Oxfordshire."
+    },
+    "products": [
       {
-        id: 'single-width-tower-2-2m',
-        title: 'Single Width Scaffold Tower – 2.2m Working Height',
-        image: '/images/IMG_7778.WEBP',
-        specs: [
-          'Platform: 900mm × 2500mm',
-          'Working height: 2.2m',
-          'Aluminium alloy frame – lightweight and quick to erect',
-          'Outriggers and guardrails included',
+        "id": "jigsaw",
+        "title": "Jigsaw – 110v",
+        "image": "/images/IMG_7819.WEBP",
+        "specs": [
+          "110v electric",
+          "For cutting curves and intricate shapes in wood, metal and plastics",
+          "Variable speed control"
         ],
-        pricing: { day1: '£21.50', extraDay: '–', week: '£43.00', weekend: '–' },
+        "pricing": {
+          "day1": "£12.50",
+          "extraDay": "£5.00",
+          "week": "£25.00",
+          "weekend": "£20.00"
+        }
       },
       {
-        id: 'single-width-tower-3-2m',
-        title: 'Single Width Scaffold Tower – 3.2m Working Height',
-        image: '/images/IMG_7779(1).WEBP',
-        specs: [
-          'Platform: 900mm × 2500mm',
-          'Working height: 3.2m',
-          'Aluminium alloy frame – lightweight and quick to erect',
-          'Outriggers and guardrails included',
+        "id": "reciprocating-saw",
+        "title": "Reciprocating Saw – 110v",
+        "image": "/images/IMG_7820.WEBP",
+        "specs": [
+          "110v electric",
+          "Heavy duty demolition and cutting tool",
+          "Cuts wood, metal, pipework and more"
         ],
-        pricing: null,
+        "pricing": {
+          "day1": "£16.50",
+          "extraDay": "£6.60",
+          "week": "£33.00",
+          "weekend": "£26.40"
+        }
       },
       {
-        id: 'single-width-tower-4-2m',
-        title: 'Single Width Scaffold Tower – 4.2m Working Height',
-        image: '/images/IMG_7779(1).WEBP',
-        specs: [
-          'Platform: 900mm × 2500mm',
-          'Working height: 4.2m',
-          'Aluminium alloy frame – lightweight and quick to erect',
-          'Outriggers and guardrails included',
+        "id": "circular-saw-185",
+        "title": "185mm Circular Saw – 110v",
+        "image": "/images/IMG_7821.WEBP",
+        "specs": [
+          "110v electric",
+          "185mm blade diameter",
+          "For straight cuts in timber, sheet materials and more"
         ],
-        pricing: null,
+        "pricing": {
+          "day1": "£15.50",
+          "extraDay": "£6.20",
+          "week": "£31.00",
+          "weekend": "£24.80"
+        }
       },
       {
-        id: 'single-width-tower-5-2m',
-        title: 'Single Width Scaffold Tower – 5.2m Working Height',
-        image: '/images/IMG_7779(1).WEBP',
-        specs: [
-          'Platform: 900mm × 2500mm',
-          'Working height: 5.2m',
-          'Aluminium alloy frame – lightweight and quick to erect',
-          'Outriggers and guardrails included',
+        "id": "circular-saw-235",
+        "title": "235mm Circular Saw – 110v",
+        "image": "/images/IMG_7822.WEBP",
+        "specs": [
+          "110v electric",
+          "235mm blade diameter – greater cutting depth than 185mm",
+          "For thicker timber sections and heavy sheet materials"
         ],
-        pricing: null,
+        "pricing": {
+          "day1": "£15.50",
+          "extraDay": "£6.20",
+          "week": "£31.00",
+          "weekend": "£24.80"
+        }
       },
       {
-        id: 'single-width-tower-6-2m',
-        title: 'Single Width Scaffold Tower – 6.2m Working Height',
-        image: '/images/IMG_7779(1).WEBP',
-        specs: [
-          'Platform: 900mm × 2500mm',
-          'Working height: 6.2m',
-          'Aluminium alloy frame – lightweight and quick to erect',
-          'Outriggers and guardrails included',
+        "id": "mitre-saw",
+        "title": "Crosscut / Slide Mitre Saw – 110v",
+        "specs": [
+          "110v electric sliding crosscut mitre saw",
+          "For precision angled and straight crosscuts in timber",
+          "Ideal for framing, skirting, architrave and joinery"
         ],
-        pricing: null,
-      },
-      {
-        id: 'single-width-tower-7-2m',
-        title: 'Single Width Scaffold Tower – 7.2m Working Height',
-        image: '/images/IMG_7783.WEBP',
-        specs: [
-          'Platform: 900mm × 2500mm',
-          'Working height: 7.2m',
-          'Aluminium alloy frame – lightweight and quick to erect',
-          'Outriggers and guardrails included',
-        ],
-        pricing: null,
-      },
-      {
-        id: 'single-width-tower-8-2m',
-        title: 'Single Width Scaffold Tower – 8.2m Working Height',
-        image: '/images/IMG_7784.WEBP',
-        specs: [
-          'Platform: 900mm × 2500mm',
-          'Working height: 8.2m',
-          'Aluminium alloy frame – lightweight and quick to erect',
-          'Outriggers and guardrails included',
-        ],
-        pricing: null,
-      },
-      {
-        id: 'single-width-tower-9-2m',
-        title: 'Single Width Scaffold Tower – 9.2m Working Height',
-        image: '/images/IMG_7785.WEBP',
-        specs: [
-          'Platform: 900mm × 2500mm',
-          'Working height: 9.2m',
-          'Aluminium alloy frame – lightweight and quick to erect',
-          'Outriggers and guardrails included',
-        ],
-        pricing: null,
-      },
-      {
-        id: 'single-width-tower-10-2m',
-        title: 'Single Width Scaffold Tower – 10.2m Working Height',
-        image: '/images/IMG_7786.WEBP',
-        specs: [
-          'Platform: 900mm × 2500mm',
-          'Working height: 10.2m',
-          'Aluminium alloy frame – lightweight and quick to erect',
-          'Outriggers and guardrails included',
-        ],
-        pricing: null,
-      },
-      {
-        id: 'single-width-tower-12-2m',
-        title: 'Single Width Scaffold Tower – 12.2m Working Height',
-        image: '/images/IMG_7787.WEBP',
-        specs: [
-          'Platform: 900mm × 2500mm',
-          'Working height: 12.2m',
-          'Aluminium alloy frame – lightweight and quick to erect',
-          'Outriggers and guardrails included',
-        ],
-        pricing: null,
-      },
-      {
-        id: 'double-width-tower-2-2m',
-        title: 'Double Width Scaffold Tower – 2.2m Working Height',
-        image: '/images/IMG_7788.WEBP',
-        specs: [
-          'Platform: 1450mm × 2500mm',
-          'Working height: 2.2m',
-          'Aluminium alloy frame – lightweight and quick to erect',
-          'Outriggers and guardrails included',
-        ],
-        pricing: { day1: '£24.00', extraDay: '–', week: '£48.00', weekend: '–' },
-      },
-      {
-        id: 'double-width-tower-3-2m',
-        title: 'Double Width Scaffold Tower – 3.2m Working Height',
-        image: '/images/IMG_7789.WEBP',
-        specs: [
-          'Platform: 1450mm × 2500mm',
-          'Working height: 3.2m',
-          'Aluminium alloy frame – lightweight and quick to erect',
-          'Outriggers and guardrails included',
-        ],
-        pricing: null,
-      },
-      {
-        id: 'double-width-tower-4-2m',
-        title: 'Double Width Scaffold Tower – 4.2m Working Height',
-        image: '/images/IMG_7790(1).WEBP',
-        specs: [
-          'Platform: 1450mm × 2500mm',
-          'Working height: 4.2m',
-          'Aluminium alloy frame – lightweight and quick to erect',
-          'Outriggers and guardrails included',
-        ],
-        pricing: null,
-      },
-      {
-        id: 'double-width-tower-5-2m',
-        title: 'Double Width Scaffold Tower – 5.2m Working Height',
-        image: '/images/IMG_7790(1).WEBP',
-        specs: [
-          'Platform: 1450mm × 2500mm',
-          'Working height: 5.2m',
-          'Aluminium alloy frame – lightweight and quick to erect',
-          'Outriggers and guardrails included',
-        ],
-        pricing: null,
-      },
-      {
-        id: 'double-width-tower-6-2m',
-        title: 'Double Width Scaffold Tower – 6.2m Working Height',
-        image: '/images/IMG_7790(1).WEBP',
-        specs: [
-          'Platform: 1450mm × 2500mm',
-          'Working height: 6.2m',
-          'Aluminium alloy frame – lightweight and quick to erect',
-          'Outriggers and guardrails included',
-        ],
-        pricing: null,
-      },
-      {
-        id: 'double-width-tower-7-2m',
-        title: 'Double Width Scaffold Tower – 7.2m Working Height',
-        image: '/images/IMG_7790(1).WEBP',
-        specs: [
-          'Platform: 1450mm × 2500mm',
-          'Working height: 7.2m',
-          'Aluminium alloy frame – lightweight and quick to erect',
-          'Outriggers and guardrails included',
-        ],
-        pricing: null,
-      },
-      {
-        id: 'double-width-tower-8-2m',
-        title: 'Double Width Scaffold Tower – 8.2m Working Height',
-        image: '/images/IMG_7790(1).WEBP',
-        specs: [
-          'Platform: 1450mm × 2500mm',
-          'Working height: 8.2m',
-          'Aluminium alloy frame – lightweight and quick to erect',
-          'Outriggers and guardrails included',
-        ],
-        pricing: null,
-      },
-      {
-        id: 'double-width-tower-9-2m',
-        title: 'Double Width Scaffold Tower – 9.2m Working Height',
-        image: '/images/IMG_7795(1).WEBP',
-        specs: [
-          'Platform: 1450mm × 2500mm',
-          'Working height: 9.2m',
-          'Aluminium alloy frame – lightweight and quick to erect',
-          'Outriggers and guardrails included',
-        ],
-        pricing: null,
-      },
-      {
-        id: 'double-width-tower-10-2m',
-        title: 'Double Width Scaffold Tower – 10.2m Working Height',
-        image: '/images/IMG_7795(1).WEBP',
-        specs: [
-          'Platform: 1450mm × 2500mm',
-          'Working height: 10.2m',
-          'Aluminium alloy frame – lightweight and quick to erect',
-          'Outriggers and guardrails included',
-        ],
-        pricing: null,
-      },
-      {
-        id: 'double-width-tower-11-2m',
-        title: 'Double Width Scaffold Tower – 11.2m Working Height',
-        image: '/images/IMG_7795(1).WEBP',
-        specs: [
-          'Platform: 1450mm × 2500mm',
-          'Working height: 11.2m',
-          'Aluminium alloy frame – lightweight and quick to erect',
-          'Outriggers and guardrails included',
-        ],
-        pricing: null,
-      },
-    ],
-  },
+        "pricing": {
+          "day1": "£30.00",
+          "extraDay": "£12.00",
+          "week": "£60.00",
+          "weekend": "£48.00"
+        }
+      }
+    ]
+  }
 ]

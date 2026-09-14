@@ -1,0 +1,73 @@
+label: Welding Gas
+order: 4
+icon: "⚡"
+intro: >-
+  Shielding gases for MIG and TIG welding, plus oxygen and acetylene for cutting
+  and brazing. Welding cylinders are hired rather than bought, so you pay for
+  the cylinder for as long as you have it and just swap it when it runs out.
+pricingNote: >-
+  Welding gas works differently to the other bottles: rather than a refundable
+  deposit, the cylinder is on hire for as long as you keep it. Give us a ring and
+  we will talk you through what suits the job.
+products:
+  - title: Argon — MIG & TIG
+    size: Various
+    image: ""
+    specs:
+      - Pure argon for TIG welding and aluminium MIG
+      - Available in several cylinder sizes
+      - Refill by straight swap over the counter
+    refillPrice: "£45.00"
+    deposit: ""
+    hirePrice: "£60.00 / year"
+    advanced:
+      id: welding-argon
+  - title: Argon / CO2 Mix
+    size: Various
+    image: ""
+    specs:
+      - The usual shielding gas for MIG welding mild steel
+      - Cleaner finish and less spatter than pure CO2
+    refillPrice: "£45.00"
+    deposit: ""
+    hirePrice: "£60.00 / year"
+    advanced:
+      id: welding-argon-co2
+  - title: Pure CO2
+    size: Various
+    image: ""
+    specs:
+      - Budget shielding gas for MIG welding mild steel
+      - Deeper penetration, though more spatter than a mix
+    refillPrice: "£32.00"
+    deposit: ""
+    hirePrice: "£50.00 / year"
+    advanced:
+      id: welding-co2
+  - title: Oxygen
+    size: Various
+    image: ""
+    specs:
+      - For oxy-acetylene cutting, brazing and heating
+      - Used alongside an acetylene cylinder
+    refillPrice: "£40.00"
+    deposit: ""
+    hirePrice: "£60.00 / year"
+    advanced:
+      id: welding-oxygen
+  - title: Acetylene
+    size: Various
+    image: ""
+    specs:
+      - For oxy-acetylene cutting, brazing and heating
+      - Used alongside an oxygen cylinder
+    refillPrice: "£55.00"
+    deposit: ""
+    hirePrice: "£60.00 / year"
+    advanced:
+      id: welding-acetylene
+seo:
+  title: Welding Gas Hire Witney | Argon, CO2, Oxygen & Acetylene
+  description: >-
+    Welding gas cylinders in Witney, West Oxfordshire. Argon, argon/CO2 mix,
+    pure CO2, oxygen and acetylene for MIG, TIG, cutting and brazing.
