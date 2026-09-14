@@ -15,8 +15,13 @@ const openSans = Open_Sans({
   display: 'swap',
 })
 
+// Belt and braces alongside robots.js: a preview deploy also sends a noindex
+// meta tag, so a stray link cannot pull it into Google.
+const NOINDEX = process.env.NEXT_PUBLIC_SITE_NOINDEX === 'true'
+
 export const metadata = {
   metadataBase: new URL('https://rowlandplant.co.uk'),
+  ...(NOINDEX ? { robots: { index: false, follow: false } } : {}),
   title: {
     default: 'Rowland Tool & Plant Hire | Witney, Oxfordshire',
     template: '%s | Rowland Plant Hire',
