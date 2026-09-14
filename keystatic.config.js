@@ -8,7 +8,16 @@ import { config, fields, collection, singleton } from '@keystatic/core'
 // into src/data/toolHireData.js at build time by scripts/build-content.mjs.
 // ---------------------------------------------------------------------------
 
-const GITHUB_REPO = { owner: 'thomasd230320', name: 'Rowland-plant-hire' }
+// Which GitHub repository Keystatic saves Rowland's edits to.
+//
+// Set as environment variables so the site can be moved to a different GitHub
+// account without a code change — point these at the new owner and repo name,
+// then redeploy. They must start with NEXT_PUBLIC_ because the admin panel runs
+// in the browser.
+const GITHUB_REPO = {
+  owner: process.env.NEXT_PUBLIC_GITHUB_REPO_OWNER || 'thomasd230320',
+  name: process.env.NEXT_PUBLIC_GITHUB_REPO_NAME || 'Rowland-plant-hire',
+}
 
 // Local mode (editing on your own machine) unless GitHub credentials are set.
 const storage =

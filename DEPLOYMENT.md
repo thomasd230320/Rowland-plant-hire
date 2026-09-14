@@ -86,6 +86,61 @@ currently sends that URL to the tool hire index so it does not 404, but it
 should become a real page — it needs the Rug Doctor hire rates, which are not
 in this repository yet.
 
+## Moving the site to a different GitHub account
+
+Nothing in the code is tied to a particular GitHub account except the
+repository the editing panel saves to, and that is set by environment
+variable.
+
+**1. Copy the repository across.** Either use GitHub's importer at
+<https://github.com/new/import>, or push it by hand:
+
+```bash
+git clone https://github.com/thomasd230320/Rowland-plant-hire.git
+cd Rowland-plant-hire
+git remote add new https://github.com/NEW-OWNER/Rowland-plant-hire.git
+git push new --all
+git push new --tags
+```
+
+**2. Point Netlify at the new repository.** Either connect a fresh Netlify
+site to it, or in **Site settings → Build & deploy → Link to a different
+repository**.
+
+**3. Tell Keystatic where to save.** In Netlify's environment variables:
+
+```
+NEXT_PUBLIC_GITHUB_REPO_OWNER=NEW-OWNER
+NEXT_PUBLIC_GITHUB_REPO_NAME=Rowland-plant-hire
+```
+
+Without these, the panel keeps trying to save to the old repository, and
+Rowland's edits will not appear.
+
+**4. Create a fresh GitHub App.** The Keystatic App is tied to the account
+that owns the repository, so the old credentials will not work. Repeat
+*Turning on the editing panel* above against the new repository, and replace
+`KEYSTATIC_GITHUB_CLIENT_ID`, `KEYSTATIC_GITHUB_CLIENT_SECRET` and
+`NEXT_PUBLIC_KEYSTATIC_GITHUB_APP_SLUG`.
+
+**5. Redeploy with the cache cleared**, then check `/keystatic` saves
+correctly by making one small edit and confirming it appears on the site.
+
+### Whose account should own it?
+
+Worth thinking about before you move rather than after. Whoever owns the
+repository controls the site: they add and remove editors, and their account
+holds the GitHub App the panel signs in through.
+
+- **You own it** — you stay in control; Rowland is a collaborator who can
+  edit content. Best while you are still looking after the site.
+- **Rowland owns it** — he keeps the site if you step away, and can appoint
+  someone else later without needing you. Best if this is heading towards a
+  full handover.
+
+Either way the other person is added as a collaborator, so day-to-day editing
+is identical. It only matters for who has the final say.
+
 ## How content reaches the site
 
 ```
