@@ -1,0 +1,192 @@
+label: Masonry, Diamond Core & Tile Cutting
+icon: 🪚
+image: /images/IMG_7768.WEBP
+intro: Hire angle grinders, disc cutters, tile saws and block splitters for brickwork, stonework and tiling projects in Witney and across West Oxfordshire. All equipment is 110v for site safety compliance.
+categoryNote: ""
+products:
+  - title: 4.5" Angle Grinder – 110v
+    image: /images/IMG_7764.WEBP
+    specs:
+      - 110v electric
+      - Suitable for masonry, metal and stone cutting/grinding
+      - 4.5" disc diameter
+    pricing:
+      day1: £8.00
+      extraDay: £3.20
+      week: £16.00
+      weekend: £12.80
+    pricingRows: []
+    advanced:
+      id: angle-grinder-4-5
+  - title: 9" Angle Grinder – 110v
+    image: /images/IMG_7765.WEBP
+    specs:
+      - 110v electric
+      - Heavy duty grinder for larger masonry and metal cutting
+      - 9" disc diameter
+    pricing:
+      day1: £11.00
+      extraDay: £4.40
+      week: £22.00
+      weekend: £17.60
+    pricingRows: []
+    advanced:
+      id: angle-grinder-9
+  - title: 12" Electric Cut-Off Saw (Disc Cutter)
+    image: /images/IMG_7766.WEBP
+    specs:
+      - 110v electric
+      - 12" blade capacity
+      - For cutting concrete, masonry, asphalt and stone
+    pricing:
+      day1: £16.00
+      extraDay: £6.40
+      week: £32.00
+      weekend: £25.60
+    pricingRows: []
+    advanced:
+      id: cut-off-saw-12-electric
+  - title: 12" Petrol Cut-Off Saw (Disc Cutter)
+    image: /images/IMG_7767.WEBP
+    specs:
+      - Petrol engine – suitable for outdoor use
+      - 12" blade capacity
+      - For cutting concrete, masonry and asphalt
+    pricing:
+      day1: £18.50
+      extraDay: £7.40
+      week: £37.00
+      weekend: £29.60
+    pricingRows: []
+    advanced:
+      id: cut-off-saw-12-petrol
+  - title: 14" Petrol Cut-Off Saw (Disc Cutter)
+    image: /images/IMG_7768.WEBP
+    specs:
+      - Petrol engine – suitable for outdoor use
+      - 14" blade capacity for greater cutting depth
+      - For thicker concrete, kerbs and heavy masonry
+    pricing:
+      day1: £21.00
+      extraDay: £8.40
+      week: £42.00
+      weekend: £33.60
+    pricingRows: []
+    advanced:
+      id: cut-off-saw-14-petrol
+  - title: Petrol Floor Saw (Max 14" Blade)
+    image: /images/IMG_7769.WEBP
+    specs:
+      - Petrol engine walk-behind floor saw
+      - Max 14" blade capacity
+      - For precision cutting of floors, roads and pavements
+      - Controlled straight cutting for joint/trench work
+    pricing:
+      day1: £32.50
+      extraDay: £13.00
+      week: £65.00
+      weekend: £52.00
+    pricingRows: []
+    advanced:
+      id: petrol-floor-saw
+  - title: Standard Diamond Core Drill Unit
+    image: ""
+    specs:
+      - 110v electric core drill
+      - For precision core drilling through concrete and masonry
+      - Requires separate core cutter bit (sizes listed below)
+      - Variable speed for different material densities
+    pricing:
+      day1: £32.50
+      extraDay: £13.00
+      week: £65.00
+      weekend: £52.00
+    pricingRows: []
+    advanced:
+      id: diamond-core-drill
+  - title: Diamond Core Cutters – Individual Sizes
+    image: /images/IMG_7799(1).WEBP
+    specs:
+      - "Available in sizes: 22mm, 28mm, 38mm, 48mm, 52mm, 65mm, 78mm, 107mm, 117mm, 127mm, 152mm"
+      - Prices scale with cutter diameter – see pricing table
+      - Used in conjunction with Standard Diamond Core Drill Unit
+    pricing:
+      day1: ""
+      extraDay: ""
+      week: ""
+      weekend: ""
+    pricingRows:
+      - size: 22mm
+        day1: £6.00
+        extraDay: £2.40
+        week: £12.00
+        weekend: £9.60
+      - size: 28mm – 65mm
+        day1: Enquire
+        extraDay: Enquire
+        week: Enquire
+        weekend: Enquire
+      - size: 78mm – 117mm
+        day1: Enquire
+        extraDay: Enquire
+        week: Enquire
+        weekend: Enquire
+      - size: 127mm
+        day1: £14.00
+        extraDay: £5.60
+        week: £28.00
+        weekend: £22.40
+      - size: 152mm
+        day1: Enquire
+        extraDay: Enquire
+        week: Enquire
+        weekend: Enquire
+    advanced:
+      id: diamond-core-cutters
+  - title: Tile Bench Saw / Bridge Saw
+    image: /images/IMG_7774.WEBP
+    specs:
+      - Electric tile bench / bridge saw
+      - For precision cutting of ceramic, porcelain and natural stone tiles
+      - Sliding table for accurate cuts
+    pricing:
+      day1: £31.50
+      extraDay: £12.60
+      week: £63.00
+      weekend: £50.40
+    pricingRows: []
+    advanced:
+      id: tile-bench-saw
+  - title: Manual Rail Tile Cutter (Heavy Duty)
+    image: /images/IMG_7775.WEBP
+    specs:
+      - Manual operation – no power required
+      - Heavy duty construction for repeated professional use
+      - Suitable for ceramic and porcelain tiles
+    pricing:
+      day1: £13.50
+      extraDay: £5.40
+      week: £27.00
+      weekend: £21.60
+    pricingRows: []
+    advanced:
+      id: manual-tile-cutter
+  - title: Block Splitter (Manual Hydraulic)
+    image: /images/IMG_7772.WEBP
+    specs:
+      - Manual hydraulic operation – no power required
+      - For splitting concrete blocks, bricks and kerb stones
+      - Clean accurate splits with no dust
+    pricing:
+      day1: £16.50
+      extraDay: £6.60
+      week: £33.00
+      weekend: £26.40
+    pricingRows: []
+    advanced:
+      id: block-splitter
+seo:
+  title: Masonry & Tile Cutter Hire Witney | Rowland
+  description: Hire angle grinders, disc cutters, diamond core drills, tile saws and block splitters in Witney & West Oxfordshire.
+advanced:
+  id: masonry-diamond-tile

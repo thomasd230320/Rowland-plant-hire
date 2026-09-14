@@ -1,0 +1,78 @@
+label: Concrete Breaking
+icon: 🔨
+image: /images/IMG_7762.WEBP
+intro: We hire light, medium and heavy duty concrete breakers to trade and domestic customers across Witney, West Oxfordshire and The Cotswolds. Ideal for breaking up concrete slabs, foundations, block paving and masonry.
+categoryNote: Sharpening charge per chisel @ £3.75 applies to all breakers.
+products:
+  - title: Light Duty Breaker – 110v
+    image: /images/IMG_7837.WEBP
+    specs:
+      - For light duty breaking of plaster, render & small wall tiles
+      - "Tool Holder: SDS Plus"
+      - "Max drill in concrete: 32mm"
+      - "Input Voltage: 850W"
+      - "Vibration Drilling: 11.5 m/sec²"
+      - "Vibration Chiselling: 9 m/sec²"
+      - "Net Weight: 5.1 – 5.6 kg"
+    pricing:
+      day1: £17.50
+      extraDay: £7.00
+      week: £35.00
+      weekend: £28.00
+    pricingRows: []
+    advanced:
+      id: light-duty-breaker
+  - title: Medium Duty Breaker – 110v – 6.2Kg
+    image: /images/IMG_7761.WEBP
+    specs:
+      - Lightweight breaker intended for horizontal chiselling in concrete and stone
+      - "Tool Holder: SDS Max"
+      - "Chiselling Vibration: 11 m/s²"
+      - "Net Weight: 6.2 kg"
+      - "Impact Energy: 8.5 J"
+    pricing:
+      day1: £22.00
+      extraDay: £8.80
+      week: £44.00
+      weekend: £35.20
+    pricingRows: []
+    advanced:
+      id: medium-duty-breaker
+  - title: Heavy Duty Breaker – 110v – 11.0Kg
+    image: /images/IMG_7762.WEBP
+    specs:
+      - Ideal for demolition and breaking up of concrete and hard material
+      - Can be used inside and outside – flooring, tiles, brickwork and more
+      - "Tool Holder: SDS Max"
+      - "Chiselling Vibration: 20 m/s²"
+      - "Net Weight: 11.0 kg"
+      - "Impact Energy: 26 J"
+    pricing:
+      day1: £27.50
+      extraDay: £11.00
+      week: £55.00
+      weekend: £44.00
+    pricingRows: []
+    advanced:
+      id: heavy-duty-breaker-11kg
+  - title: Heavy Duty Breaker – 110v (32AMP) – 27.0Kg
+    image: /images/IMG_7763.WEBP
+    specs:
+      - For breaking up concrete slabs, roads, footings and stone
+      - "Tool Holder: HEX 28mm"
+      - "Chiselling Vibration: 17 m/s²"
+      - "Net Weight: 29.1 kg"
+      - "Impact Energy: 62 J"
+    pricing:
+      day1: £48.00
+      extraDay: £19.20
+      week: £96.00
+      weekend: £76.80
+    pricingRows: []
+    advanced:
+      id: heavy-duty-breaker-27kg
+seo:
+  title: Concrete Breaker Hire Witney | Rowland Plant
+  description: Hire concrete breakers in Witney & West Oxfordshire. Light, medium and heavy duty options from 5kg to 27kg.
+advanced:
+  id: concrete-breaking

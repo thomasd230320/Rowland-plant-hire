@@ -1,0 +1,111 @@
+label: Concrete Mixing & Laying
+icon: 🪣
+image: /images/IMG_7813(1).WEBP
+intro: From cement mixers to power trowels and vibrating pokers, we have everything you need for concrete mixing and laying projects across Witney and West Oxfordshire. Available for day, weekend and weekly hire.
+categoryNote: ""
+products:
+  - title: Petrol 4/3 Tip Up Cement Mixer
+    image: /images/IMG_7813(1).WEBP
+    specs:
+      - Portable mixer for all small-to-medium building projects
+      - Barrow height tipping
+      - "Drum Volume: 130 Litres"
+      - "Mix Capacity: 90 Litres"
+      - Complete with stand
+      - Petrol fuel engine
+    pricing:
+      day1: £16.00
+      extraDay: £6.40
+      week: £32.00
+      weekend: £25.60
+    pricingRows: []
+    advanced:
+      id: petrol-cement-mixer
+  - title: 110v 4/3 Tip Up Cement Mixer
+    image: /images/IMG_7813(1).WEBP
+    specs:
+      - Portable mixer for all small-to-medium building projects
+      - Barrow height tipping
+      - "Drum Volume: 130 Litres"
+      - "Mix Capacity: 90 Litres"
+      - Complete with stand
+      - 110v electric motor
+    pricing:
+      day1: £16.00
+      extraDay: £6.40
+      week: £32.00
+      weekend: £25.60
+    pricingRows: []
+    advanced:
+      id: 110v-cement-mixer
+  - title: Diesel 5/3.5 Wheelbarrow Cement Mixer
+    image: /images/IMG_7815.WEBP
+    specs:
+      - Heavy duty site mixer
+      - "Engine: Yanmar L48 3.4HP Diesel"
+      - "Sound Level: 101 dB(A)"
+      - "Max Drum Capacity: 160 Litres"
+      - "Max Mix Capacity: 115 Litres"
+      - Heavy duty chassis for tough site conditions
+      - "Net Weight: 340 kg"
+      - "Dimensions W×H×L: 900mm × 1430mm × 1540mm"
+    pricing:
+      day1: £27.50
+      extraDay: £11.00
+      week: £55.00
+      weekend: £44.00
+    pricingRows: []
+    advanced:
+      id: diesel-site-mixer
+  - title: Vibrating Poker Unit (Petrol)
+    image: /images/IMG_7816.WEBP
+    specs:
+      - Vibrates fluid concrete to ensure total compaction and structural strength
+      - Removes trapped air for an improved finish
+      - "Core Diameter: 50mm"
+    pricing:
+      day1: £17.50
+      extraDay: £7.00
+      week: £35.00
+      weekend: £28.00
+    pricingRows: []
+    advanced:
+      id: vibrating-poker
+  - title: Petrol Power Trowel / Float (36 Inch)
+    image: /images/IMG_7817.WEBP
+    specs:
+      - High performance 36" power trowel designed for safety and longevity
+      - Complete with set of finishing blades
+      - Accurate screw pitch control
+      - "Operating Weight: 73 kg"
+      - "Engine: Honda GX160 5.5HP"
+      - "Guard Ring Diameter: 900mm"
+    pricing:
+      day1: £29.50
+      extraDay: £11.80
+      week: £59.00
+      weekend: £47.20
+    pricingRows: []
+    advanced:
+      id: power-trowel
+  - title: Twin Beam Air Screed (Petrol)
+    image: /images/IMG_7818.WEBP
+    specs:
+      - High efficiency vibratory twin beam screed
+      - For accurate consolidation and levelling of concrete slabs
+      - Length options from 3.2m to 6.2m
+      - "Engine: Honda GX35 4-stroke"
+      - Variable vibration speed control
+    pricing:
+      day1: £37.50
+      extraDay: £15.00
+      week: £75.00
+      weekend: £60.00
+    pricingRows: []
+    advanced:
+      id: twin-beam-screed
+seo:
+  title: Concrete Mixer Hire Witney | Rowland Plant Hire
+  description: Hire cement mixers, vibrating pokers, power trowels and screeds in Witney & West Oxfordshire.
+advanced:
+  id: concrete-mixing-laying

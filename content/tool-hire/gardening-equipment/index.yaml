@@ -1,0 +1,112 @@
+label: Gardening Equipment
+icon: 🌿
+image: /images/IMG_7861.WEBP
+intro: Hire lawnmowers, rotavators, chainsaws and hedge trimmers for garden maintenance, landscaping and groundswork projects. Serving domestic and trade customers across Witney, West Oxfordshire and The Cotswolds.
+categoryNote: ""
+products:
+  - title: Rotary Lawnmower
+    image: ""
+    specs:
+      - Petrol rotary lawnmower
+      - Self-propelled or push options available
+      - For domestic and commercial lawn cutting
+    pricing:
+      day1: £17.50
+      extraDay: £7.00
+      week: £35.00
+      weekend: £28.00
+    pricingRows: []
+    advanced:
+      id: rotary-lawnmower
+  - title: Chainsaw – Petrol 16"
+    image: ""
+    specs:
+      - Petrol engine chainsaw
+      - 16" (400mm) guide bar
+      - For felling, pruning and cutting logs
+      - Safety equipment available on request
+    pricing:
+      day1: £29.50
+      extraDay: £11.80
+      week: £59.00
+      weekend: £47.20
+    pricingRows: []
+    advanced:
+      id: chainsaw-16
+  - title: Hedge Trimmer – Petrol 24"
+    image: /images/IMG_7858.WEBP
+    specs:
+      - Petrol engine hedge trimmer
+      - 24" (600mm) double-sided blade
+      - For trimming and shaping hedges and shrubs
+    pricing:
+      day1: £20.00
+      extraDay: £8.00
+      week: £40.00
+      weekend: £32.00
+    pricingRows: []
+    advanced:
+      id: hedge-trimmer
+  - title: Heavy Duty Rotavator (Petrol)
+    image: /images/IMG_7861.WEBP
+    specs:
+      - Heavy duty petrol rotavator / cultivator
+      - For breaking up and aerating compacted soil
+      - Ideal for vegetable gardens, new beds and lawn preparation
+      - Adjustable tine depth
+    pricing:
+      day1: £36.00
+      extraDay: £14.40
+      week: £72.00
+      weekend: £57.60
+    pricingRows: []
+    advanced:
+      id: rotavator
+  - title: Turf Cutter (Petrol)
+    image: ""
+    specs:
+      - Petrol engine turf cutter
+      - For removing turf/sod for new lawn or paving preparation
+      - Adjustable cutting depth
+      - Please enquire for pricing and availability
+    pricing:
+      day1: ""
+      extraDay: ""
+      week: ""
+      weekend: ""
+    pricingRows: []
+    advanced:
+      id: turf-cutter
+  - title: Stump Grinder
+    image: /images/IMG_7865.WEBP
+    specs:
+      - For grinding tree stumps below ground level
+      - Removes the need for excavation
+      - Multiple sizes available on enquiry
+    pricing:
+      day1: ""
+      extraDay: ""
+      week: ""
+      weekend: ""
+    pricingRows: []
+    advanced:
+      id: stump-grinder
+  - title: Log Splitter
+    image: ""
+    specs:
+      - Hydraulic log splitter
+      - For splitting logs and timber
+      - Various sizes available on enquiry
+    pricing:
+      day1: ""
+      extraDay: ""
+      week: ""
+      weekend: ""
+    pricingRows: []
+    advanced:
+      id: log-splitter
+seo:
+  title: Garden Equipment Hire Witney | Rowland Plant
+  description: Hire lawnmowers, chainsaws, hedge trimmers, rotavators and more in Witney & West Oxfordshire.
+advanced:
+  id: gardening-equipment

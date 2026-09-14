@@ -1,0 +1,71 @@
+label: Compacting Equipment
+icon: 🏗️
+image: /images/IMG_7841.WEBP
+intro: We hire plate compactors, vibrating rollers and ride-on rollers for compacting sub-bases, gravel, tarmac and soil across Witney and West Oxfordshire. Essential for driveways, paths and groundworks projects.
+categoryNote: ""
+products:
+  - title: 12" Plate Compactor – Petrol
+    image: /images/IMG_7841.WEBP
+    specs:
+      - Petrol engine
+      - 12" (300mm) plate width
+      - For compacting gravel, soil, sand and asphalt
+      - Suitable for small to medium areas and trenches
+    pricing:
+      day1: £25.00
+      extraDay: £10.00
+      week: £50.00
+      weekend: £40.00
+    pricingRows: []
+    advanced:
+      id: plate-compactor-12
+  - title: 18" Plate Compactor – Petrol
+    image: /images/IMG_7841.WEBP
+    specs:
+      - Petrol engine
+      - 18" (450mm) plate width – greater coverage per pass
+      - For compacting gravel, soil, sand and asphalt
+      - Suitable for medium to large areas
+    pricing:
+      day1: £25.00
+      extraDay: £10.00
+      week: £50.00
+      weekend: £40.00
+    pricingRows: []
+    advanced:
+      id: plate-compactor-18
+  - title: Vibrating Roller 55cm – Petrol
+    image: /images/IMG_7843.WEBP
+    specs:
+      - Petrol engine walk-behind vibratory roller
+      - 55cm drum width
+      - For compacting soil, gravel and sub-base material
+      - Double drum – front and rear compaction
+    pricing:
+      day1: £34.00
+      extraDay: £13.60
+      week: £68.00
+      weekend: £54.40
+    pricingRows: []
+    advanced:
+      id: vibrating-roller-55
+  - title: 960mm Ride-On Roller – Diesel
+    image: /images/IMG_7844.WEBP
+    specs:
+      - Diesel engine ride-on roller
+      - 960mm roller drum width
+      - For large-scale compaction of roads and large surface areas
+      - Please enquire for pricing and availability
+    pricing:
+      day1: ""
+      extraDay: ""
+      week: ""
+      weekend: ""
+    pricingRows: []
+    advanced:
+      id: ride-on-roller
+seo:
+  title: Compactor Hire Witney | Rowland Plant Hire
+  description: Hire plate compactors, vibrating rollers and ride-on rollers in Witney & West Oxfordshire.
+advanced:
+  id: compacting-equipment

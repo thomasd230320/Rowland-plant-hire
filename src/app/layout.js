@@ -1,11 +1,5 @@
 import './globals.css'
 import { Oswald, Open_Sans } from 'next/font/google'
-import Navbar from '@/components/Navbar'
-import AnnouncementBar from '@/components/AnnouncementBar'
-import Providers from '@/components/Providers'
-import QuoteDrawer from '@/components/QuoteDrawer'
-import QuoteFloatingBtn from '@/components/QuoteFloatingBtn'
-import StickyCallBtn from '@/components/StickyCallBtn'
 
 const oswald = Oswald({
   subsets: ['latin'],
@@ -96,6 +90,9 @@ const SCHEMA = {
   priceRange: '££',
 }
 
+// Deliberately minimal: fonts, metadata and business schema only. The site's
+// navigation and quote drawer live in SiteChrome so that /keystatic can render
+// without them.
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${oswald.variable} ${openSans.variable}`}>
@@ -105,16 +102,7 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(SCHEMA) }}
         />
       </head>
-      <body>
-        <Providers>
-          <AnnouncementBar />
-          <Navbar />
-          <main>{children}</main>
-          <StickyCallBtn />
-          <QuoteFloatingBtn />
-          <QuoteDrawer />
-        </Providers>
-      </body>
+      <body>{children}</body>
     </html>
   )
 }

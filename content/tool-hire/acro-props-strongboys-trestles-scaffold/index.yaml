@@ -1,0 +1,137 @@
+label: Acro Props, Trestles & Boards
+icon: 🪵
+image: /images/IMG_7830(1).WEBP
+intro: Hire acro props, strongboys, builders trestles and scaffold boards for structural support and working-at-height tasks. Available for short and long-term hire across Witney, West Oxfordshire and The Cotswolds.
+categoryNote: ""
+products:
+  - title: Adjustable Prop – Size 0 (1044–1836mm)
+    image: /images/IMG_7848(1).WEBP
+    specs:
+      - Adjustable steel acro prop for temporary structural support
+      - "Size 0 extension range: 1044–1836mm"
+      - For supporting floors, ceilings, beams and lintels during construction
+    pricing:
+      day1: £17.00
+      extraDay: £3.40
+      week: £17.00
+      weekend: £13.60
+    pricingRows: []
+    advanced:
+      id: adjustable-prop-size-0
+  - title: Adjustable Prop – Size 1 (1250–1930mm)
+    image: /images/IMG_7848(1).WEBP
+    specs:
+      - Adjustable steel acro prop for temporary structural support
+      - "Size 1 extension range: 1250–1930mm"
+      - For supporting floors, ceilings, beams and lintels during construction
+    pricing:
+      day1: £17.00
+      extraDay: £3.40
+      week: £17.00
+      weekend: £13.60
+    pricingRows: []
+    advanced:
+      id: adjustable-prop-size-1
+  - title: Adjustable Prop – Size 2 (1984–3300mm)
+    image: /images/IMG_7848(1).WEBP
+    specs:
+      - Adjustable steel acro prop for temporary structural support
+      - "Size 2 extension range: 1984–3300mm"
+      - For supporting floors, ceilings, beams and lintels during construction
+    pricing:
+      day1: £17.00
+      extraDay: £3.40
+      week: £17.00
+      weekend: £13.60
+    pricingRows: []
+    advanced:
+      id: adjustable-prop-size-2
+  - title: Adjustable Prop – Size 3 (2356–3536mm)
+    image: /images/IMG_7848(1).WEBP
+    specs:
+      - Adjustable steel acro prop for temporary structural support
+      - "Size 3 extension range: 2356–3536mm"
+      - For supporting floors, ceilings, beams and lintels during construction
+    pricing:
+      day1: £17.00
+      extraDay: £3.40
+      week: £17.00
+      weekend: £13.60
+    pricingRows: []
+    advanced:
+      id: adjustable-prop-size-3
+  - title: Strongboy Wall Support
+    image: /images/IMG_7852.WEBP
+    specs:
+      - Steel strongboy wall support / prop attachment
+      - Used with adjustable acro props for lintel and wall support
+      - For underpinning and new opening creation work
+    pricing:
+      day1: £17.00
+      extraDay: £3.40
+      week: £17.00
+      weekend: £13.60
+    pricingRows: []
+    advanced:
+      id: strongboy
+  - title: Builders Trestle – Size 1 (0.29m–0.71m)
+    image: /images/IMG_7855.WEBP
+    specs:
+      - Folding steel builders trestle
+      - "Size 1 height range: 0.29m–0.71m"
+      - Used with scaffold boards to form a low-level working platform
+    pricing:
+      day1: £17.00
+      extraDay: £3.40
+      week: £17.00
+      weekend: £13.60
+    pricingRows: []
+    advanced:
+      id: builders-trestle-size-1
+  - title: Builders Trestle – Size 2 (0.70m–1.07m)
+    image: /images/IMG_7855.WEBP
+    specs:
+      - Folding steel builders trestle
+      - "Size 2 height range: 0.70m–1.07m"
+      - Used with scaffold boards to form a medium-level working platform
+    pricing:
+      day1: £17.00
+      extraDay: £3.40
+      week: £17.00
+      weekend: £13.60
+    pricingRows: []
+    advanced:
+      id: builders-trestle-size-2
+  - title: Builders Trestle – Size 3 (1.07m–1.68m)
+    image: /images/IMG_7855.WEBP
+    specs:
+      - Folding steel builders trestle
+      - "Size 3 height range: 1.07m–1.68m"
+      - Used with scaffold boards to form a higher working platform
+    pricing:
+      day1: £17.00
+      extraDay: £3.40
+      week: £17.00
+      weekend: £13.60
+    pricingRows: []
+    advanced:
+      id: builders-trestle-size-3
+  - title: Scaffold Boards (3.9m)
+    image: /images/IMG_7830(1).WEBP
+    specs:
+      - Kiln-dried and graded scaffold boards
+      - "Length: 3.9m"
+      - Used with builders trestles or scaffold towers to form a working platform
+    pricing:
+      day1: £17.00
+      extraDay: £3.40
+      week: £17.00
+      weekend: £13.60
+    pricingRows: []
+    advanced:
+      id: scaffold-boards
+seo:
+  title: Acro Prop & Trestle Hire Witney | Rowland Plant
+  description: Hire acro props, strongboys, builders trestles and scaffold boards in Witney & West Oxfordshire.
+advanced:
+  id: acro-props-trestles-boards
